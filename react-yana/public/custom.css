@@ -1,0 +1,450 @@
+body {
+    margin-top: 80px;
+}
+
+/*NavMenu Component*/
+.navcontainer {
+    background-color: #353535;
+}
+
+a.navbrand {
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white !important;
+}
+
+a.navbrand:hover,
+a.navbrand:focus {
+    color: red !important;
+}
+
+.navitem > a {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white !important;
+}
+
+.navitem > a:hover,
+.navitem > a:focus {
+    color: red !important;
+}
+
+.navitem > a.active {
+    color: red;
+}
+
+button.navbar-toggle {
+    margin-top: 18px;
+    background-color: black;
+    border: 1.5px solid white;
+}
+
+button.navbar-toggle > .icon-bar {
+    border: 1px solid white;
+}
+
+button.navbar-toggle:hover,
+button.navbar-toggle:focus {
+    background-color: black !important;
+}
+
+/*Footer Component*/
+.navfooter {
+    margin-top: 0px;
+}
+
+.keepintouchcontainer {
+    padding-bottom: 20px;
+    background-color: #353535;
+}
+
+.textin-keepintouchcontainer {
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    margin-top: -80px;
+    margin-bottom: 30px;
+}
+
+.sociallinkcontainer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #353535;
+}
+
+i.sociallink {
+    font-size: 60px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+i.sociallink:hover,
+i.sociallink:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.contactdetailcontainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #353535;
+}
+
+.textin-contactdetailcontainer {
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+}
+
+.address-contactdetailcontainer {
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+/*Media Query Settings*/
+@media screen and (max-width: 500px){
+    .textin-keepintouchcontainer {
+        padding-top: 25px;
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .textin-keepintouchcontainer {
+        font-size: 25px;
+    }
+
+    i.sociallink {
+        font-size: 50px;
+    }
+
+    .textin-contactdetailcontainer {
+        font-size: 28px;
+    }
+
+    .address-contactdetailcontainer {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .textin-keepintouchcontainer {
+        font-size: 23px;
+    }
+
+    .textin-contactdetailcontainer {
+        font-size: 27px;
+    }
+
+    .address-contactdetailcontainer {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .textin-keepintouchcontainer {
+        font-size: 20px;
+    }
+
+    .textin-contactdetailcontainer {
+        font-size: 25px;
+    }
+
+    .address-contactdetailcontainer {
+        font-size: 14px;
+    }
+}
+
+/*Collapse Component*/
+.Collapsible {
+    /*collapsed container*/
+    background-color: white;
+}
+
+.Collapsible__contentInner {
+    padding: 10px;
+    /*border of collapsed container*/
+    border: 1px solid black;
+    border-top: 0;
+}
+
+.Collapsible__contentInner p {
+    /*content inside collapsed container*/
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.Collapsible__contentInner p:last-child {
+    margin-bottom: 5px;
+}
+
+.Collapsible__trigger {
+    /*Non-collapsed container*/
+    display: block;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    border: 2px solid black;
+    padding: 10px;
+    background: brown;
+}
+
+.Collapsible__trigger:hover {
+    cursor: pointer;
+}
+
+.Collapsible__trigger:after {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    color: white;
+    position: absolute;
+    font-weight: 900;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+}
+
+.Collapsible__trigger.is-open:after {
+    transform: rotateZ(180deg);
+}
+
+/*Not is use
+.Collapsible__trigger.is-disabled {
+    opacity: 0.5;
+    background-color: grey;
+}
+
+.CustomTriggerCSS {
+    background-color: lightcoral;
+    transition: background-color 200ms ease;
+}
+
+.CustomTriggerCSS--open {
+    background-color: darkslateblue;
+}
+*/
+
+/*Contact Component*/
+.contact-form-wrapper {
+  background-color: #FADA9D;
+}
+
+div.well.well-lg {
+    margin-top: 20px;
+    background-color: black;
+}
+
+.form-header {
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    margin-top: -5px;
+    padding-bottom: 5px;
+}
+
+.contact-form-panel {
+  background-color: black;
+  border: 2px solid white;
+}
+
+label.col-sm-2.col-form-label {
+  font-size: 20px;
+  color: white;
+}
+
+div.panel.panel-default.custom {
+    border: 1px solid black;
+}
+
+div.formErrors > p {
+  color: red;
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: pink;
+}
+
+input.btn {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  border: 3px solid white;
+}
+
+input.btn:hover,
+input.btn:focus {
+  color: white;
+  background-color: #73BF45;
+  border: 3px solid #73BF45;
+}
+
+button.btn.btn-link {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+}
+
+button.btn.btn-link:hover,
+button.btn.btn-link:focus {
+  font-weight: 700;
+  color: red;
+}
+
+/*
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:100vh;
+}
+*/
+
+.container-element {
+    height: 550px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.map-element {
+    position: relative;
+    height: 550px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*Media Query Settings*/
+@media screen and (max-width: 1200px){
+  label.col-sm-2.col-form-label {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1050px){
+  label.col-sm-2.col-form-label {
+    font-size: 15px;
+  }
+}
+
+/*Faq Component*/
+.accordion-wrapper {
+    padding-top: 100px;
+    background-color: #FADA9D;
+    padding-bottom: 100px;
+}
+
+.accordion-container {
+    width: 65%;
+}
+
+span.Collapsible__trigger.is-open,
+div.Collapsible__contentInner {
+    margin-top: 100px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+/*Media Query Settings*/
+@media screen and (max-width: 1388px){
+  .accordion-container {
+      width: 85%;
+  }
+
+  span.Collapsible__trigger.is-open,
+  div.Collapsible__contentInner {
+      width: 85%;
+  }
+}
+
+@media screen and (max-width: 980px){
+  .Collapsible__contentInner p {
+      font-size: 22px;
+  }
+
+  .Collapsible__trigger {
+      font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 980px){
+  .Collapsible__contentInner p {
+      font-size: 21px;
+  }
+
+  .Collapsible__trigger {
+      font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 630px){
+  .accordion-wrapper {
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+
+  .Collapsible__contentInner p {
+      font-size: 20px;
+  }
+
+  .Collapsible__trigger {
+      font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .accordion-wrapper {
+      padding-top: 30px;
+      margin-bottom: 30px;
+  }
+
+  .Collapsible__contentInner p {
+      font-size: 19px;
+  }
+
+  .Collapsible__trigger {
+      font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .accordion-wrapper {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .Collapsible__contentInner p {
+      font-size: 18px;
+  }
+
+  .Collapsible__trigger {
+      font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .Collapsible__contentInner p {
+      font-size: 17px;
+  }
+
+  .Collapsible__trigger {
+      font-size: 13px;
+  }
+}

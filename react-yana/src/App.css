@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -21,4 +21,421 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+*/
+
+/*Background-Images for Home Page*/
+div.section-1-home,
+div.section-2-home,
+div.section-4-home {
+    position: relative;
+}
+
+/*1st Section aft NavMenu*/
+img.background-home {
+   margin-top: 68px;
+   background-image: url('./img/bg_light.jpg');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 1200px;
+   width: 100%;
+}
+
+div.background-caption-home {
+    display: block;
+    position: absolute;
+    margin-top: -1180px;
+    z-index: 10;
+}
+
+img.vacl-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+h1.home-heading-text {
+    color: #353535;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+div.button-container {
+  margin-top: 80px;
+}
+
+button.learn-now-button {
+  background-color: #353535;
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 20px 60px;
+}
+
+button.learn-now-button:hover,
+button.learn-now-button:focus {
+  background-color: #353535;
+  color: red;
+}
+
+h6.h6-text {
+  color: #353535;
+  font-weight: 500;
+  font-size: 35px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+div.sign-in-link-container {
+  margin-top: -15px;
+}
+
+a.sign-in-link {
+  color: #353535;
+  font-weight: 700;
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+a.sign-in-link:hover,
+a.sign-in-link:focus {
+   color: red;
+}
+
+/*Media Query Settings for Home Section 1*/
+@media screen and (max-width: 600px){
+  img.background-home {
+     height: 800px;
+  }
+
+  div.background-caption-home {
+      margin-top: -760px;
+      z-index: 10;
+  }
+
+  img.vacl-logo {
+    margin-bottom: 40px;
+  }
+
+  h1.home-heading-text {
+      font-size: 35px;
+  }
+
+  div.button-container {
+    margin-top: 120px;
+  }
+
+  button.learn-now-button {
+    font-size: 30px;
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  div.button-container {
+    margin-left: -20px;
+  }
+
+  button.learn-now-button {
+    font-size: 30px;
+    padding: 20px 30px;
+  }
+}
+
+@media screen and (max-width: 300px){
+  div.button-container {
+    margin-left: -35px;
+  }
+}
+
+/*2nd Section aft NavMenu*/
+img.background-home-2 {
+   background-image: url('./img/bg_dark.jpg');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 650px;
+   width: 100%;
+}
+
+div.background-caption-home-2 {
+    display: block;
+    position: absolute;
+    margin-top: -600px;
+    z-index: 10;
+}
+
+h1.home-heading-text-2 {
+    color: white;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+p.caption-home-2-p {
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+div.caption-home-2-img {
+    margin-top: 0px;
+}
+
+/*Media Query Settings for Home Section 2*/
+@media screen and (max-width: 1450px){
+  img.background-home-2 {
+     height: 800px;
+  }
+
+  div.background-caption-home-2 {
+      margin-top: -750px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  img.background-home-2 {
+     height: 900px;
+  }
+
+  div.background-caption-home-2 {
+      margin-top: -850px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  img.background-home-2 {
+     height: 1000px;
+  }
+
+  div.background-caption-home-2 {
+      margin-top: -950px;
+  }
+}
+
+@media screen and (max-width: 850px){
+  img.background-home-2 {
+     height: 1200px;
+  }
+
+  div.background-caption-home-2 {
+      margin-top: -1150px;
+  }
+}
+
+@media screen and (max-width: 380px){
+  img.background-home-2 {
+     height: 1400px;
+  }
+
+  div.background-caption-home-2 {
+      margin-top: -1350px;
+  }
+}
+
+@media screen and (max-width: 280px){
+  img.background-home-2 {
+     height: 1500px;
+  }
+
+  div.background-caption-home-2 {
+      margin-top: -1450px;
+  }
+}
+
+/*3rd Section aft NavMenu*/
+img.background-home-3 {
+   background-image: url('./img/bg_light.jpg');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 80px;
+   width: 100%;
+}
+
+/*4th Section aft NavMenu*/
+img.background-home-4 {
+   background-image: url('./img/bg_dark.jpg');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 550px;
+   width: 100%;
+}
+
+div.background-caption-home-4 {
+    display: block;
+    position: absolute;
+    margin-top: -500px;
+    z-index: 10;
+}
+
+h1.home-heading-text-4 {
+    color: white;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+p.caption-home-4-p:first-child {
+    margin-top: 50px;
+}
+
+p.caption-home-4-p {
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+p.caption-home-4-pb {
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+div.caption-home-4-img {
+    margin-top: 40px;
+}
+
+/*Media Query Settings for Home Section 4*/
+@media screen and (max-width: 767px){
+  img.background-home-4 {
+     height: 1000px;
+  }
+
+  div.background-caption-home-4 {
+      margin-top: -950px;
+  }
+}
+
+/*5th Section aft NavMenu*/
+img.background-home-5 {
+   background-image: url('./img/mid_dark.jpg');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 130px;
+   width: 100%;
+}
+
+/*1st Section for Faq Page*/
+/*Background-Images for Home Page*/
+div.section-1-faq {
+  position: relative;
+}
+
+/*1st Section aft NavMenu*/
+img.background-faq {
+   margin-top: 68px;
+   background-image: url('./img/backgroundfaqcontact.jpg');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 300px;
+   width: 100%;
+}
+
+img.background-contact {
+   margin-top: 68px;
+   background-image: url('./img/backgroundfaqcontact.jpg');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 300px;
+   width: 100%;
+}
+
+
+div.background-caption-faq,
+div.background-caption-contact {
+    display: block;
+    position: absolute;
+    margin-top: -15px;
+    z-index: 10;
+}
+
+h1.h1-faq,
+h1.h1-contact {
+    font-size: 60px;
+    font-weight: 900;
+    margin-top: -150px;
+}
+
+img.background-caption-faq,
+img.background-caption-contact {
+    margin-top: -230px;
+    margin-bottom: 170px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 600px){
+    img.background-faq,
+    img.background-contact {
+       height: 200px;
+    }
+
+    div.background-caption-faq,
+    div.background-caption-contact {
+        margin-top: 55px;
+    }
+
+    h1.h1-faq,
+    h1.h1-contact {
+        margin-top: -150px;
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    img.background-faq,
+    img.background-contact {
+       height: 180px;
+    }
+
+    div.background-caption-faq,
+    div.background-caption-contact {
+        margin-top: 75px;
+    }
+
+    h1.h1-faq,
+    h1.h1-contact {
+        margin-top: -140px;
+        font-size: 37px;
+    }
+
+    img.background-home-5 {
+       height: 80px;
+    }
+}
+
+@media screen and (max-width: 400px){
+  img.background-faq,
+  img.background-contact {
+     height: 145px;
+  }
+
+  div.background-caption-faq,
+  div.background-caption-contact {
+      margin-top: 120px;
+  }
+
+    h1.h1-faq,
+    h1.h1-contact {
+        margin-top: -160px;
+        font-size: 30px;
+    }
+
+    .form-header {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .form-header {
+        font-size: 23px;
+    }
 }

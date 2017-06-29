@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import NavMenu from './components/NavMenu';
+import Footer from './components/Footer';
 import TestingList from './components/TestingList'
 
 class App extends Component {
@@ -13,6 +15,7 @@ class App extends Component {
 
     return (
       <div className="App">
+      <NavMenu />
       {
         !!testings ? (
           <TestingList items={ testings } />
@@ -20,6 +23,7 @@ class App extends Component {
           'Loading testings.....'
         )
       }
+      <Footer />
       </div>
     );
   }
