@@ -813,15 +813,10 @@ div.section-4-home {
 /*1st Section aft NavMenu*/
 img.background-home {
    margin-top: 58px;
-<<<<<<< HEAD
    background-image: url('./img/main_background.png');
    background-size: cover;
    background-position: center center;
    background-repeat: no-repeat;
-=======
-   background-image: url('./img/mainbackground.png');
-   background-position: center;
->>>>>>> 60efda0fd7d92ab8968d29cb9401ad4d1ba74557
    height: 1200px;
    width: 100%;
 }
