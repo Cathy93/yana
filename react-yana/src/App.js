@@ -1,47 +1,60 @@
 import React, { Component } from 'react';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom';
 import NavMenu from './components/NavMenu';
-import Footer from './components/Footer';
-import TestingList from './components/TestingList'
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import FaqPage from './pages/FaqPage';
+import ContactPage from './pages/ContactPage';
 
 class App extends Component {
-  state = {
-    testings: null
-  }
-
   render() {
-    const { testings } = this.state
-    // const testings = this.state.testings
-
     return (
-      <div className="App">
-      <NavMenu />
-      {
-        !!testings ? (
-          <TestingList items={ testings } />
-        ) : (
-          'Loading testings.....'
-        )
-      }
-      <Footer />
-      </div>
-    );
-  }
+      <Router>
+          <main>
+              <NavMenu />
+              <Switch>
+                  <Route exact path='/' render={
+                      () => (
+                        <HomePage />
+                      )
+                    }
+                  />
 
-  // Run after our component instance first appears
-  // on screen
-  componentDidMount() {
-    // Load testings from API
-    fetch('/testings')
-      // Parsing the JSON JS objects
-      .then(res => res.json())
-      // Update our component's state with the loaded testings
-      .then(json => {
-        // Changing the state will re-render the component
-        this.setState({
-          testings: json
-        })
-      })
+                  <Route path='/about' render={
+                      () => (
+                        <AboutPage />
+                      )
+                    }
+                  />
+
+                  <Route path='/faq' render={
+                      () => (
+                        <FaqPage />
+                      )
+                    }
+                  />
+
+                  <Route path='/contact' render={
+                      () => (
+                        <ContactPage />
+                      )
+                    }
+                  />
+
+                  <Route render={
+                      ({ location }) => (
+                        <h1>{ location.pathname } Not Found</h1>
+                      )
+                    }
+                  />
+              </Switch>
+          </main>
+      </Router>
+    );
   }
 }
 

@@ -1,32 +1,22 @@
 import React from 'react';
-import { Nav, NavItem, Navbar } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import { Image, Nav, NavItem, Navbar } from 'react-bootstrap';
+import logo from '../img/aus_logo.jpg';
 
-class NavMenu extends React.Component {
-    render() {
-        return(
-            <Navbar fixedTop className="navcontainer">
-              <Navbar.Header>
-                <Navbar.Brand>
-                  <a className="navbrand" activeClassName="active" href="/">Yana</a>
-                </Navbar.Brand>
-                <Navbar.Toggle />
-              </Navbar.Header>
-              <Navbar.Collapse>
-                {/*<Nav>
-                  <NavItem eventKey={1} href="#">About</NavItem>
-                  <NavItem eventKey={2} href="#">Faq</NavItem>
-                  <NavItem eventKey={3} href="#">Contact</NavItem>
-
-                </Nav>*/}
-                <Nav pullRight>
-                  <NavItem className="navitem" href="/">About</NavItem>
-                  <NavItem className="navitem" href="/faq">Faq</NavItem>
-                  <NavItem className="navitem" href="/contact">Contact</NavItem>
-                </Nav>
-              </Navbar.Collapse>
-            </Navbar>
-        );
-    }
-}
-
-export default NavMenu;
+export default () => (
+      <Navbar fixedTop className="nav-container container-fluid">
+      <Navbar.Header>
+        <Navbar.Brand>
+          <NavLink exact to='/' activeClassName="selected">
+            <Image src={logo} alt="aus_logo" responsive/>
+          </NavLink>
+        </Navbar.Brand>
+            <Navbar.Toggle />
+       </Navbar.Header>
+       <Navbar.Collapse>
+          <NavLink to='/about' activeClassName="selected">About</NavLink>
+          <NavLink to='/faq' activeClassName="selected">Faq</NavLink>
+          <NavLink to='/contact' activeClassName="selected">Contact</NavLink>
+      </Navbar.Collapse>
+    </Navbar>
+)

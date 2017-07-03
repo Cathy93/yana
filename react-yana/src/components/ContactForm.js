@@ -1,10 +1,10 @@
 import React from 'react';
+import {Grid, Row, Well, Panel, FormGroup } from 'react-bootstrap';
 import { FormErrors } from './FormErrors';
-import {Well, Panel, FormGroup } from 'react-bootstrap';
 import SingleInput from './SingleInput';
 import TextArea from './TextArea';
 
-class FormContainer extends React.Component {
+class ContactForm extends React.Component {
 
   constructor(props) {
       super(props);
@@ -186,65 +186,67 @@ class FormContainer extends React.Component {
 
     render() {
         return(
-          <div>
-              <Well bsSize="lg">
-                <h1 className="form-header">VACL Contact Form</h1>
+            <Grid>
+              <Row>
+                <Well bsSize="lg">
+                  <h1 className="form-header">VACL Contact Form</h1>
                   <Panel className="contact-form-panel">
-                      <FormGroup>
-                          <form onSubmit={this.handleFormSubmit}>
-                              <div className="panel panel-default custom">
-                                  <FormErrors formErrors={this.state.formErrors} />
-                              </div>
-                              <SingleInput
-                                   inputType={'text'}
-                                   title={'Your Name (*)'}
-                                   name={'userName'}
-                                   controlFunc={this.handleFullNameChange}
-                                   content={this.state.userName}
-                                   placeholder={'Full Name'}/> {/* Full name text input */}
-                              <SingleInput
-                                   inputType={'text'}
-                                   title={'Email (*)'}
-                                   name={'userEmail'}
-                                   controlFunc={this.handleEmailChange}
-                                   content={this.state.userEmail}
-                                   placeholder={'Email'} /> {/* Email input */}
-                              <SingleInput
-                                   inputType={'text'}
-                                   title={'Phone'}
-                                   name={'userPhone'}
-                                   controlFunc={this.handlePhoneChange}
-                                   content={this.state.userPhone}
-                                   placeholder={'Phone Number'} /> {/* Phone Number input */}
-                              <TextArea
-                                   inputType={'text'}
-                                   title={'Message (*)'}
-                                   name={'userMessage'}
-                                   rows={8}
-                                   resize={true}
-                                   content={this.state.userMessage}
-                                   controlFunc={this.handleMessageChange}
-                                   placeholder={'Please type your message'} /> {/* Message input */}
-                              <div className="col-lg-offset-2">
-                                    <input
-                                          type="submit"
-                                          className="btn"
-                                          disabled={!this.state.formValid}
-                                          value="Submit"
-                                    />
-                                    <button
-                                          className="btn btn-link"
-                                          onClick={this.handleClearForm}>
-                                          Clear form
-                                    </button>
-                              </div>
-                          </form>
-                      </FormGroup>
-                  </Panel>
+                    <FormGroup>
+                      <form onSubmit={this.handleFormSubmit}>
+                        <div className="panel panel-default custom">
+                          <FormErrors formErrors={this.state.formErrors} />
+                        </div>
+                      <SingleInput
+                        inputType={'text'}
+                        title={'Your Name (*)'}
+                        name={'userName'}
+                        controlFunc={this.handleFullNameChange}
+                        content={this.state.userName}
+                        placeholder={'Full Name'} /> {/* Full name text input */}
+                      <SingleInput
+                        inputType={'text'}
+                        title={'Email (*)'}
+                        name={'userEmail'}
+                        controlFunc={this.handleEmailChange}
+                        content={this.state.userEmail}
+                        placeholder={'Email'} /> {/* Email input */}
+                      <SingleInput
+                        inputType={'text'}
+                        title={'Phone'}
+                        name={'userPhone'}
+                        controlFunc={this.handlePhoneChange}
+                        content={this.state.userPhone}
+                        placeholder={'Phone Number'} /> {/* Phone Number input */}
+                      <TextArea
+                        inputType={'text'}
+                        title={'Message (*)'}
+                        name={'userMessage'}
+                        rows={8}
+                        resize={true}
+                        content={this.state.userMessage}
+                        controlFunc={this.handleMessageChange}
+                        placeholder={'Please type your message'} /> {/* Message input */}
+                      <div className="col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-xl-offset-2">
+                        <input
+                          type="submit"
+                          className="btn"
+                          disabled={!this.state.formValid}
+                          value="Submit"
+                        />
+                        <button
+                          className="btn btn-link"
+                            onClick={this.handleClearForm}>
+                            Clear form
+                        </button>
+                      </div>
+                    </form>
+                  </FormGroup>
+                </Panel>
               </Well>
-          </div>
+            </Row>
+          </Grid>
         );
     }
 }
 
-export default FormContainer;
+export default ContactForm;
