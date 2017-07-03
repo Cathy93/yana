@@ -327,7 +327,7 @@ i.social-link:focus {
 /*-------------------------Collapse Component---------------------------------*/
 .Collapsible {
     /*collapsed container*/
-    background-color: #FADA9D;
+    background-color: rgba(250, 218, 157, 0.6)
 }
 
 .Collapsible__contentInner {
@@ -437,7 +437,10 @@ img.background-caption-faq {
 
 .accordion-wrapper {
     padding-top: 50px;
-    background-color: #FADA9D;
+    background-image: url('./img/main_background.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     padding-bottom: 50px;
 }
 
@@ -661,7 +664,10 @@ img.background-caption-contact {
 /*-----------------------------ContactForm Component--------------------------*/
 div.contact-form-container {
   margin-bottom: -20px;
-  background-color: #F4DA9D;
+  background-image: url('./img/main_background.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 div.well.well-lg {
