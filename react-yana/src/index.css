@@ -1130,3 +1130,38 @@ img.background-home-5 {
 }
 
 /*------------------------------End of HomePage-------------------------------*/
+
+
+/*-----------------------------SignInPage-------------------------------------*/
+div.sign-in-bg {
+    position: relative;
+}
+
+img.background-sign-in {
+   margin-top: 58px;
+   background-image: url('./img/main_background.png');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 1200px;
+   width: 100%;
+}
+
+div.background-caption-sign-in {
+    display: block;
+    position: absolute;
+    margin-top: -1180px;
+    z-index: 10;
+}
+
+h1.sign-in-heading-text {
+    font-size: 70px;
+    font-weight: 700;
+    color: #353535;
+}
+
+h4.forgot-password-text {
+  font-size: 30px;
+  font-weight: 400;
+  color: #353535;
+}

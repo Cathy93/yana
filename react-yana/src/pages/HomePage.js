@@ -31,7 +31,7 @@ const HomePage = ({
             <h6 className="h6-text text-center">Not a new user?</h6>
             <div className="sign-in-link-container text-center">
                 <AnchorLink title="Sign in"
-                            linkPath="/SignIn" />
+                            linkPath="/signIn" />
             </div>
             </div>
         </div>
