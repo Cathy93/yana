@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import FaqPage from './pages/FaqPage';
 import ContactPage from './pages/ContactPage';
+import CoursesPage from './pages/CoursesPage';
 
 class App extends Component {
   render() {
@@ -48,6 +49,13 @@ class App extends Component {
                   <Route render={
                       ({ location }) => (
                         <h1>{ location.pathname } Not Found</h1>
+                      )
+                    }
+                  />
+
+                  <Route exact path='/courses' render={
+                      () => (
+                        <CoursesPage />
                       )
                     }
                   />
