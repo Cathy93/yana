@@ -12,7 +12,8 @@ main {
 
 /*------------------------ButtonDefault Component-----------------------------*/
 .button-Default {
-    background-color: #353535;
+    background-color: rgba(53, 53, 53, 0.85);
+    border-radius: 15px;
 }
 
 .button-default-link {
