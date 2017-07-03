@@ -14,43 +14,29 @@ class App extends Component {
   render() {
     return (
       <Router>
-          <main>
-              <NavMenu />
-              <Switch>
-                  <Route exact path='/' render={
-                      () => (
-                        <HomePage />
-                      )
-                    }
-                  />
+        <main>
+          <NavMenu />
+            <Switch>
+              <Route
+                path='/faq'
+                render={() => (<FaqPage />)} />
 
-                  <Route path='/faq' render={
-                      () => (
-                        <FaqPage />
-                      )
-                    }
-                  />
+              <Route
+                path='/contact'
+                render={() => (<ContactPage />)}/>
 
-                  <Route path='/contact' render={
-                      () => (
-                        <ContactPage />
-                      )
-                    }
-                  />
+                <Route
+                  path='/courses'
+                  render={() => (<CoursesPage />)}/>
 
-                  <Route render={
-                      ({ location }) => (
-                        <h1>{ location.pathname } Not Found</h1>
-                      )
-                    }
-                  />
+               <Route
+                  exact path='/'
+                  render={() => (<HomePage />)}/>
 
-                  <Route exact path='/courses' render={
-                      () => (
-                        <CoursesPage />
-                      )
-                    }
-                  />
+                  <Route
+                  render={({ location }) => (
+                    <h1>{ location.pathname } Not Found</h1>
+                  )} />
               </Switch>
           </main>
       </Router>

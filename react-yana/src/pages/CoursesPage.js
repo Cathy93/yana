@@ -1,11 +1,9 @@
 import React from 'react'
-import '../course/components/courses.css';
-import NavMenu from '../components/NavMenu';
-import Footer from '../components/Footer';
-
+import MainHeader from '../components/MainHeader'
 
 const CoursesPage = () => (
   <div>
+    <MainHeader/>
     <h2> Courses </h2>
 
   </div>
