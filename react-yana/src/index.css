@@ -772,10 +772,8 @@ div.section-4-home {
 /*1st Section aft NavMenu*/
 img.background-home {
    margin-top: 58px;
-   background-image: url('./img/bg_light.jpg');
-   background-size: cover;
-   background-position: center center;
-   background-repeat: no-repeat;
+   background-image: url('./img/mainbackground.png');
+   background-position: center;
    height: 1200px;
    width: 100%;
 }
@@ -1021,10 +1019,9 @@ div.caption-home-2-img {
 
 /*3rd Section aft NavMenu*/
 img.background-home-3 {
-   background-image: url('./img/bg_light.jpg');
+   background-image: url('./img/mainbackground.png');
    background-size: cover;
-   background-position: center center;
-   background-repeat: no-repeat;
+   background-position: center;
    height: 80px;
    width: 100%;
 }
@@ -1086,10 +1083,9 @@ div.caption-home-4-img {
 
 /*5th Section aft NavMenu*/
 img.background-home-5 {
-   background-image: url('./img/mid_dark.jpg');
+   background-image: url('./img/mainbackground.png');
    background-size: cover;
-   background-position: center center;
-   background-repeat: no-repeat;
+   background-position: center;
    height: 130px;
    width: 100%;
 }

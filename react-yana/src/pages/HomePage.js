@@ -3,7 +3,7 @@ import { Image } from 'react-bootstrap';
 import Footer from '../components/Footer';
 import ButtonDefault from '../components/ButtonDefault';
 import vaclLogo from '../img/vacl_logo.jpg';
-import boomerang from '../img/boomerang.jpg';
+import boomerang from '../img/boomerang.png';
 import vaclLogoMod from '../img/vacl_b_logo.jpg';
 import bio from '../img/bio.jpg';
 
