@@ -1,12 +1,6 @@
-.backgroundcoloreffect {
-  position: relative;
-  overflow: hidden;
-  background-color: #F4DA9D;
-}
 .mainbackground {
   margin-top: 68px;
   background-image: url('../../img/mainbackground.png');
-  opacity: 0.05;
   background-position: center;
   height: 1200px;
   width: 100%;

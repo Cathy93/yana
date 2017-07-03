@@ -2,13 +2,26 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-image: url('./img/mainbackground.png');
+  background-position: center;
 }
 
 main {
   max-width: 100%;
   margin: auto;
-  padding: 0 0;
+  padding: 0;
+  padding-top: 60px;
+  margin-top: 60px;
 }
+
+.mainbackground {
+   margin-top: 58px;
+   background-image: url('./img/mainbackground.png');
+   background-position: center;
+   height: 1200px;
+   width: 100%;
+}
+
 
 /*------------------------NavMenu Component-----------------------------------*/
 .nav-container {
@@ -763,10 +776,49 @@ button.btn.btn-link:focus {
 /*-------------------------HomePage-------------------------------------------*/
 
 /*Background-Images for Home Page*/
-div.section-1-home,
-div.section-2-home,
-div.section-4-home {
-    position: relative;
+.section-1-home {
+  margin-bottom: 100px;
+}
+
+.secondary-section {
+  background-color: rgba(0,0,0, 0.5);
+  padding: 20px 0;
+  margin-bottom: 100px;
+  color: white;
+}
+
+.secondary-section h1 {
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.secondary-section p {
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+p.secondary-section-emphasis {
+  font-weight: 700;
+}
+
+.secondary-section-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.secondary-section-content {
+  padding: 0 30px;
+}
+
+.secondary-section-image {
+  padding: 0 30px;
+}
+
+.secondary-section-image img {
+  width: 200px;
 }
 
 /*1st Section aft NavMenu*/
@@ -789,13 +841,10 @@ img.vacl-logo {
     margin: 0 auto;
 }
 
-h1.home-heading-text {
+.home-heading-text {
     color: #353535;
     font-weight: 700;
     font-size: 65px;
-    letter-spacing: 3px;
-    word-spacing: 11px;
-    margin-bottom: 80px;
 }
 
 img.boom-img {
@@ -846,24 +895,12 @@ a.sign-in-link:focus {
 
 /*Media Query Settings for Home Section 1*/
 @media screen and (max-width: 600px){
-  img.background-home {
-     height: 850px;
-  }
-
-  div.background-caption-home {
-      margin-top: -830px;
-  }
-
   img.vacl-logo {
     margin-bottom: 5px;
   }
 
   h1.home-heading-text {
       font-size: 35px;
-  }
-
-  img.boom-img {
-      margin-top: -85px;
   }
 
   div.button-container {
@@ -874,220 +911,6 @@ a.sign-in-link:focus {
     font-size: 30px;
     padding: 20px 50px;
   }
-}
-
-@media screen and (max-width: 500px){
-  img.background-home {
-     height: 820px;
-  }
-
-  div.background-caption-home {
-      margin-top: -780px;
-  }
-
-  img.boom-img {
-      margin-top: -35px;
-  }
-
-  button.learn-now-button {
-    font-size: 30px;
-    padding: 20px 30px;
-  }
-}
-
-@media screen and (max-width: 400px){
-  img.background-home {
-     height: 800px;
-  }
-
-  div.background-caption-home {
-      margin-top: -800px;
-  }
-
-}
-
-@media screen and (max-width: 300px){
-  img.background-home {
-     height: 650px;
-  }
-
-  div.background-caption-home {
-      margin-top: -630px;
-  }
-
-  button.learn-now-button {
-    font-size: 20px;
-    padding: 10px 20px;
-  }
-}
-
-/*2nd Section aft NavMenu*/
-img.background-home-2 {
-   background-image: url('./img/bg_dark.jpg');
-   background-size: cover;
-   background-position: center center;
-   background-repeat: no-repeat;
-   height: 650px;
-   width: 100%;
-}
-
-div.background-caption-home-2 {
-    display: block;
-    position: absolute;
-    margin-top: -600px;
-    z-index: 10;
-}
-
-h1.home-heading-text-2 {
-    color: white;
-    font-weight: 700;
-    font-size: 45px;
-    margin-bottom: 20px;
-}
-
-p.caption-home-2-p {
-    color: white;
-    font-weight: 400;
-    font-size: 25px;
-    margin-bottom: 40px;
-}
-
-div.caption-home-2-img {
-    margin-top: 0px;
-}
-
-/*Media Query Settings for Home Section 2*/
-@media screen and (max-width: 1450px){
-  img.background-home-2 {
-     height: 800px;
-  }
-
-  div.background-caption-home-2 {
-      margin-top: -750px;
-  }
-}
-
-@media screen and (max-width: 1200px){
-  img.background-home-2 {
-     height: 900px;
-  }
-
-  div.background-caption-home-2 {
-      margin-top: -850px;
-  }
-}
-
-@media screen and (max-width: 1000px){
-  img.background-home-2 {
-     height: 1000px;
-  }
-
-  div.background-caption-home-2 {
-      margin-top: -950px;
-  }
-}
-
-@media screen and (max-width: 850px){
-  img.background-home-2 {
-     height: 1200px;
-  }
-
-  div.background-caption-home-2 {
-      margin-top: -1150px;
-  }
-}
-
-@media screen and (max-width: 380px){
-  img.background-home-2 {
-     height: 1400px;
-  }
-
-  div.background-caption-home-2 {
-      margin-top: -1350px;
-  }
-}
-
-@media screen and (max-width: 280px){
-  img.background-home-2 {
-     height: 1500px;
-  }
-
-  div.background-caption-home-2 {
-      margin-top: -1450px;
-  }
-}
-
-/*3rd Section aft NavMenu*/
-img.background-home-3 {
-   background-image: url('./img/mainbackground.png');
-   background-size: cover;
-   background-position: center;
-   height: 80px;
-   width: 100%;
-}
-
-/*4th Section aft NavMenu*/
-img.background-home-4 {
-   background-image: url('./img/bg_dark.jpg');
-   background-size: cover;
-   background-position: center center;
-   background-repeat: no-repeat;
-   height: 550px;
-   width: 100%;
-}
-
-div.background-caption-home-4 {
-    display: block;
-    position: absolute;
-    margin-top: -500px;
-    z-index: 10;
-}
-
-h1.home-heading-text-4 {
-    color: white;
-    font-weight: 700;
-    font-size: 45px;
-    margin-bottom: 20px;
-}
-
-p.caption-home-4-p:first-child {
-    margin-top: 50px;
-}
-
-p.caption-home-4-p {
-    color: white;
-    font-weight: 400;
-    font-size: 25px;
-}
-
-p.caption-home-4-pb {
-    color: white;
-    font-weight: 900;
-    font-size: 25px;
-}
-
-div.caption-home-4-img {
-    margin-top: 40px;
-}
-
-/*Media Query Settings for Home Section 4*/
-@media screen and (max-width: 767px){
-  img.background-home-4 {
-     height: 1000px;
-  }
-
-  div.background-caption-home-4 {
-      margin-top: -950px;
-  }
-}
-
-/*5th Section aft NavMenu*/
-img.background-home-5 {
-   background-image: url('./img/mainbackground.png');
-   background-size: cover;
-   background-position: center;
-   height: 130px;
-   width: 100%;
 }
 
 /*------------------------------End of HomePage-------------------------------*/

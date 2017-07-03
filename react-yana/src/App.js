@@ -6,7 +6,6 @@ import {
 } from 'react-router-dom';
 import NavMenu from './components/NavMenu';
 import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
 import FaqPage from './pages/FaqPage';
 import ContactPage from './pages/ContactPage';
 import CoursesPage from './pages/CoursesPage';
@@ -21,13 +20,6 @@ class App extends Component {
                   <Route exact path='/' render={
                       () => (
                         <HomePage />
-                      )
-                    }
-                  />
-
-                  <Route path='/about' render={
-                      () => (
-                        <AboutPage />
                       )
                     }
                   />
