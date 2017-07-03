@@ -4,6 +4,7 @@ import { Image } from 'react-bootstrap';
 
 // Components
 import ContactForm from '../components/ContactForm';
+import MainHeader from '../components/MainHeader';
 import Map from '../components/Map';
 import Footer from '../components/Footer';
 
@@ -14,18 +15,10 @@ const ContactPage = ({
     // Props
 }) => (
     <div>
-      <div className="section-1-contact">
-        <Image className="background-contact" responsive/>
-          <div className="background-caption-contact">
-            <Image className="background-caption-contact" src={caption} alt="vacl_caption" responsive/>
-            <h1 className="h1-contact text-center">CONTACT</h1>
-          </div>
-      </div>
-      <div></div>
-      <div className="contact-form-container">
+        <MainHeader title="Contact"/>
+      <div className="contact-wrapper"/>
         <ContactForm />
-      </div>
-      <div></div>
+      <div className="contact-wrapper"/>
       <Footer />
       <div className="map-responsive">
         <Map

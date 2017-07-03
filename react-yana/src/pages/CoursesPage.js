@@ -3,9 +3,7 @@ import MainHeader from '../components/MainHeader'
 
 const CoursesPage = () => (
   <div>
-    <MainHeader/>
-    <h2> Courses </h2>
-
+    <MainHeader title="Courses"/>
   </div>
 )
 

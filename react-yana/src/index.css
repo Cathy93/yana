@@ -631,9 +631,8 @@ img.background-caption-contact {
 /*------------------------------End of ContactPage----------------------------*/
 
 /*-----------------------------ContactForm Component--------------------------*/
-div.contact-form-container {
-  margin-bottom: -20px;
-  background-color: #F4DA9D;
+.contact-wrapper {
+  margin-top: 60px;
 }
 
 div.well.well-lg {
@@ -781,7 +780,7 @@ button.btn.btn-link:focus {
 }
 
 .secondary-section {
-  background-color: rgba(0,0,0, 0.5);
+  background-color: rgba(53, 53, 53, 0.8);
   padding: 20px 0;
   margin-bottom: 100px;
   color: white;
@@ -822,13 +821,6 @@ p.secondary-section-emphasis {
 }
 
 /*1st Section aft NavMenu*/
-img.background-home {
-   margin-top: 58px;
-   background-image: url('./img/mainbackground.png');
-   background-position: center;
-   height: 1200px;
-   width: 100%;
-}
 
 div.background-caption-home {
     display: block;
