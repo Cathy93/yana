@@ -1,7 +1,12 @@
+// Dependencies
 import React from 'react';
 import { Image } from 'react-bootstrap';
+
+// Components
 import Collapse from '../components/Collapse';
 import Footer from '../components/Footer';
+
+// Img
 import caption from '../img/caption.jpg';
 
 const FaqPage = ({

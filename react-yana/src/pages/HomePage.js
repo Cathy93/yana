@@ -1,10 +1,15 @@
+// Dependencies
 import React from 'react';
 import { Image } from 'react-bootstrap';
+
+// Components
 import Footer from '../components/Footer';
 import ButtonDefault from '../components/ButtonDefault';
+
+// Img
 import vaclLogo from '../img/logo.png';
 import boomerang from '../img/boomerang.png';
-import vaclLogoMod from '../img/vacl_b_logo.jpg';
+import vaclLogoMod from '../img/vacl_mod_logo.jpg';
 import bio from '../img/bio.jpg';
 
 

@@ -6,7 +6,7 @@ import { Image } from 'react-bootstrap';
 import Footer from '../components/Footer';
 
 // Img
-import vaclLogoMod from '../img/vacl_b_logo.jpg';
+import vaclLogoMod from '../img/vacl_mod_logo.jpg';
 import bio from '../img/bio.jpg';
 
 const AboutPage = ({
