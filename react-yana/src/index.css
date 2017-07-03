@@ -52,6 +52,20 @@ main {
 }
 /*------------------------End of ButtonDefault Component----------------------*/
 
+/*-----------------------AnchorLink Component---------------------------------*/
+a.anchor-default-link {
+  color: #353535;
+  font-weight: 700;
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+a.anchor-default-link:hover,
+a.anchor-default-link:focus {
+   color: #73BF45;
+}
+/*------------------------End of AnchorLink Component-------------------------*/
+
 /*------------------------NavMenu Component-----------------------------------*/
 .nav-container {
   background-color: #353535;
@@ -866,18 +880,6 @@ h6.h6-text {
 
 div.sign-in-link-container {
   margin-top: -15px;
-}
-
-a.sign-in-link {
-  color: #353535;
-  font-weight: 700;
-  font-size: 35px;
-  text-decoration: underline;
-}
-
-a.sign-in-link:hover,
-a.sign-in-link:focus {
-   color: #73BF45;
 }
 
 /*Media Query Settings for Home Section 1*/
