@@ -29,7 +29,7 @@ main {
     text-decoration: none;
 }
 
-/*Media Query Settings*/
+/*Media Query Settings for ButtonDefault*/
 @media screen and (max-width: 600px){
   .button-default-link {
     font-size: 30px;
@@ -1165,3 +1165,48 @@ h4.forgot-password-text {
   font-weight: 400;
   color: #353535;
 }
+/*-----------------------------End of SignInPage------------------------------*/
+
+/*-----------------------------NotFoundPage-------------------------------------*/
+h1.not-found-page-msg {
+  font-size: 200px;
+  font-weight: 900;
+  color: #353535;
+  padding-top: 200px;
+}
+
+.not-found-page-container {
+  margin-top: 58px;
+  background-image: url('./img/main_background.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 1500px;
+  width: 100%;
+}
+
+/*Media Query Settings for Not Found Page*/
+@media screen and (max-width: 767px){
+  h1.not-found-page-msg {
+    font-size: 100px;
+    font-weight: 700;
+    padding-top: 100px;
+  }
+
+  .not-found-page-container {
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  h1.not-found-page-msg {
+    font-size: 80px;
+    font-weight: 400;
+    padding-top: 100px;
+  }
+
+  .not-found-page-container {
+    height: 750px;
+  }
+}
+/*-----------------------------End of NotFoundPage----------------------------*/

@@ -68,7 +68,11 @@ class App extends Component {
 
                   <Route render={
                       ({ location }) => (
-                        <h1>{ location.pathname } Not Found</h1>
+                        <div className="not-found-page-container">
+                          <h1 className="not-found-page-msg text-center">
+                            { location.pathname } Url Not Found
+                          </h1>
+                        </div>
                       )
                     }
                   />
