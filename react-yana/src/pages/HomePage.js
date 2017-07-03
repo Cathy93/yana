@@ -2,8 +2,8 @@ import React from 'react';
 import { Image } from 'react-bootstrap';
 import Footer from '../components/Footer';
 import ButtonDefault from '../components/ButtonDefault';
-import vaclLogo from '../img/vacl_logo.jpg';
-import boomerang from '../img/boomerang.jpg';
+import vaclLogo from '../img/logo.png';
+import boomerang from '../img/boomerang.png';
 import vaclLogoMod from '../img/vacl_b_logo.jpg';
 import bio from '../img/bio.jpg';
 
@@ -18,8 +18,10 @@ const HomePage = ({
             <Image className="vacl-logo" src={vaclLogo} alt="vacl_logo_caption" responsive/>
             <h1 className="home-heading-text text-center">Dive into Aboriginal Culture</h1>
             <Image className="boom-img" src={boomerang} alt="boomerang_caption" responsive/>
-            <ButtonDefault title="Learn Now"
-                    buttonPath="/courses"  />
+            <div className="learn-now-button-container text-center">
+                <ButtonDefault title="Learn Now"
+                               buttonPath="/courses"  />
+            </div>
             <h6 className="h6-text text-center">Not a new user?</h6>
             <div className="sign-in-link-container text-center">
               <a className="sign-in-link" href="#">Sign in</a>

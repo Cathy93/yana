@@ -10,6 +10,47 @@ main {
   padding: 0 0;
 }
 
+/*------------------------ButtonDefault Component-----------------------------*/
+.button-Default {
+    background-color: #353535;
+}
+
+.button-default-link {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    padding: 20px 20px;
+}
+
+.button-default-link:hover,
+.button-default-link:focus {
+    color: #F4DA9D;
+    text-decoration: none;
+}
+
+/*Media Query Settings*/
+@media screen and (max-width: 600px){
+  .button-default-link {
+    font-size: 30px;
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .button-default-link {
+    font-size: 30px;
+    padding: 20px 30px;
+  }
+}
+
+@media screen and (max-width: 300px){
+  .button-default-link {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+}
+/*------------------------End of ButtonDefault Component----------------------*/
+
 /*------------------------NavMenu Component-----------------------------------*/
 .nav-container {
   background-color: #353535;
@@ -772,7 +813,7 @@ div.section-4-home {
 /*1st Section aft NavMenu*/
 img.background-home {
    margin-top: 58px;
-   background-image: url('./img/bg_light.jpg');
+   background-image: url('./img/main_background.png');
    background-size: cover;
    background-position: center center;
    background-repeat: no-repeat;
@@ -804,22 +845,8 @@ img.boom-img {
     margin: 0 auto;
 }
 
-div.button-container {
+.learn-now-button-container {
   margin-top: 80px;
-}
-
-button.learn-now-button {
-  background-color: #353535;
-  color: white;
-  font-weight: 700;
-  font-size: 30px;
-  padding: 20px 60px;
-}
-
-button.learn-now-button:hover,
-button.learn-now-button:focus {
-  background-color: #353535;
-  color: #F4DA9D;
 }
 
 h6.h6-text {
@@ -868,7 +895,7 @@ a.sign-in-link:focus {
       margin-top: -85px;
   }
 
-  div.button-container {
+  .learn-now-button-container {
     margin-top: 30px;
   }
 
@@ -1021,7 +1048,7 @@ div.caption-home-2-img {
 
 /*3rd Section aft NavMenu*/
 img.background-home-3 {
-   background-image: url('./img/bg_light.jpg');
+   background-image: url('./img/main_background.png');
    background-size: cover;
    background-position: center center;
    background-repeat: no-repeat;
