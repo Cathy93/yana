@@ -8,18 +8,17 @@ import MainHeader from '../components/MainHeader';
 import Map from '../components/Map';
 import Footer from '../components/Footer';
 
-// Img
-import caption from '../img/caption.jpg';
-
 const ContactPage = ({
     // Props
 }) => (
     <div>
-        <MainHeader title="Contact"/>
+      <MainHeader title="Contact"/>
       <div className="contact-wrapper"/>
-        <ContactForm />
+      <ContactForm />
       <div className="contact-wrapper"/>
       <Footer />
+
+      <div className='dark'></div>
       <div className="map-responsive">
         <Map
           center={{ lat: -37.8031437, lng: 144.974884 }}

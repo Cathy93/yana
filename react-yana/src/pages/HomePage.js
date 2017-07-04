@@ -2,6 +2,7 @@ import React from 'react';
 import { Image } from 'react-bootstrap';
 import Footer from '../components/Footer';
 import ButtonDefault from '../components/ButtonDefault';
+import AnchorLink from '../components/AnchorLink';
 import MainHeader from '../components/MainHeader';
 import vaclLogo from '../img/logo.png';
 import boomerang from '../img/boomerang.png';
@@ -16,12 +17,15 @@ const HomePage = ({
       <div className="section-1-home">
         <MainHeader title="Dive into Aboriginal Culture!"/>
         <Image className="boom-img" src={boomerang} alt="boomerang_caption" responsive/>
-        <ButtonDefault title="Learn Now"
-              buttonPath="/courses" />
-        <h6 className="h6-text text-center">Not a new user?</h6>
-        <div className="sign-in-link-container text-center">
-          <a className="sign-in-link" href="#">Sign in</a>
-        </div>
+        <div className="learn-now-button-container text-center">
+                <ButtonDefault title="Learn Now"
+                               buttonPath="/courses" />
+            </div>
+            <h3 className="text-center"> Not a new user?</h3>
+            <div className="sign-in-link-container text-center">
+                <AnchorLink title="Sign in"
+                            linkPath="/signIn" />
+            </div>
       </div>
 
       <div id="about" className="secondary-section">

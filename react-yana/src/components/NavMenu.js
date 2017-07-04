@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Image, Nav, NavItem, Navbar } from 'react-bootstrap';
-import logo from '../img/aus_logo.jpg';
+import logo from '../img/aus_logo.png';
 
 export default () => (
       <Navbar fixedTop className="nav-container container-fluid">
@@ -15,7 +15,7 @@ export default () => (
        </Navbar.Header>
        <Navbar.Collapse>
           <a href='/#about'>About</a>
-          <NavLink to='/faq' activeClassName="selected">Faq</NavLink>
+          <NavLink to='/faq' activeClassName="selected">FAQ</NavLink>
           <NavLink to='/contact' activeClassName="selected">Contact</NavLink>
       </Navbar.Collapse>
     </Navbar>

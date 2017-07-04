@@ -10,7 +10,6 @@ main {
   max-width: 100%;
   margin: auto;
   padding: 0;
-  padding-top: 60px;
   margin-top: 60px;
 }
 
@@ -21,7 +20,6 @@ main {
    height: 1200px;
    width: 100%;
 }
-
 
 /*------------------------NavMenu Component-----------------------------------*/
 .nav-container {
@@ -299,7 +297,7 @@ i.social-link:focus {
 /*-------------------------Collapse Component---------------------------------*/
 .Collapsible {
     /*collapsed container*/
-    background-color: #FADA9D;
+    background-color: rgba(250,218,157,0.6);
 }
 
 .Collapsible__contentInner {
@@ -378,39 +376,15 @@ div.section-1-faq {
     position: relative;
 }
 
-img.background-faq {
-     background-image: url('./img/backgroundfaqcontact.jpg');
-     background-size: cover;
-     background-position: center center;
-     background-repeat: no-repeat;
-     height: 300px;
-     width: 100%;
-}
-
 div.background-caption-faq {
     display: block;
     margin: 0 auto;
     z-index: 10;
 }
 
-h1.h1-faq {
-    font-size: 60px;
-    font-weight: 900;
-    margin-top: -150px;
-}
-
-img.background-caption-faq {
-    margin-top: -230px;
-    margin-bottom: 170px;
-    z-index: 10;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .accordion-wrapper {
-    padding-top: 50px;
-    background-color: #FADA9D;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .accordion-container {
@@ -560,25 +534,10 @@ div.section-1-contact {
     position: relative;
 }
 
-img.background-contact {
-     background-image: url('./img/backgroundfaqcontact.jpg');
-     background-size: cover;
-     background-position: center center;
-     background-repeat: no-repeat;
-     height: 300px;
-     width: 100%;
-}
-
 div.background-caption-contact {
     display: block;
     margin: 0 auto;
     z-index: 10;
-}
-
-h1.h1-contact {
-    font-size: 60px;
-    font-weight: 900;
-    margin-top: -150px;
 }
 
 img.background-caption-contact {
@@ -630,13 +589,15 @@ img.background-caption-contact {
 }
 /*------------------------------End of ContactPage----------------------------*/
 
+/*------------------------------Button Default----------------------------*/
+
 /*-----------------------------ContactForm Component--------------------------*/
 .contact-wrapper {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 div.well.well-lg {
-    background-color: #353535;
+    background-color: rgba(53, 53, 53, 0.8);
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -656,7 +617,7 @@ div.panel-body {
 }
 
 .contact-form-panel {
-  background-color: #353535;
+  background-color: rgba(53, 53, 53, 0.8);
   border: 2px solid white;
 }
 
@@ -666,7 +627,7 @@ label.col-sm-2.col-form-label {
 }
 
 div.panel.panel-default.custom {
-    border: 1px solid #353535;
+    border: 1px solid rgba(53, 53, 53, 0.8);
 }
 
 div.formErrors > p {
@@ -771,6 +732,12 @@ button.btn.btn-link:focus {
 }
 
 /*-------------------------End of ContactForm Component-----------------------*/
+/*Anchor Link*/
+
+.anchor-default-link  {
+  font-size: 24px;
+}
+
 
 /*-------------------------HomePage-------------------------------------------*/
 
@@ -820,54 +787,47 @@ p.secondary-section-emphasis {
   width: 200px;
 }
 
-/*1st Section aft NavMenu*/
 
-div.background-caption-home {
-    display: block;
-    position: absolute;
-    margin-top: -1180px;
-    z-index: 10;
-}
 
 img.vacl-logo {
-    margin: 0 auto;
+  width: 20%;
+  margin: 0 auto;
 }
 
 .home-heading-text {
     color: #353535;
     font-weight: 700;
-    font-size: 65px;
+    font-size: 45px;
 }
 
 img.boom-img {
-    margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
 }
 
 div.button-container {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 button.learn-now-button {
+  border-radius: 15px;
   background-color: #353535;
-  color: white;
-  font-weight: 700;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 24px;
   padding: 20px 60px;
 }
 
-button.learn-now-button:hover,
-button.learn-now-button:focus {
-  background-color: #353535;
-  color: #F4DA9D;
+button.learn-now-button > a {
+  color: white;
 }
 
-h6.h6-text {
-  color: #353535;
-  font-weight: 500;
-  font-size: 35px;
-  margin-top: 35px;
-  margin-bottom: 20px;
+button.learn-now-button:hover > a,
+button.learn-now-button:focus > a {
+  background-color: #353535;
+  color: #F4DA9D;
+  text-decoration: none
 }
+
 
 div.sign-in-link-container {
   margin-top: -15px;
@@ -887,22 +847,54 @@ a.sign-in-link:focus {
 
 /*Media Query Settings for Home Section 1*/
 @media screen and (max-width: 600px){
+
+  img.vacl-logo {
+    width: 70%;
+  }
+
+  img.boom-img {
+    width: 70%;
+  }
+
+  .home-heading-text {
+    font-size: 42px;
+    padding: 0px 10px 0px 10px;
+  }
+
+  .secondary-section-wrapper {
+    display: block;
+    justify-content: space-around;
+  }
+  .secondary-section-image {
+    text-align: center;
+  }
+
   img.vacl-logo {
     margin-bottom: 5px;
   }
 
-  h1.home-heading-text {
-      font-size: 35px;
-  }
 
   div.button-container {
     margin-top: 30px;
   }
 
   button.learn-now-button {
-    font-size: 30px;
-    padding: 20px 50px;
+    font-size: 20px;
+    padding: 15px 50px;
   }
+}
+
+@media screen and (max-width: 380px){
+
+  .img.vacl-logo {
+    margin-bottom: 40px;
+  }
+
+  .home-heading-text {
+    font-size: 30px;
+    padding: 0px 3px 0px 3px;
+  }
+
 }
 
 /*------------------------------End of HomePage-------------------------------*/
