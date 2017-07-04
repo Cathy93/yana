@@ -878,3 +878,35 @@ a.sign-in-link:focus {
 }
 
 /*------------------------------End of HomePage-------------------------------*/
+
+/*New CSS as @4/07/2017 6:30pm
+/*-----------------------------SubHeading Component---------------------------*/
+h1.sub-heading-text {
+  padding-left: 50px;
+  font-size: 50px;
+  font-weight: 700;
+  color: black;
+}
+/*----------------------------End of SubHeading Component---------------------*/
+
+/*---------------------------LevelCourse Component----------------------------*/
+.img-rounded {
+  padding-left: 40px;
+}
+
+h5.course-name-title {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  padding-bottom: 60px;
+}
+
+h5.course-name-title:hover,
+h5.course-name-title:focus {
+  color: #DD6D26;
+  text-decoration: underline;
+  -moz-text-decoration-color: #DD6D26;
+  text-decoration-color: #DD6D26;
+}

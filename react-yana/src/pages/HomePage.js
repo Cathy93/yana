@@ -27,7 +27,7 @@ const HomePage = ({
           <h3 className="text-center"> Not a new user?</h3>
           <div className="sign-in-link-container text-center">
               <AnchorLink title="Sign in"
-                          linkPath="/signIn" />
+                          linkPath="/sign_in" />
           </div>
     </div>
 

@@ -9,5 +9,4 @@ const ButtonDefault = ({title, buttonPath}) => (
  </div>
 )
 
-
 export default ButtonDefault;

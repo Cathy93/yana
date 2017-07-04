@@ -14,7 +14,7 @@ import HomePage from './pages/HomePage';
 import FaqPage from './pages/FaqPage';
 import ContactPage from './pages/ContactPage';
 import CoursesPage from './pages/CoursesPage';
-import SingleCoursePage from './pages/SingleCoursePage';
+import SingleCourseAnimalPage from './pages/SingleCourseAnimalPage';
 import SignInPage from './pages/SignInPage';
 
 class App extends Component {
@@ -41,8 +41,8 @@ class App extends Component {
                 render={() => (<CoursesPage />)}/>
 
               <Route
-                path='/single_course'
-                render={() => (<SingleCoursePage />)}/>
+                path='/single_course_animal'
+                render={() => (<SingleCourseAnimalPage />)}/>
 
               <Route
                 path='/sign_in'
