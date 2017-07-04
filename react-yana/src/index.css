@@ -26,6 +26,7 @@ main {
   background-color: #353535;
   height: 58px;
   margin: 0 -15px 0px -15px;
+  border: #353535;
 }
 
 .navbar-header > a.navbar-brand {
