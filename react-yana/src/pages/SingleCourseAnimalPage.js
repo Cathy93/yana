@@ -8,6 +8,7 @@ import animal from '../img/animal.png';
 const SingleCourseAnimalPage = () => (
   <div>
     <MainHeader title="Animal"/>
+
   </div>
 )
 

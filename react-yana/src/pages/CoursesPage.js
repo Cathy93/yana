@@ -24,19 +24,19 @@ const CoursesPage = () => (
 
       <SubHeading title="Level 1"/>
         <div className="row">
-          <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 m-x-auto">
+          <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
             <LevelCourse course_icon={animal}
                          course_icon_name="animal_course_icon"
                          singleCoursePath="/single_course_animal"
                          title="Animal"/>
           </div>
-          <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 m-x-auto">
+          <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
             <LevelCourse course_icon={color}
                          course_icon_name="color_course_icon"
                          singleCoursePath="/single_course_color"
                          title="Colours"/>
           </div>
-          <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 m-x-auto">
+          <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
             <LevelCourse course_icon={number}
                          course_icon_name="number_course_icon"
                          singleCoursePath="/single_course_number"
