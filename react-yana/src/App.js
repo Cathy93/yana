@@ -47,36 +47,6 @@ class App extends Component {
                 path='/contact'
                 render={() => (<ContactPage />)}/>
 
-<<<<<<< HEAD
-                <Route
-                  path='/courses'
-                  render={() => (<CoursesPage />)}/>
-
-               <Route
-                  exact path='/'
-                  render={() => (<HomePage />)}/>
-                  />
-
-                  <Route path='/signIn' render={
-                      () => (
-                        <SignInPage />
-                      )
-                    }
-                  />
-
-                  <Route render={
-                      ({ location }) => (
-                        <div className="not-found-page-container">
-                          <h1 className="not-found-page-msg text-center">
-                            { location.pathname } Url Not Found
-                          </h1>
-                        </div>
-                      )
-                    }
-                  />
-              </Switch>
-          </main>
-=======
               <Route
                 path='/courses'
                 render={() => (<CoursesPage />)}/>
@@ -133,7 +103,6 @@ class App extends Component {
             />
           </Switch>
         </main>
->>>>>>> 3d380d17f1b9d5082d83e981d6e727f17b9bae7c
       </Router>
     );
   }
