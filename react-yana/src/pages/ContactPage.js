@@ -1,6 +1,5 @@
 // Dependencies
 import React from 'react';
-import { Image } from 'react-bootstrap';
 
 // Components
 import ContactForm from '../components/ContactForm';

@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./img/mainbackground.png');
+  background-image: url('./img/main_background.png');
   background-position: center;
 }
 
@@ -15,67 +15,11 @@ main {
 
 .mainbackground {
    margin-top: 58px;
-   background-image: url('./img/mainbackground.png');
+   background-image: url('./img/main_background.png');
    background-position: center;
    height: 1200px;
    width: 100%;
 }
-
-/*------------------------ButtonDefault Component-----------------------------*/
-.button-Default {
-    background-color: rgba(53, 53, 53, 0.85);
-    border-radius: 15px;
-}
-
-.button-default-link {
-    font-size: 50px;
-    font-weight: 700;
-    color: white;
-    padding: 20px 20px;
-}
-
-.button-default-link:hover,
-.button-default-link:focus {
-    color: #F4DA9D;
-    text-decoration: none;
-}
-
-/*Media Query Settings for ButtonDefault*/
-@media screen and (max-width: 600px){
-  .button-default-link {
-    font-size: 30px;
-    padding: 20px 50px;
-  }
-}
-
-@media screen and (max-width: 500px){
-  .button-default-link {
-    font-size: 30px;
-    padding: 20px 30px;
-  }
-}
-
-@media screen and (max-width: 300px){
-  .button-default-link {
-    font-size: 20px;
-    padding: 10px 20px;
-  }
-}
-/*------------------------End of ButtonDefault Component----------------------*/
-
-/*-----------------------AnchorLink Component---------------------------------*/
-a.anchor-default-link {
-  color: #353535;
-  font-weight: 700;
-  font-size: 35px;
-  text-decoration: underline;
-}
-
-a.anchor-default-link:hover,
-a.anchor-default-link:focus {
-   color: #73BF45;
-}
-/*------------------------End of AnchorLink Component-------------------------*/
 
 /*------------------------NavMenu Component-----------------------------------*/
 .nav-container {
@@ -353,11 +297,7 @@ i.social-link:focus {
 /*-------------------------Collapse Component---------------------------------*/
 .Collapsible {
     /*collapsed container*/
-<<<<<<< HEAD
     background-color: rgba(250,218,157,0.6);
-=======
-    background-color: rgba(250, 218, 157, 0.6)
->>>>>>> a58c5f63c03940e1ebcb11bf60518865dcb66a0a
 }
 
 .Collapsible__contentInner {
@@ -436,18 +376,6 @@ div.section-1-faq {
     position: relative;
 }
 
-<<<<<<< HEAD
-=======
-img.background-faq {
-     background-image: url('./img/background_faq_contact.jpg');
-     background-size: cover;
-     background-position: center center;
-     background-repeat: no-repeat;
-     height: 300px;
-     width: 100%;
-}
-
->>>>>>> a58c5f63c03940e1ebcb11bf60518865dcb66a0a
 div.background-caption-faq {
     display: block;
     margin: 0 auto;
@@ -455,17 +383,8 @@ div.background-caption-faq {
 }
 
 .accordion-wrapper {
-<<<<<<< HEAD
     padding-top: 30px;
     padding-bottom: 30px;
-=======
-    padding-top: 50px;
-    background-image: url('./img/main_background.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    padding-bottom: 50px;
->>>>>>> a58c5f63c03940e1ebcb11bf60518865dcb66a0a
 }
 
 .accordion-container {
@@ -608,18 +527,6 @@ div.section-1-contact {
     position: relative;
 }
 
-<<<<<<< HEAD
-=======
-img.background-contact {
-     background-image: url('./img/background_faq_contact.jpg');
-     background-size: cover;
-     background-position: center center;
-     background-repeat: no-repeat;
-     height: 300px;
-     width: 100%;
-}
-
->>>>>>> a58c5f63c03940e1ebcb11bf60518865dcb66a0a
 div.background-caption-contact {
     display: block;
     margin: 0 auto;
@@ -668,17 +575,8 @@ div.background-caption-contact {
 /*------------------------------Button Default----------------------------*/
 
 /*-----------------------------ContactForm Component--------------------------*/
-<<<<<<< HEAD
 .contact-wrapper {
   margin-top: 30px;
-=======
-div.contact-form-container {
-  margin-bottom: -20px;
-  background-image: url('./img/main_background.png');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
->>>>>>> a58c5f63c03940e1ebcb11bf60518865dcb66a0a
 }
 
 div.well.well-lg {
@@ -819,10 +717,17 @@ button.btn.btn-link:focus {
 /*-------------------------End of ContactForm Component-----------------------*/
 /*Anchor Link*/
 
-.anchor-default-link  {
+a.anchor-default-link {
+  color: #000000;
   font-size: 24px;
+  text-decoration: underline;
 }
-
+a.anchor-default-link:hover,
+a.anchor-default-link:focus {
+  color: #DD6D26;
+  font-size: 24px;
+  text-decoration: underline;
+}
 
 /*-------------------------HomePage-------------------------------------------*/
 
@@ -889,7 +794,6 @@ img.boom-img {
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
 div.button-container {
   margin-top: 40px;
 }
@@ -913,22 +817,21 @@ button.learn-now-button:focus > a {
   text-decoration: none
 }
 
-=======
-.learn-now-button-container {
-  margin-top: 80px;
-}
-
-h6.h6-text {
-  color: #353535;
-  font-weight: 500;
-  font-size: 35px;
-  margin-top: 35px;
-  margin-bottom: 20px;
-}
->>>>>>> a58c5f63c03940e1ebcb11bf60518865dcb66a0a
 
 div.sign-in-link-container {
   margin-top: -15px;
+}
+
+a.sign-in-link {
+  color: #353535;
+  font-weight: 700;
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+a.sign-in-link:hover,
+a.sign-in-link:focus {
+   color: #73BF45;
 }
 
 /*Media Query Settings for Home Section 1*/
@@ -943,15 +846,7 @@ div.sign-in-link-container {
   }
 
   img.boom-img {
-<<<<<<< HEAD
     width: 70%;
-=======
-      margin-top: -85px;
-  }
-
-  .learn-now-button-container {
-    margin-top: 30px;
->>>>>>> a58c5f63c03940e1ebcb11bf60518865dcb66a0a
   }
 
   .secondary-section-wrapper {
@@ -979,83 +874,8 @@ div.sign-in-link-container {
 
 @media screen and (max-width: 380px){
 
-<<<<<<< HEAD
   .img.vacl-logo {
     margin-bottom: 40px;
-=======
-  div.background-caption-home-2 {
-      margin-top: -1350px;
-  }
-}
-
-@media screen and (max-width: 280px){
-  img.background-home-2 {
-     height: 1500px;
-  }
-
-  div.background-caption-home-2 {
-      margin-top: -1450px;
-  }
-}
-
-/*3rd Section aft NavMenu*/
-img.background-home-3 {
-   background-image: url('./img/main_background.png');
-   background-size: cover;
-   background-position: center center;
-   height: 80px;
-   width: 100%;
-}
-
-/*4th Section aft NavMenu*/
-img.background-home-4 {
-   background-image: url('./img/bg_dark.jpg');
-   background-size: cover;
-   background-position: center center;
-   background-repeat: no-repeat;
-   height: 550px;
-   width: 100%;
-}
-
-div.background-caption-home-4 {
-    display: block;
-    position: absolute;
-    margin-top: -500px;
-    z-index: 10;
-}
-
-h1.home-heading-text-4 {
-    color: white;
-    font-weight: 700;
-    font-size: 45px;
-    margin-bottom: 20px;
-}
-
-p.caption-home-4-p:first-child {
-    margin-top: 50px;
-}
-
-p.caption-home-4-p {
-    color: white;
-    font-weight: 400;
-    font-size: 25px;
-}
-
-p.caption-home-4-pb {
-    color: white;
-    font-weight: 900;
-    font-size: 25px;
-}
-
-div.caption-home-4-img {
-    margin-top: 40px;
-}
-
-/*Media Query Settings for Home Section 4*/
-@media screen and (max-width: 767px){
-  img.background-home-4 {
-     height: 1000px;
->>>>>>> a58c5f63c03940e1ebcb11bf60518865dcb66a0a
   }
 
   .home-heading-text {
@@ -1063,97 +883,6 @@ div.caption-home-4-img {
     padding: 0px 3px 0px 3px;
   }
 
-<<<<<<< HEAD
-=======
-/*5th Section aft NavMenu*/
-img.background-home-5 {
-   background-image: url('./img/main_background.png');
-   background-size: cover;
-   background-position: center center;
-   background-repeat: no-repeat;
-   height: 130px;
-   width: 100%;
->>>>>>> a58c5f63c03940e1ebcb11bf60518865dcb66a0a
 }
 
 /*------------------------------End of HomePage-------------------------------*/
-
-
-/*-----------------------------SignInPage-------------------------------------*/
-div.sign-in-bg {
-    position: relative;
-}
-
-img.background-sign-in {
-   margin-top: 58px;
-   background-image: url('./img/main_background.png');
-   background-size: cover;
-   background-position: center center;
-   background-repeat: no-repeat;
-   height: 1200px;
-   width: 100%;
-}
-
-div.background-caption-sign-in {
-    display: block;
-    position: absolute;
-    margin-top: -1180px;
-    z-index: 10;
-}
-
-h1.sign-in-heading-text {
-    font-size: 70px;
-    font-weight: 700;
-    color: #353535;
-}
-
-h4.forgot-password-text {
-  font-size: 30px;
-  font-weight: 400;
-  color: #353535;
-}
-/*-----------------------------End of SignInPage------------------------------*/
-
-/*-----------------------------NotFoundPage-------------------------------------*/
-h1.not-found-page-msg {
-  font-size: 200px;
-  font-weight: 900;
-  color: #353535;
-  padding-top: 200px;
-}
-
-.not-found-page-container {
-  margin-top: 58px;
-  background-image: url('./img/main_background.png');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 1500px;
-  width: 100%;
-}
-
-/*Media Query Settings for Not Found Page*/
-@media screen and (max-width: 767px){
-  h1.not-found-page-msg {
-    font-size: 100px;
-    font-weight: 700;
-    padding-top: 100px;
-  }
-
-  .not-found-page-container {
-    height: 800px;
-  }
-}
-
-@media screen and (max-width: 500px){
-  h1.not-found-page-msg {
-    font-size: 80px;
-    font-weight: 400;
-    padding-top: 100px;
-  }
-
-  .not-found-page-container {
-    height: 750px;
-  }
-}
-/*-----------------------------End of NotFoundPage----------------------------*/

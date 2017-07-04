@@ -1,7 +1,6 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
 import vaclLogo from '../img/logo.png';
-import { Link } from 'react-router-dom'
 
 const MainHeader = ({title}) => (
   <div>
