@@ -446,13 +446,6 @@ div.Collapsible__contentInner {
 }
 
 @media screen and (max-width: 767px){
-    img.background-faq {
-       height: 300px;
-    }
-
-    div.background-caption-faq {
-        margin-top: 30px;
-    }
 
     h1.h1-faq {
         margin-top: -150px;
@@ -540,13 +533,6 @@ div.background-caption-contact {
     z-index: 10;
 }
 
-img.background-caption-contact {
-    margin-top: -230px;
-    margin-bottom: 170px;
-    z-index: 10;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 /*
 .map-responsive {
@@ -574,9 +560,6 @@ img.background-caption-contact {
 }
 
 @media screen and (max-width: 767px){
-    img.background-contact {
-       height: 300px;
-    }
 
     div.background-caption-contact {
         margin-top: 30px;
@@ -787,8 +770,6 @@ p.secondary-section-emphasis {
   width: 200px;
 }
 
-
-
 img.vacl-logo {
   width: 20%;
   margin: 0 auto;
@@ -797,7 +778,8 @@ img.vacl-logo {
 .home-heading-text {
     color: #353535;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 42px;
+    padding: 0px 10px 0px 10px;
 }
 
 img.boom-img {
@@ -848,17 +830,16 @@ a.sign-in-link:focus {
 /*Media Query Settings for Home Section 1*/
 @media screen and (max-width: 600px){
 
+  main {
+    padding-top: 20px;
+  }
+
   img.vacl-logo {
-    width: 70%;
+    width: 40%;
   }
 
   img.boom-img {
     width: 70%;
-  }
-
-  .home-heading-text {
-    font-size: 42px;
-    padding: 0px 10px 0px 10px;
   }
 
   .secondary-section-wrapper {
