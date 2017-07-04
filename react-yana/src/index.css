@@ -892,7 +892,7 @@ h1.sub-heading-text {
 @media screen and (max-width: 1200px){
   h1.sub-heading-text {
     font-size: 45px;
-    margin-left: -15px;
+    margin-left: -25px;
   }
 }
 
@@ -968,21 +968,21 @@ h5.course-name-title:focus {
 @media screen and (max-width: 600px){
   h5.course-name-title {
     font-size: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 500px){
   h5.course-name-title {
     font-size: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
 }
 
 @media screen and (max-width: 400px){
   h5.course-name-title {
     font-size: 12px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 }
 /*----------------------------End of LevelCourse Component--------------------*/
