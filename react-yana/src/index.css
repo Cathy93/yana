@@ -170,7 +170,8 @@ div.navbar-collapse.collapse > a.selected {
 
 /*------------------------Footer Component------------------------------------*/
 .nav-footer {
-    margin-top: 0px;
+  padding-top: 5px;
+  background-image: url('./img/mid_dark.png');
 }
 
 .keep-in-touch-container {
@@ -178,21 +179,12 @@ div.navbar-collapse.collapse > a.selected {
     background-color: #353535;
 }
 
-img.background-footer {
-   background-image: url('./img/mid_dark.jpg');
-   background-size: cover;
-   background-position: center center;
-   background-repeat: no-repeat;
-   height: 130px;
-   width: 100%;
-}
 
 .text-in-keep-in-touch-container {
-    font-size: 40px;
-    font-weight: 900;
-    color: white;
-    margin-top: -80px;
-    margin-bottom: 30px;
+  margin-top: 7px;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
 }
 
 .social-link-container {
@@ -221,13 +213,12 @@ i.social-link:focus {
 }
 
 .text-in-contact-detail-container {
-    font-size: 35px;
-    font-weight: 900;
+    font-size: 30px;
+    font-weight: 500;
     color: white;
 }
 
 .address-contact-detail-container {
-    padding-top: 30px;
     font-size: 18px;
     font-weight: 400;
     color: white;
