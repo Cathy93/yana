@@ -14,6 +14,7 @@ import HomePage from './pages/HomePage';
 import FaqPage from './pages/FaqPage';
 import ContactPage from './pages/ContactPage';
 import CoursesPage from './pages/CoursesPage';
+import SingleCoursePage from './pages/SingleCoursePage';
 import SignInPage from './pages/SignInPage';
 
 class App extends Component {
@@ -24,6 +25,10 @@ class App extends Component {
           <NavMenu />
             <Switch>
               <Route
+                exact path='/'
+                render={() => (<HomePage />)}/>
+
+              <Route
                 path='/faq'
                 render={() => (<FaqPage />)} />
 
@@ -31,40 +36,30 @@ class App extends Component {
                 path='/contact'
                 render={() => (<ContactPage />)}/>
 
-                <Route
-                  path='/courses'
-                  render={() => (<CoursesPage />)}/>
+              <Route
+                path='/courses'
+                render={() => (<CoursesPage />)}/>
 
-               <Route
-                  exact path='/'
-                  render={() => (<HomePage />)}/>
+              <Route
+                path='/single_course'
+                render={() => (<SingleCoursePage />)}/>
 
-                  <Route path='/courses' render={
-                      () => (
-                        <CoursesPage />
-                      )
-                    }
-                  />
+              <Route
+                path='/sign_in'
+                render={() => (<SignInPage />)}/>
 
-                  <Route path='/signIn' render={
-                      () => (
-                        <SignInPage />
-                      )
-                    }
-                  />
-
-                  <Route render={
-                      ({ location }) => (
-                        <div className="not-found-page-container">
-                          <h1 className="not-found-page-msg text-center">
-                            { location.pathname } Url Not Found
-                          </h1>
-                        </div>
-                      )
-                    }
-                  />
-              </Switch>
-          </main>
+              <Route render={
+                ({ location }) => (
+                  <div className="not-found-page-container">
+                    <h1 className="not-found-page-msg text-center">
+                      { location.pathname } Url Not Found
+                    </h1>
+                  </div>
+                )
+              }
+            />
+          </Switch>
+        </main>
       </Router>
     );
   }
