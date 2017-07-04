@@ -986,3 +986,16 @@ h5.course-name-title:focus {
   }
 }
 /*----------------------------End of LevelCourse Component--------------------*/
+
+/*---------------------------SingleCoursePage---------------------------------*/
+a.img-link > img {
+  margin: 0 auto;
+}
+
+.course-description {
+  margin-top: -20px;
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+}
