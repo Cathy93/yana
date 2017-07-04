@@ -887,11 +887,52 @@ h1.sub-heading-text {
   font-weight: 700;
   color: black;
 }
+
+/*Media Query Settings for SubHeading Component*/
+@media screen and (max-width: 1200px){
+  h1.sub-heading-text {
+    font-size: 45px;
+    margin-left: -15px;
+  }
+}
+
+@media screen and (max-width: 800px){
+  h1.sub-heading-text {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  h1.sub-heading-text {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  h1.sub-heading-text {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  h1.sub-heading-text {
+    font-size: 18px;
+  }
+}
+
 /*----------------------------End of SubHeading Component---------------------*/
 
 /*---------------------------LevelCourse Component----------------------------*/
 .img-rounded {
-  padding-left: 40px;
+  padding-left: 20px;
+}
+
+a.img-link:hover > h5.course-name-title,
+a.img-link:focus > h5.course-name-title {
+  color: #DD6D26;
+  text-decoration: underline;
+  -moz-text-decoration-color: #DD6D26;
+  text-decoration-color: #DD6D26;
 }
 
 h5.course-name-title {
@@ -910,3 +951,38 @@ h5.course-name-title:focus {
   -moz-text-decoration-color: #DD6D26;
   text-decoration-color: #DD6D26;
 }
+
+/*Media Query Settings for LecelCourse Component*/
+@media screen and (max-width: 1200px){
+  h5.course-name-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 800px){
+  h5.course-name-title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  h5.course-name-title {
+    font-size: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  h5.course-name-title {
+    font-size: 15px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  h5.course-name-title {
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+}
+/*----------------------------End of LevelCourse Component--------------------*/

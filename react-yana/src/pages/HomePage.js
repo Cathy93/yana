@@ -1,6 +1,7 @@
 // Dependencies
 import React from 'react';
 import { Image } from 'react-bootstrap';
+
 // Components
 import Footer from '../components/Footer';
 import ButtonDefault from '../components/ButtonDefault';
