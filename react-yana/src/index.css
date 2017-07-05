@@ -584,6 +584,20 @@ div.background-caption-contact {
   text-decoration: none
 }
 
+/*-----------------------------progress bar Component--------------------------*/
+.progress {
+  margin: 0 auto;
+  width: 70%;
+  height: 3.5rem;
+  margin-bottom: 80px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+
+
+}
+/*-----------------------------end progressbar Component--------------------------*/
+
 /*-----------------------------ContactForm Component--------------------------*/
 .contact-wrapper {
   margin-top: 30px;

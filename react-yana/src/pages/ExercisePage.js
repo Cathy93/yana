@@ -3,6 +3,7 @@ import Footer from '../components/Footer'
 import Animal from '../img/platypus.png'
 import Thumbnails from '../components/Thumbnails'
 import ButtonDefault from '../components/ButtonDefault'
+import ProgressB from '../components/ProgressBar'
 
 const ExercisePage = () => (
   <div>
@@ -18,6 +19,7 @@ const ExercisePage = () => (
       <ButtonDefault title="Next"
         buttonPath="/exercise:id" />
     </div>
+    <ProgressB CurrentLevel={50} />
     <Footer />
   </div>
 )
