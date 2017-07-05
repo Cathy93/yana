@@ -1,12 +1,14 @@
 import React from 'react';
-import {ProgressBar} from 'react-bootstrap'
+import { ProgressBar } from 'react-bootstrap'
 
+const now = 50;
 
-const ProgressB = ({TotalLevels, CurrentLevel}) => (
-  <div className="progress-bar-css">
+const ProgressB = ({CurrentLevel}) => (
+  <div>
    <ProgressBar bsStyle="success"
                 striped
-                now={CurrentLevel} />
+                now={CurrentLevel}
+                label={`${now}%`} />
  </div>
 )
 
