@@ -1,14 +1,16 @@
+// Dependencies
 import React from 'react'
+import ReactDOM from 'react-dom';
+import Mosaic from 'mosaic-audio';
+
+// Components
 import Footer from '../components/Footer'
+
+// Img
 import Animal from '../img/platypus.png'
 import Thumbnails from '../components/Thumbnails'
 import ButtonDefault from '../components/ButtonDefault'
 import ProgressB from '../components/ProgressBar'
-import ReactAudioPlayer from 'react-audio-player';
-//import AudioPlayer from '../components/AudioPlayer';
-  //  <AudioPlayer src="p.wav"/>
-  import ReactDOM from 'react-dom';
-  import Mosaic from 'mosaic-audio';
 
 const ExercisePage = () => (
   <div>
