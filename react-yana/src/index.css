@@ -566,6 +566,7 @@ div.background-caption-contact {
 /*------------------------------Button Thin----------------------------*/
 
 .button-thin {
+  border-radius: 5px;
   font-size: 20px;
   padding-left: 80px;
   padding-right: 80px;
@@ -1003,6 +1004,21 @@ h5.course-name-title:focus {
   }
 }
 /*----------------------------End of LevelCourse Component--------------------*/
+
+/*---------------------------Start of Common CSS---------------------------------*/
+.img-center  {
+  margin: 0 auto;
+}
+
+.title-wrapper {
+  margin: 50px 0;
+}
+
+.thumbnail-wrapper {
+  margin-top: 150px;
+}
+/*---------------------------End of Common CSS---------------------------------*/
+
 
 /*---------------------------SingleCoursePage---------------------------------*/
 a.img-link > img {

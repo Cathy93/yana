@@ -1,16 +1,17 @@
 import React from 'react'
-
-import Footer from '../components/Footer';
-
-import animal from '../img/animal.png';
+import Footer from '../components/Footer'
+import Animal from '../img/platypus.png'
+import Thumbnails from '../components/Thumbnails'
 
 const ExercisePage = () => (
   <div>
 
-
-      <h3 className="course-description text-center">Aboriginal word</h3>
-      <p className="course-description text-center">Word in Engllish</p>
-      
+    <Thumbnails
+      course_icon={Animal}
+      course_icon_alt="animal_icon"
+      titleOne="Ornitorrinco"
+      titleTwo ="Platypus"
+    />
     <Footer />
   </div>
 )
