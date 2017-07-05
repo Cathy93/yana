@@ -231,7 +231,6 @@ i.social-link:focus {
     }
 
     .text-in-keep-in-touch-container {
-        padding-top: 25px;
         font-size: 28px;
     }
 }
@@ -564,7 +563,25 @@ div.background-caption-contact {
 }
 /*------------------------------End of ContactPage----------------------------*/
 
-/*------------------------------Button Default----------------------------*/
+/*------------------------------Button Thin----------------------------*/
+
+.button-thin {
+  font-size: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background: #353535;
+}
+
+.button-thin > a {
+  color: white;
+}
+
+.button-thin:hover > a,
+.button-thin:focus > a {
+  background-color: #353535;
+  color: #F4DA9D;
+  text-decoration: none
+}
 
 /*-----------------------------ContactForm Component--------------------------*/
 .contact-wrapper {
@@ -999,3 +1016,9 @@ a.img-link > img {
   font-weight: 600;
   color: black;
 }
+
+.button-wrapper {
+  margin-bottom: 100px;
+}
+
+/*---------------------------End of SingleCoursePage---------------------------*/

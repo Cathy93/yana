@@ -23,7 +23,7 @@ import SingleCourseFamilyPage from './pages/SingleCourseFamilyPage';
 import SingleCourseSentencePage from './pages/SingleCourseSentencePage';
 import SingleCourseActionPage from './pages/SingleCourseActionPage';
 import SingleCourseSeasonPage from './pages/SingleCourseSeasonPage';
-
+import ExercisePage from './pages/ExercisePage'
 
 
 import SignInPage from './pages/SignInPage';
@@ -86,6 +86,10 @@ class App extends Component {
               <Route
                 path='/single_course_seasons'
                 render={() => (<SingleCourseSeasonPage />)}/>
+
+                <Route
+                  path='/animal_exercise_page'
+                  render={() => (<ExercisePage />)}/>
 
               <Route
                 path='/sign_in'
