@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from '../components/Footer'
 import Animal from '../img/platypus.png'
 import Thumbnails from '../components/Thumbnails'
+import ButtonDefault from '../components/ButtonDefault'
 
 const ExercisePage = () => (
   <div>
@@ -12,6 +13,11 @@ const ExercisePage = () => (
       titleOne="Ornitorrinco"
       titleTwo ="Platypus"
     />
+    <i className="fa fa-volume-up audio" aria-hidden="true"></i>
+    <div className="button-wrapper" >
+      <ButtonDefault title="Next"
+        buttonPath="/exercise:id" />
+    </div>
     <Footer />
   </div>
 )

@@ -755,14 +755,14 @@ a.anchor-default-link:focus {
 
 .secondary-section h1 {
   font-weight: 700;
-  font-size: 45px;
+  font-size: 4rem;
   margin-bottom: 40px;
   text-align: center;
 }
 
 .secondary-section p {
-  font-weight: 400;
-  font-size: 25px;
+  font-weight: 300;
+  font-size: 2rem;
   margin-bottom: 40px;
 }
 
@@ -1011,12 +1011,28 @@ h5.course-name-title:focus {
 }
 
 .title-wrapper {
-  margin: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 0;
 }
 
 .thumbnail-wrapper {
   margin-top: 150px;
 }
+
+.audio {
+      display: block;
+      text-align: center;
+      font-size: 10rem;
+}
+
+/*Media Query Settings*/
+@media screen and (max-width: 600px){
+  .thumbnail-wrapper {
+    margin-top: 10px;
+  }
+}
+
+
 /*---------------------------End of Common CSS---------------------------------*/
 
 
@@ -1028,9 +1044,10 @@ a.img-link > img {
 .course-description {
   margin-top: -20px;
   padding-bottom: 20px;
-  font-size: 40px;
+  font-size: 5rem;
   font-weight: 600;
   color: black;
+  line-height: 4rem;
 }
 
 .button-wrapper {
