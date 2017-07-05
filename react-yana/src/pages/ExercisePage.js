@@ -4,6 +4,11 @@ import Animal from '../img/platypus.png'
 import Thumbnails from '../components/Thumbnails'
 import ButtonDefault from '../components/ButtonDefault'
 import ProgressB from '../components/ProgressBar'
+import ReactAudioPlayer from 'react-audio-player';
+//import AudioPlayer from '../components/AudioPlayer';
+  //  <AudioPlayer src="p.wav"/>
+  import ReactDOM from 'react-dom';
+  import Mosaic from 'mosaic-audio';
 
 const ExercisePage = () => (
   <div>
@@ -14,7 +19,15 @@ const ExercisePage = () => (
       titleOne="Ornitorrinco"
       titleTwo ="Platypus"
     />
-    <i className="fa fa-volume-up audio" aria-hidden="true"></i>
+
+    <Mosaic
+      hover={true}
+      margin={false}
+      playClass="fa fa-volume-up audio"
+      pauseClass="fa fa-volume-up audio"
+      source="p.wav"
+    />
+
     <div className="button-wrapper" >
       <ButtonDefault title="Next"
         buttonPath="/exercise:id" />
