@@ -1,4 +1,4 @@
-// Dependencies
+// import Dependencies
 import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
