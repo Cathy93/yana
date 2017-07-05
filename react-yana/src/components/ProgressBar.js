@@ -6,7 +6,7 @@ const ProgressB = ({CurrentLevel}) => (
    <ProgressBar bsStyle="success"
                 striped
                 now={CurrentLevel}
-                label={`${CurrentLevel}% Complete`} />
+                label={`${CurrentLevel}%`} />
  </div>
 )
 
