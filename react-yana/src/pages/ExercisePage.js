@@ -34,7 +34,7 @@ const ExercisePage = () => (
       <ButtonDefault title="Next"
         buttonPath="/exercise:id" />
     </div>
-    <ProgressB CurrentLevel={50} />
+    <ProgressB CurrentLevel={25} />
     <Footer />
   </div>
 )
