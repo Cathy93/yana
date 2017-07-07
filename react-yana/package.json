@@ -5,6 +5,7 @@
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
     "gulp-sass": "^3.1.0",
+    "mosaic-audio": "^1.1.1",
     "npmdoc-react-fontawesome": "^0.0.2",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.0",
