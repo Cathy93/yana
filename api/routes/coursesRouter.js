@@ -1,34 +1,7 @@
-require('dotenv').config()
 const express = require('express')
-const bodyParser = require('body-parser')
-const mongoose = require('mongoose')
-// const Courses = require('./api/models/courses')
-const coursesRouter = require('./routes/coursesRouter')
-
-// Create our Express server
-const server = express()
-
-
-// configure app for bodyparser()
-//lets us grab data from the body of POST
-server.use(bodyParser.urlencoded({extended: true}))
-server.use(bodyParser.json())
-
-//connect to mongoose
-// mongoose.connect('mongodb://localhost:27017/yana')
-
-//api routes
+const Course = require('../models/course')
 const router = express.Router()
-
 //
-
-// // middleware
-// server.use(functon(req, res, next) {
-//   next()
-// })
-
-server.use(coursesRouter)
-
 // router.route('/courses')
 //   .post(function(req, res) {
 //     const newCourse = new Course()  //new couurse Add
@@ -42,7 +15,7 @@ server.use(coursesRouter)
 //       res.json({message:"New course added!!"})
 //     })
 //   })
-//
+
 //   .get(function(req, res) {
 //     Course.find(functon (err, courses) {
 //       if (err) { res.send(err) }
@@ -82,8 +55,17 @@ server.use(coursesRouter)
 //           })
 //         })
 
-//Start server
-const port = 8000
-server.listen(port, () => {
-  console.log(`API server is running on port ${port}`)
-})
+
+router.post('/api/courses', (req,res) => {
+  newCourse = req.body
+  Course.create(newCourse)
+    .then((newCourse) => {
+      res.json(newCourse)
+    })
+    .catch((error) => {
+      res.json({ error: error })
+    })
+} )
+
+
+module.exports = router
