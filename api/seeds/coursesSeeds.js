@@ -3,21 +3,35 @@ const Course = require('../models/course')
 
 Course.create([
   {
+    courseName: "Animal",
     level: 1,
-    course: ['hey', 'how', 'why'],
-    image: 'blah',
-    words:  ['Array', 'hash']
+    courseImage: "blah",
+    words: [
+      {
+        title: { en: 'hello', br: 'hola'},
+        audio: {
+          en: 'http',
+        },
+        image: {
+          url: 'bob'
+        }
+      }
+    ]
   },
   {
+    courseName: "Colors",
     level: 2,
-    course: ['george', 'how', 'why'],
-    image: 'blah',
-    words:  ['livia', 'hash']
+    courseImage: "blue",
+    words: [
+      {
+        title: { en: 'Blue', br: 'Azul'},
+        audio: {
+          en: 'http',
+        },
+        image: {
+          url: 'bob'
+        }
+      }
+    ]
   },
-  {
-    level: 4,
-    course: ['hey', 'how', 'why'],
-    image: 'blah',
-    words:  ['Array', 'hash']
-  }
 ])

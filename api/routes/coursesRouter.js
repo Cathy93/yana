@@ -1,7 +1,8 @@
 const express = require('express')
 const Course = require('../models/course')
 const router = express.Router()
-//
+
+// Maybe we gonna use again later
 // router.route('/courses')
 //   .post(function(req, res) {
 //     const newCourse = new Course()  //new couurse Add
@@ -55,17 +56,28 @@ const router = express.Router()
 //           })
 //         })
 
+router.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
-router.post('/api/courses', (req,res) => {
-  newCourse = req.body
+router.post('/api/courses', (req, res) => {
+  newCourse = req.body;
   Course.create(newCourse)
     .then((newCourse) => {
-      res.json(newCourse)
+      res.json(newCourse);
     })
     .catch((error) => {
-      res.json({ error: error })
+      res.json({ error: error });
     })
-} )
+});
 
+router.get('/api/courses', (req, res) => {
+  Course.find(function (err, courses) {
+    if (err) { res.send(err) }
+    res.json(courses)
+  });
+});
 
 module.exports = router
