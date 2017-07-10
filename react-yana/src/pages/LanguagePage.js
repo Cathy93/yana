@@ -14,12 +14,12 @@ const  LanguagePage= () => (
     <MainHeader title="Languages"/>
     <LevelCourse course_icon={BrazilFlag}
                  course_icon_name="Brazilian_flag"
-                 singleCoursePath="/courses"
+                 path="/courses"
                  title='Brazilian Portuguese'/>
 
    <LevelCourse course_icon={MacedonianFlag}
                 course_icon_name="Macedonia_flag"
-                singleCoursePath="/courses"
+                path="/courses"
                 title='Macedonian'/>
     <Footer />
   </div>

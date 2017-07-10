@@ -14,7 +14,7 @@ import HomePage from './pages/HomePage';
 import FaqPage from './pages/FaqPage';
 import ContactPage from './pages/ContactPage';
 import CoursesPage from './pages/CoursesPage';
-import SingleCourseAnimalPage from './pages/SingleCourseAnimalPage';
+import SingleCoursePage from './pages/SingleCoursePage';
 import SingleCourseColorPage from './pages/SingleCourseColorPage';
 import SingleCourseNumberPage from './pages/SingleCourseNumberPage';
 import SingleCourseGreetingPage from './pages/SingleCourseGreetingPage';
@@ -53,12 +53,13 @@ class App extends Component {
                 render={() => (<LanguagePage />)}/>
 
               <Route
+                path='/courses/:id'
+                render={({match}) => (<SingleCoursePage courseId={match.params.id}/>)}/>
+
+              <Route
                 path='/courses'
                 render={() => (<CoursesPage />)}/>
 
-              <Route
-                path='/single_course_animal'
-                render={() => (<SingleCourseAnimalPage />)}/>
 
               <Route
                 path='/single_course_color'

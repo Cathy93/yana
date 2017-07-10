@@ -24,12 +24,12 @@ class CoursesPage  extends React.Component {
     this.state = {levels: []};
   }
 
-  componentWillMount() {
+  componentDidMount() {
     var url = "http://localhost:8000/api/courses"
       fetch(url)
         .then(results => results.json())
         .then(courses => {
-          this.setState({levels:  this.groupBy(courses, 'level')});
+          this.setState({levels: this.groupBy(courses, 'level')});
         })
         .catch(function(err) {
           console.log("Didn't connect to the API", err)
@@ -56,10 +56,10 @@ class CoursesPage  extends React.Component {
 
   renderCourses(courses) {
     return courses.map((course) =>
-      <div className="col-xs-4 col-sm-4 mb20" key={course.courseName}>
+      <div className="col-xs-4 col-sm-4 mb20" key={course._id}>
         <LevelCourse course_icon={animal}
                      course_icon_name="animal_course_icon"
-                     singleCoursePath="/single_course_animal"
+                     path={`/courses/${course._id}`}
                      title={course.courseName}/>
       </div>
     );
@@ -67,7 +67,7 @@ class CoursesPage  extends React.Component {
 
   render() {
     return (<div>
-      <MainHeader title="blahblah"/>
+      <MainHeader title="Portuguese"/>
       {this.renderLevels()}
       <Footer />
     </div>);
