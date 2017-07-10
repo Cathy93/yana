@@ -24,13 +24,7 @@ const router = express.Router()
 //     })
 //   })
 //
-// router.route('/course/:course_id')
-//   .get(function(req, res) {
-//     Course.findById(req.params.course_id, function(err, course) {
-//       if (err) { res.send(err) }
-//       res.json(course)
-//     })
-//   })
+
 //
 //   router.route('/course/image/:image')
 //     .get(function(req, res) {
@@ -56,10 +50,20 @@ const router = express.Router()
 //           })
 //         })
 
+// Permiting request from others servers;
 router.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
+});
+
+// Matching a url path with the course id using findById method.
+// params is what I take dinamic information from the path. (id is variable)
+router.get('/api/courses/:id', (req, res) => {
+  Course.findById(req.params.id, function(err, course) {
+    if (err) { res.send(err) }
+    res.json(course);
+  });
 });
 
 router.post('/api/courses', (req, res) => {
