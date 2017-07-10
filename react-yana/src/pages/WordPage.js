@@ -12,7 +12,7 @@ import Thumbnails from '../components/Thumbnails'
 import ButtonDefault from '../components/ButtonDefault'
 import ProgressB from '../components/ProgressBar'
 
-const ExercisePage = () => (
+const WordPage = () => (
   <div>
 
     <Thumbnails
@@ -39,4 +39,4 @@ const ExercisePage = () => (
   </div>
 )
 
-export default ExercisePage;
+export default WordPage;

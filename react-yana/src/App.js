@@ -23,7 +23,8 @@ import SingleCourseFamilyPage from './pages/SingleCourseFamilyPage';
 import SingleCourseSentencePage from './pages/SingleCourseSentencePage';
 import SingleCourseActionPage from './pages/SingleCourseActionPage';
 import SingleCourseSeasonPage from './pages/SingleCourseSeasonPage';
-import ExercisePage from './pages/ExercisePage'
+import WordPage from './pages/WordPage'
+import LanguagePage from './pages/LanguagePage';
 
 
 import SignInPage from './pages/SignInPage';
@@ -46,6 +47,10 @@ class App extends Component {
               <Route
                 path='/contact'
                 render={() => (<ContactPage />)}/>
+
+              <Route
+                path='/languages'
+                render={() => (<LanguagePage />)}/>
 
               <Route
                 path='/courses'
@@ -89,7 +94,7 @@ class App extends Component {
 
                 <Route
                   path='/animal_exercise_page'
-                  render={() => (<ExercisePage />)}/>
+                  render={() => (<WordPage />)}/>
 
               <Route
                 path='/sign_in'

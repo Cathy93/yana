@@ -18,77 +18,59 @@ import sentences from '../img/sentence.png';
 import action from '../img/action.png';
 import seasons from '../img/seasons.png';
 
-const CoursesPage = () => (
-  <div>
-    <MainHeader title="Courses"/>
+class CoursesPage  extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {levels: []};
+  }
 
-      <SubHeading title="Level 1"/>
+  componentWillMount() {
+    var url = "http://localhost:8000/api/courses"
+      fetch(url)
+        .then(results => results.json())
+        .then(courses => {
+          this.setState({levels:  this.groupBy(courses, 'level')});
+        })
+        .catch(function(err) {
+          console.log("Didn't connect to the API", err)
+        });
+  }
+
+  groupBy(collection, attribute) {
+    return collection.reduce((groups, elem) => {
+      (groups[elem[attribute]] = groups[elem[attribute]] || []).push(elem);
+      return groups;
+    }, {});
+  }
+
+  renderLevels() {
+    return Object.keys(this.state.levels).map((level) =>
+      <div>
+        <SubHeading title={"Level " + level}/>
         <div className="row">
-          <div className="col-xs-4 col-sm-4 mb20">
-            <LevelCourse course_icon={animal}
-                         course_icon_name="animal_course_icon"
-                         singleCoursePath="/single_course_animal"
-                         title="Animal"/>
-          </div>
-          <div className="col-xs-4 col-sm-4 mb20">
-            <LevelCourse course_icon={color}
-                         course_icon_name="color_course_icon"
-                         singleCoursePath="/single_course_color"
-                         title="Colours"/>
-          </div>
-          <div className="col-xs-4 col-sm-4 mb20">
-            <LevelCourse course_icon={number}
-                         course_icon_name="number_course_icon"
-                         singleCoursePath="/single_course_number"
-                         title="Numbers"/>
-         </div>
-       </div>
+          {this.renderCourses(this.state.levels[level])}
+        </div>
+      </div>
+    );
+  }
 
-     <SubHeading title="Level 2"/>
-      <div className="row">
-        <div className="col-xs-4 col-sm-4 mb20">
-          <LevelCourse course_icon={greetings}
-                       course_icon_name="greeting_course_icon"
-                       singleCoursePath="/single_course_greetings"
-                       title="Greetings"/>
-       </div>
-       <div className="col-xs-4 col-sm-4 mb20">
-         <LevelCourse course_icon={food}
-                      course_icon_name="food_course_icon"
-                      singleCoursePath="/single_course_food"
-                      title="Food"/>
-       </div>
-       <div className="col-xs-4 col-sm-4 mb20">
-         <LevelCourse course_icon={family}
-                      course_icon_name="family_course_icon"
-                      singleCoursePath="/single_course_family"
-                      title="Family"/>
+  renderCourses(courses) {
+    return courses.map((course) =>
+      <div className="col-xs-4 col-sm-4 mb20" key={course.courseName}>
+        <LevelCourse course_icon={animal}
+                     course_icon_name="animal_course_icon"
+                     singleCoursePath="/single_course_animal"
+                     title={course.courseName}/>
       </div>
-    </div>
+    );
+  }
 
-  <SubHeading title="Level 3"/>
-    <div className="row">
-      <div className="col-xs-4 col-sm-4 mb20">
-        <LevelCourse course_icon={sentences}
-                     course_icon_name="sentences_course_icon"
-                     singleCoursePath="/single_course_sentences"
-                     title="Sentences"/>
-      </div>
-      <div className="col-xs-4 col-sm-4 mb20">
-        <LevelCourse course_icon={action}
-                     course_icon_name="action_course_icon"
-                     singleCoursePath="/single_course_action"
-                     title="Action"/>
-      </div>
-      <div className="col-xs-4 col-sm-4 mb20">
-        <LevelCourse course_icon={seasons}
-                     course_icon_name="seasons_course_icon"
-                     singleCoursePath="/single_course_seasons"
-                     title="Seasons"/>
-      </div>
-    </div>
-    <Footer />
-  </div>
-)
-
+  render() {
+    return (<div>
+      <MainHeader title="blahblah"/>
+      {this.renderLevels()}
+      <Footer />
+    </div>);
+  }
+}
 export default CoursesPage;

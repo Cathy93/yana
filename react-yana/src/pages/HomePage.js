@@ -23,7 +23,7 @@ const HomePage = ({
       <Image className="boom-img" src={boomerang} alt="boomerang_caption" responsive/>
       <div className="learn-now-button-container text-center">
               <ButtonDefault title="Learn Now"
-                             buttonPath="/courses" />
+                             buttonPath="/Languages" />
           </div>
           <h3 className="text-center"> Not a new user?</h3>
           <div className="sign-in-link-container text-center">
