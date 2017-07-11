@@ -15,14 +15,6 @@ import FaqPage from './pages/FaqPage';
 import ContactPage from './pages/ContactPage';
 import CoursesPage from './pages/CoursesPage';
 import SingleCoursePage from './pages/SingleCoursePage';
-import SingleCourseColorPage from './pages/SingleCourseColorPage';
-import SingleCourseNumberPage from './pages/SingleCourseNumberPage';
-import SingleCourseGreetingPage from './pages/SingleCourseGreetingPage';
-import SingleCourseFoodPage from './pages/SingleCourseFoodPage';
-import SingleCourseFamilyPage from './pages/SingleCourseFamilyPage';
-import SingleCourseSentencePage from './pages/SingleCourseSentencePage';
-import SingleCourseActionPage from './pages/SingleCourseActionPage';
-import SingleCourseSeasonPage from './pages/SingleCourseSeasonPage';
 import WordPage from './pages/WordPage'
 import LanguagePage from './pages/LanguagePage';
 
@@ -59,39 +51,6 @@ class App extends Component {
               <Route
                 path='/courses'
                 render={() => (<CoursesPage />)}/>
-
-
-              <Route
-                path='/single_course_color'
-                render={() => (<SingleCourseColorPage />)}/>
-
-              <Route
-                path='/single_course_number'
-                render={() => (<SingleCourseNumberPage />)}/>
-
-              <Route
-                path='/single_course_greetings'
-                render={() => (<SingleCourseGreetingPage />)}/>
-
-              <Route
-                path='/single_course_food'
-                render={() => (<SingleCourseFoodPage />)}/>
-
-              <Route
-                path='/single_course_family'
-                render={() => (<SingleCourseFamilyPage />)}/>
-
-              <Route
-                path='/single_course_sentences'
-                render={() => (<SingleCourseSentencePage />)}/>
-
-              <Route
-                path='/single_course_action'
-                render={() => (<SingleCourseActionPage />)}/>
-
-              <Route
-                path='/single_course_seasons'
-                render={() => (<SingleCourseSeasonPage />)}/>
 
                 <Route
                   path='/animal_exercise_page'

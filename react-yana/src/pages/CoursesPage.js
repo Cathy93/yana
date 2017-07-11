@@ -9,14 +9,7 @@ import Footer from '../components/Footer';
 
 // Img
 import animal from '../img/animal.png';
-import color from '../img/color.png';
-import number from '../img/number.png';
-import greetings from '../img/greetings.png';
-import food from '../img/food.png';
-import family from '../img/family.png';
-import sentences from '../img/sentence.png';
-import action from '../img/action.png';
-import seasons from '../img/seasons.png';
+
 
 class CoursesPage  extends React.Component {
   constructor(props) {

@@ -58,7 +58,7 @@ router.use(function(req, res, next) {
 });
 
 // Matching a url path with the course id using findById method.
-// params is what I take dinamic information from the path. (id is variable)
+// params is what take a dinamic information from the path. (id is variable)
 router.get('/api/courses/:id', (req, res) => {
   Course.findById(req.params.id, function(err, course) {
     if (err) { res.send(err) }
