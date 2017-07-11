@@ -2,20 +2,19 @@ var mongoose = require('mongoose')
 require('./init')
 var Schema = mongoose.Schema
 
-const languages = ['en', 'br', 'mk', 'my']
+const languages = ['eng', 's35', 's36']
 
 const languagesSchema = new Schema({
-  en: String, // 'Platypus'
-  br: String, // 'Ornitorrico'
-  mk: String,
-  my: String
+  eng: String, // 'English'
+  s35: String, // 'Boonwurrung'
+  s36: String  // 'Woiwurrung'
+
 })
 
 const audioSchema = new Schema({
-  en: String, // 'Platypus'
-  br: String, // 'Ornitorrico'
-  mk: String,
-  my: String
+  eng: String, // 'Platypus'
+  s35: String, // 'Ornitorrico'
+  s36: String
 })
 
 const courseSchema = new Schema({
