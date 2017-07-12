@@ -37,7 +37,6 @@ const  LanguagePage = (  ) => (
         />
       </Switch>
 
-    <Footer />
   </div>
 )
 
