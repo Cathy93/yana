@@ -1,8 +1,11 @@
 import React from 'react'
 import MainHeader from '../components/MainHeader'
 import LevelCourse from '../components/LevelCourse';
-import ButtonThin from '../components/ButtonThin';
+import ActionButton from '../components/ActionButton';
 import Footer from '../components/Footer';
+import WordPage from '../pages/WordPage';
+
+
 import animal from '../img/animal.png';
 
 class SingleCoursePage extends React.Component {
@@ -10,7 +13,7 @@ class SingleCoursePage extends React.Component {
   constructor(props) {
     // with props recive characteristic from father(who calls him)
     super(props);
-    this.state = { course: null };
+    this.state = { course: null, currentWordIndex: null };
   }
 
   componentDidMount() {
@@ -26,35 +29,53 @@ class SingleCoursePage extends React.Component {
       });
   }
 
+  nextWord = () => {
+    const nextIndex = (this.state.currentWordIndex || 0) + 1;
+    this.setState({currentWordIndex: nextIndex });
+  }
+
+  currentWord = () => {
+    const course = this.state.course;
+    const wordIndex = this.state.currentWordIndex;
+
+    if(!course || !wordIndex) {
+      return null;
+    }
+
+    return course.words[wordIndex];
+  }
+
   render() {
     const course = this.state.course;
+    const currentWord = this.state.currentWord;
 
     if(!course) {
       return (<div>Loading</div>);
     }
 
-    return (
-      <div>
-        <MainHeader title={course.courseName}/>
+    if(!this.currentWord()) {
+      return (
+        <div>
+          <MainHeader title={course.courseName}/>
 
-        <LevelCourse course_icon={animal}
+          <LevelCourse course_icon={animal}
                      course_icon_name="animal_course_icon"
                      path='/bla'
                      title=""/>
 
-        <h3 className="course-description text-center">Level: {course.level} </h3>
-        <p className="course-description text-center">Words: {course.words.length}</p>
+          <h3 className="course-description text-center">Level: {course.level} </h3>
+          <p className="course-description text-center">Words: {course.words.length}</p>
 
-        <div className='button-wrapper'>
-          <ButtonThin title="Start"
-                       buttonPath="/animal_exercise_page" />
-         </div>
-         <Footer />
-      </div>
-    );
+          <div className='button-wrapper'>
+            <ActionButton title="Start" onClick={this.nextWord} />
+          </div>
+          <Footer />
+        </div>
+      );
+    } else {
+      return <WordPage word={this.currentWord()} nextWord={this.nextWord} />
+    }
   }
 }
-
-
 
 export default SingleCoursePage;

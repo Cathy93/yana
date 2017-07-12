@@ -53,8 +53,8 @@ class App extends Component {
                 render={() => (<LanguagesPage />)}/>
 
               <Route
-                path='/animal_exercise_page'
-                render={() => (<WordPage />)}/>
+                path='/languages/:languageId/courses/:courseName/:wordId'
+                render={({match}) => (<WordPage wordId={match.params.wordId}/>)}/>
 
               <Route
                 path='/sign_in'
