@@ -10,12 +10,11 @@ class SingleCoursePage extends React.Component {
   constructor(props) {
     // with props recive characteristic from father(who calls him)
     super(props);
-    console.log(props);
-    this.state = { id: props.courseId };
+    this.state = { course: null };
   }
 
   componentDidMount() {
-    var url = "http://localhost:8000/api/courses/" + this.state.id;
+    var url = "http://localhost:8000/api/courses/" + this.props.courseName;
 
     fetch(url)
       .then(results => results.json())

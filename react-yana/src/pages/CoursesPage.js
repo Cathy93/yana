@@ -55,17 +55,16 @@ class CoursesPage  extends React.Component {
       <div className="col-xs-4 col-sm-4 mb20" key={course._id}>
         <LevelCourse course_icon={animal}
                      course_icon_name="animal_course_icon"
-                     path={`/courses/${course._id}`}
+                     path={`/languages/${this.props.languageId}/courses/${course.courseName}`}
                      title={course.courseName}/>
+
       </div>
     );
   }
 
   render() {
-    const { match } = this.props
-    const languageID = match.params.languageID
     return (<div>
-      <MainHeader title={ languageIDToNames[languageID] }/>
+      <MainHeader title={ languageIDToNames[this.props.languageId] }/>
       {this.renderLevels()}
       <Footer />
     </div>);
