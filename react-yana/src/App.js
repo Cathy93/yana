@@ -16,7 +16,7 @@ import ContactPage from './pages/ContactPage';
 import CoursesPage from './pages/CoursesPage';
 import SingleCoursePage from './pages/SingleCoursePage';
 import WordPage from './pages/WordPage'
-import LanguagePage from './pages/LanguagePage';
+import LanguagesPage from './pages/LanguagesPage';
 
 
 import SignInPage from './pages/SignInPage';
@@ -42,15 +42,11 @@ class App extends Component {
 
               <Route
                 path='/languages'
-                render={() => (<LanguagePage />)}/>
+                render={() => (<LanguagesPage />)}/>
 
               <Route
                 path='/courses/:id'
                 render={({match}) => (<SingleCoursePage courseId={match.params.id}/>)}/>
-
-              <Route
-                path='/courses'
-                render={() => (<CoursesPage />)}/>
 
                 <Route
                   path='/animal_exercise_page'

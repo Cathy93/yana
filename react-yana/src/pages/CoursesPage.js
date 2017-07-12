@@ -6,6 +6,9 @@ import MainHeader from '../components/MainHeader';
 import LevelCourse from '../components/LevelCourse';
 import SubHeading from '../components/SubHeading';
 import Footer from '../components/Footer';
+import {
+  languageIDToNames, languageIDToFlagImages
+} from '../content/languages'
 
 // Img
 import animal from '../img/animal.png';
@@ -59,8 +62,10 @@ class CoursesPage  extends React.Component {
   }
 
   render() {
+    const { match } = this.props
+    const languageID = match.params.languageID
     return (<div>
-      <MainHeader title="Portuguese"/>
+      <MainHeader title={ languageIDToNames[languageID] }/>
       {this.renderLevels()}
       <Footer />
     </div>);
