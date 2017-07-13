@@ -58,7 +58,7 @@ class SingleCoursePage extends React.Component {
         <div>
           <MainHeader title={course.courseName}/>
 
-          <LevelCourse course_icon={animal}
+          <LevelCourse course_icon={course.courseImage}
                      course_icon_name="animal_course_icon"
                      path='/bla'
                      title=""/>
@@ -73,7 +73,11 @@ class SingleCoursePage extends React.Component {
         </div>
       );
     } else {
-      return <WordPage word={this.currentWord()} nextWord={this.nextWord} />
+      return <WordPage
+              word={this.currentWord()}
+              nextWord={this.nextWord}
+              languageId={this.props.languageId} />
+
     }
   }
 }

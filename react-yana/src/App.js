@@ -41,8 +41,12 @@ class App extends Component {
                 render={() => (<ContactPage />)}/>
 
               <Route
-                path='/languages/:languagesId/courses/:courseName'
-                render={({match}) => <SingleCoursePage courseName={match.params.courseName}/>}/>
+                path='/languages/:languageId/courses/:courseName'
+                render={({match}) => <SingleCoursePage
+                                      courseName={match.params.courseName}
+                                      languageId={match.params.languageId}
+                                      />
+              }/>
 
               <Route
                 path='/languages/:languageId'
@@ -51,10 +55,6 @@ class App extends Component {
               <Route
                 path='/languages'
                 render={() => (<LanguagesPage />)}/>
-
-              <Route
-                path='/languages/:languageId/courses/:courseName/:wordId'
-                render={({match}) => (<WordPage wordId={match.params.wordId}/>)}/>
 
               <Route
                 path='/sign_in'

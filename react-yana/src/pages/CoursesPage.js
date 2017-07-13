@@ -53,7 +53,7 @@ class CoursesPage  extends React.Component {
   renderCourses(courses) {
     return courses.map((course) =>
       <div className="col-xs-4 col-sm-4 mb20" key={course._id}>
-        <LevelCourse course_icon={animal}
+        <LevelCourse course_icon={course.courseImage}
                      course_icon_name="animal_course_icon"
                      path={`/languages/${this.props.languageId}/courses/${course.courseName}`}
                      title={course.courseName}/>

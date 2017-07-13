@@ -12,15 +12,16 @@ import Thumbnails from '../components/Thumbnails'
 import ActionButton from '../components/ActionButton'
 import ProgressBar from '../components/ProgressBar'
 
-const WordPage = ({word, nextWord,}) => (
+const WordPage = ({word, nextWord, languageId}) => (
   <div>
 
     <Thumbnails
       course_icon={Animal}
       course_icon_alt="animal_icon"
-      titleOne={word.title["s35"]}
+      titleOne={word.title[languageId]}
       titleTwo ={word.title["eng"]}
     />
+
 
     <Mosaic
       hover={true}
@@ -34,6 +35,7 @@ const WordPage = ({word, nextWord,}) => (
       <ActionButton title="Next"
         onClick={nextWord} />
     </div>
+    <h2>{languageId}</h2>
     <ProgressBar CurrentLevel={25} />
     <Footer />
   </div>
