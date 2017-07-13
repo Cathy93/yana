@@ -5,6 +5,7 @@ import MainHeader from '../components/MainHeader';
 import Footer from '../components/Footer';
 import LevelCourse from '../components/LevelCourse';
 import CoursesPage from './CoursesPage'
+import SingleCoursePage from './SingleCoursePage'
 import {
   languageIDs, languageIDToNames, languageIDToFlagImages
 } from '../content/languages'
@@ -13,6 +14,15 @@ import {
 const  LanguagePage = (  ) => (
   <div>
       <Switch>
+        <Route
+          path='/languages/:languageID/courses/:courseID'
+          render={({match}) => (
+            <SingleCoursePage
+              languageID={match.params.languageID}
+              courseID={match.params.courseID}
+            />
+          )}/>
+        />
         <Route
           path='/languages/:languageID'
           component={ CoursesPage }

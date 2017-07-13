@@ -7,7 +7,7 @@ import LevelCourse from '../components/LevelCourse';
 import SubHeading from '../components/SubHeading';
 import Footer from '../components/Footer';
 import {
-  languageIDToNames, languageIDToFlagImages
+  languageIDs, languageIDToNames, languageIDToFlagImages
 } from '../content/languages'
 
 // Img
@@ -46,17 +46,21 @@ class CoursesPage  extends React.Component {
         <div className="row">
           {this.renderCourses(this.state.levels[level])}
         </div>
+
       </div>
     );
   }
 
   renderCourses(courses) {
+    const { match } = this.props
+    const languageID = match.params.languageID
     return courses.map((course) =>
       <div className="col-xs-4 col-sm-4 mb20" key={course._id}>
         <LevelCourse course_icon={animal}
                      course_icon_name="animal_course_icon"
-                     path={`/courses/${course._id}`}
+                     path={`/languages/${languageID}/courses/${course._id}`}
                      title={course.courseName}/>
+       <h3>{course.words[0].title.s35 }</h3>
       </div>
     );
   }
@@ -66,6 +70,7 @@ class CoursesPage  extends React.Component {
     const languageID = match.params.languageID
     return (<div>
       <MainHeader title={ languageIDToNames[languageID] }/>
+      <h3>languageID chosen: { languageID }</h3>
       {this.renderLevels()}
       <Footer />
     </div>);
