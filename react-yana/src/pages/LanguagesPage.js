@@ -10,45 +10,20 @@ import {
   languageIDs, languageIDToNames, languageIDToFlagImages
 } from '../content/languages'
 
-
-const  LanguagePage = (  ) => (
+const  LanguagePage = () => (
   <div>
-      <Switch>
-        <Route
-          path='/languages/:languageID/courses/:courseID'
-          render={({match}) => (
-            <SingleCoursePage
-              languageID={match.params.languageID}
-              courseID={match.params.courseID}
-            />
-          )}/>
-        />
-        <Route
-          path='/languages/:languageID'
-          component={ CoursesPage }
-        />
-        <Route
-          path='/languages'
-          render={ () => (
-            <div>
-              <MainHeader title="Languages"/>
-            {
-              languageIDs.map(languageID => (
-                <LevelCourse
-                  languageID={languageID}
-                  course_icon={ languageIDToFlagImages[languageID] }
-                  path={ `/languages/${languageID}` }
-                  title={ languageIDToNames[languageID] }
-                />
-              ))
-            }
-            </div>
-          ) }
-        />
-      </Switch>
-
+    <MainHeader title="Languages"/>
+    {languageIDs.map(languageID =>
+        <LevelCourse
+          languageID={languageID}
+          course_icon={ languageIDToFlagImages[languageID] }
+          path={ `/languages/${languageID}` }
+          title={ languageIDToNames[languageID] }
+        />)
+    }
   </div>
-)
+  )
+
 
 
 export default LanguagePage;

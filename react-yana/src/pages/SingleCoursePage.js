@@ -51,7 +51,6 @@ class SingleCoursePage extends React.Component {
 
         <h3 className="course-description text-center">Level: {course.level} </h3>
         <p className="course-description text-center">Words: {totalWords}</p>
-        <h3>languageID chosen: { languageID }</h3>
 
         <div className='button-wrapper'>
           <ButtonThin title="Start"

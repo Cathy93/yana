@@ -56,7 +56,6 @@ class CoursesPage  extends React.Component {
                      course_icon_name="animal_course_icon"
                      path={`/languages/${languageID}/courses/${course._id}`}
                      title={course.courseName}/>
-       <h3>{course.words[0].title.s35 }</h3>
       </div>
     );
   }
@@ -66,7 +65,6 @@ class CoursesPage  extends React.Component {
     const languageID = match.params.languageID
     return (<div>
       <MainHeader title={ languageIDToNames[languageID] }/>
-      <h3>languageID chosen: { languageID }</h3>
       {this.renderLevels()}
       <Footer />
     </div>);
