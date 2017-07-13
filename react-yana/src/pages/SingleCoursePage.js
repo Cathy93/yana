@@ -3,7 +3,6 @@ import MainHeader from '../components/MainHeader'
 import LevelCourse from '../components/LevelCourse';
 import ButtonThin from '../components/ButtonThin';
 import Footer from '../components/Footer';
-import animal from '../img/animal.png';
 import { languageIDs } from '../content/languages'
 
 class SingleCoursePage extends React.Component {
@@ -11,7 +10,6 @@ class SingleCoursePage extends React.Component {
   constructor(props) {
     // with props recive characteristic from father(who calls him)
     super(props);
-    console.log({props} );
     this.state = { course: null };
   }
 
@@ -46,7 +44,7 @@ class SingleCoursePage extends React.Component {
       <div>
         <MainHeader title={course.courseName}/>
 
-        <LevelCourse course_icon={animal}
+        <LevelCourse course_icon={course.courseImage}
                      course_icon_name="animal_course_icon"
                      path='/bla'
                      title=""/>
