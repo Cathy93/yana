@@ -10,20 +10,22 @@ import {
   languageIDs, languageIDToNames, languageIDToFlagImages
 } from '../content/languages'
 
-const  LanguagePage = () => (
+const  LanguagesPage = () => (
   <div>
     <MainHeader title="Languages"/>
-    {languageIDs.map(languageID =>
+    {
+      languageIDs.map((languageId) =>
         <LevelCourse
-          languageID={languageID}
-          course_icon={ languageIDToFlagImages[languageID] }
-          path={ `/languages/${languageID}` }
-          title={ languageIDToNames[languageID] }
-        />)
+          languageID={languageId}
+          course_icon={ languageIDToFlagImages[languageId] }
+          path={ `/languages/${languageId}` }
+          title={ languageIDToNames[languageId] }
+        />
+      )
     }
   </div>
   )
 
 
 
-export default LanguagePage;
+export default LanguagesPage;

@@ -9,18 +9,19 @@ import Footer from '../components/Footer'
 // Img
 import Animal from '../img/platypus.png'
 import Thumbnails from '../components/Thumbnails'
-import ButtonDefault from '../components/ButtonDefault'
-import ProgressB from '../components/ProgressBar'
+import ActionButton from '../components/ActionButton'
+import ProgressBar from '../components/ProgressBar'
 
-const WordPage = () => (
+const WordPage = ({word, nextWord, languageId}) => (
   <div>
 
     <Thumbnails
       course_icon={Animal}
       course_icon_alt="animal_icon"
-      titleOne="Ornitorrinco"
-      titleTwo ="Platypus"
+      titleOne={word.title[languageId]}
+      titleTwo ={word.title["eng"]}
     />
+
 
     <Mosaic
       hover={true}
@@ -31,10 +32,11 @@ const WordPage = () => (
     />
 
     <div className="button-wrapper" >
-      <ButtonDefault title="Next"
-        buttonPath="/exercise:id" />
+      <ActionButton title="Next"
+        onClick={nextWord} />
     </div>
-    <ProgressB CurrentLevel={25} />
+    <h2>{languageId}</h2>
+    <ProgressBar CurrentLevel={25} />
     <Footer />
   </div>
 )
