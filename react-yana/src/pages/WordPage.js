@@ -7,7 +7,6 @@ import Mosaic from 'mosaic-audio';
 import Footer from '../components/Footer'
 
 // Img
-import Animal from '../img/platypus.png'
 import Thumbnails from '../components/Thumbnails'
 import ActionButton from '../components/ActionButton'
 import ProgressBar from '../components/ProgressBar'
@@ -16,7 +15,7 @@ const WordPage = ({word, nextWord, languageId}) => (
   <div>
 
     <Thumbnails
-      course_icon={Animal}
+      course_icon={word.image}
       course_icon_alt="animal_icon"
       titleOne={word.title[languageId]}
       titleTwo ={word.title["eng"]}
@@ -28,11 +27,11 @@ const WordPage = ({word, nextWord, languageId}) => (
       margin={false}
       playClass="fa fa-volume-up audio"
       pauseClass="fa fa-volume-up audio"
-      source="p.wav"
+      source={word.audio}
     />
 
     <div className="button-wrapper" >
-      <ActionButton title="Next"
+      <ActionButton className="button-thin" title="Next"
         onClick={nextWord} />
     </div>
     <h2>{languageId}</h2>
