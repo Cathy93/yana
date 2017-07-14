@@ -1,17 +1,13 @@
 // Dependencies
 import React from 'react'
-
 // Components
 import MainHeader from '../components/MainHeader';
 import LevelCourse from '../components/LevelCourse';
 import SubHeading from '../components/SubHeading';
 import Footer from '../components/Footer';
 import {
-  languageIDToNames, languageIDToFlagImages
+  languageIDs, languageIDToNames, languageIDToFlagImages
 } from '../content/languages'
-
-// Img
-import animal from '../img/animal.png';
 
 
 class CoursesPage  extends React.Component {
@@ -46,16 +42,20 @@ class CoursesPage  extends React.Component {
         <div className="row">
           {this.renderCourses(this.state.levels[level])}
         </div>
+
       </div>
     );
   }
 
   renderCourses(courses) {
+    const { match } = this.props
+    const languageID = match.params.languageID
     return courses.map((course) =>
       <div className="col-xs-4 col-sm-4 mb20" key={course._id}>
         <LevelCourse course_icon={course.courseImage}
                      course_icon_name="animal_course_icon"
                      path={`/languages/${this.props.languageId}/courses/${course.courseName}`}
+
                      title={course.courseName}/>
 
       </div>

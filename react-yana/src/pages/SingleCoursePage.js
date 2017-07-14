@@ -19,6 +19,7 @@ class SingleCoursePage extends React.Component {
   componentDidMount() {
     var url = "http://localhost:8000/api/courses/" + this.props.courseName;
 
+
     fetch(url)
       .then(results => results.json())
       .then(course => {
@@ -48,11 +49,11 @@ class SingleCoursePage extends React.Component {
   render() {
     const course = this.state.course;
     const currentWord = this.state.currentWord;
-
+    
     if(!course) {
       return (<div>Loading</div>);
     }
-
+              
   const languageID = this.props.languageId
   const allWords = course.words
   const languageWords = allWords.filter(word => {
@@ -67,6 +68,7 @@ class SingleCoursePage extends React.Component {
           <MainHeader title={course.courseName}/>
 
           <LevelCourse course_icon={course.courseImage}
+
                      course_icon_name="animal_course_icon"
                      path='/bla'
                      title=""/>
@@ -85,6 +87,7 @@ class SingleCoursePage extends React.Component {
               word={this.currentWord()}
               nextWord={this.nextWord}
               languageId={this.props.languageId} />
+
 
     }
   }

@@ -5,6 +5,7 @@ import MainHeader from '../components/MainHeader';
 import Footer from '../components/Footer';
 import LevelCourse from '../components/LevelCourse';
 import CoursesPage from './CoursesPage'
+import SingleCoursePage from './SingleCoursePage'
 import {
   languageIDs, languageIDToNames, languageIDToFlagImages
 } from '../content/languages'
@@ -23,7 +24,8 @@ const  LanguagesPage = () => (
       )
     }
   </div>
-)
+  )
+
 
 
 export default LanguagesPage;
