@@ -54,9 +54,9 @@ class SingleCoursePage extends React.Component {
     }
 
   const languageID = this.props.languageId
-   const allWords = course.words
-   const languageWords = allWords.filter(word => {
-   const wordHasLanguage = !!word.title[languageID]
+  const allWords = course.words
+  const languageWords = allWords.filter(word => {
+  const wordHasLanguage = !!word.title[languageID]
      return wordHasLanguage // Keep if true, remove if false
    }) // filter down allWords to your language
    const totalWords = languageWords.length
