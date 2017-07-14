@@ -14,7 +14,7 @@ class SingleCoursePage extends React.Component {
   }
 
   componentDidMount() {
-    var url = "http://localhost:8000/api/courses/" + this.props.courseID;
+    var url = "http://localhost:8000/api/courses/" + this.props.courseName;
 
     fetch(url)
       .then(results => results.json())
@@ -43,12 +43,10 @@ class SingleCoursePage extends React.Component {
     return (
       <div>
         <MainHeader title={course.courseName}/>
-
         <LevelCourse course_icon={course.courseImage}
                      course_icon_name="animal_course_icon"
                      path='/bla'
                      title=""/>
-
         <h3 className="course-description text-center">Level: {course.level} </h3>
         <p className="course-description text-center">Words: {totalWords}</p>
         <h3>languageID chosen: { languageID }</h3>

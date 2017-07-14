@@ -40,32 +40,26 @@ class App extends Component {
                 path='/contact'
                 render={() => (<ContactPage />)}/>
 
-              <Switch>
-                <Route
-                  path='/languages/:languageID/courses/:courseID'
-                  render={({match}) => (
-                    <SingleCoursePage
-                      languageID={match.params.languageID}
-                      courseID={match.params.courseID} />)} />
-                <Route
-                  path='/languages/:languageID'
-                  component={ CoursesPage } />
-                <Route
-                  path='/languages'
-                  component= { LanguagesPage } />
-              </Switch>
+              <Route
+                path='/languages/:languageID'
+                render={({match}) => <CoursesPage
+                languageID={match.params.languageID} /> } />
 
               <Route
                 path='/languages'
-                render={() => (<LanguagesPage />)}/>
+                component= { LanguagesPage } />
 
               <Route
-                path='/courses/:id'
-                render={({match}) => (<SingleCoursePage courseId={match.params.id}/>)}/>
+                path='/languages/:languageID/courses/:courseName'
+                render={({match}) => (<SingleCoursePage
+                                        courseName={match.params.courseName}
+                                        languageID={match.params.languageID}
+                                      />)
+                      }/>
 
-                <Route
-                  path='/animal_exercise_page'
-                  render={() => (<WordPage />)}/>
+              <Route
+                path='/animal_exercise_page'
+                render={() => (<WordPage />)}/>
 
               <Route
                 path='/sign_in'
