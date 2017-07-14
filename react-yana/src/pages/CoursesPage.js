@@ -48,8 +48,6 @@ class CoursesPage  extends React.Component {
   }
 
   renderCourses(courses) {
-    const { match } = this.props
-    const languageID = match.params.languageID
     return courses.map((course) =>
       <div className="col-xs-4 col-sm-4 mb20" key={course._id}>
         <LevelCourse course_icon={course.courseImage}
