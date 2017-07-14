@@ -41,6 +41,11 @@ class SingleCoursePage extends React.Component {
     });
   }
 
+  progressBarWordIndex = () => {
+    const progressWordIndex = this.state.currentWordIndex + 1 ;
+    return progressWordIndex;
+  }
+
   currentWord = () => {
     const course = this.state.course;
     const wordIndex = this.state.currentWordIndex;
@@ -91,11 +96,15 @@ class SingleCoursePage extends React.Component {
         </div>
       );
     } else {
-      return <WordPage
-              word={this.currentWord()}
-              nextWord={this.nextWord}
-              languageId={this.props.languageId} />
-
+      return (
+        <WordPage
+          word={this.currentWord()}
+          nextWord={this.nextWord}
+          languageId={this.props.languageId}
+          totalWords={totalWords}
+          progressBarWordIndex={this.progressBarWordIndex()}
+        />
+      )
 
     }
   }
