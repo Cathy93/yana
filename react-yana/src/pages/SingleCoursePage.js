@@ -53,6 +53,14 @@ class SingleCoursePage extends React.Component {
       return (<div>Loading</div>);
     }
 
+  const languageID = this.props.languageId
+   const allWords = course.words
+   const languageWords = allWords.filter(word => {
+   const wordHasLanguage = !!word.title[languageID]
+     return wordHasLanguage // Keep if true, remove if false
+   }) // filter down allWords to your language
+   const totalWords = languageWords.length
+
     if(!this.currentWord()) {
       return (
         <div>
@@ -64,7 +72,7 @@ class SingleCoursePage extends React.Component {
                      title=""/>
 
           <h3 className="course-description text-center">Level: {course.level} </h3>
-          <p className="course-description text-center">Words: {course.words.length}</p>
+          <p className="course-description text-center">Words: {totalWords}</p>
 
           <div className='button-wrapper'>
             <ActionButton title="Start" onClick={this.nextWord} />
