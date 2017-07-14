@@ -31,15 +31,24 @@ class SingleCoursePage extends React.Component {
   }
 
   nextWord = () => {
-    const nextIndex = (this.state.currentWordIndex || 0) + 1;
-    this.setState({currentWordIndex: nextIndex });
+    this.setState((prevState) =>{
+      if (prevState.currentWordIndex == null) {
+        return { currentWordIndex: 0 }
+      }
+      else {
+        return { currentWordIndex: prevState.currentWordIndex + 1 }
+      }
+    });
   }
 
   currentWord = () => {
     const course = this.state.course;
     const wordIndex = this.state.currentWordIndex;
 
-    if(!course || !wordIndex) {
+    // !null == true
+    // !0 == true
+
+    if(!course || wordIndex == null) {
       return null;
     }
 
@@ -48,12 +57,11 @@ class SingleCoursePage extends React.Component {
 
   render() {
     const course = this.state.course;
-    const currentWord = this.state.currentWord;
-    
+
     if(!course) {
       return (<div>Loading</div>);
     }
-              
+
   const languageID = this.props.languageId
   const allWords = course.words
   const languageWords = allWords.filter(word => {

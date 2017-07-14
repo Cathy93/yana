@@ -23,11 +23,12 @@ const WordPage = ({word, nextWord, languageId}) => (
 
 
     <Mosaic
+      key={word.audio[languageId]}
       hover={true}
       margin={false}
       playClass="fa fa-volume-up audio"
       pauseClass="fa fa-volume-up audio"
-      source={word.audio}
+      source={word.audio[languageId]}
     />
 
     <div className="button-wrapper" >
