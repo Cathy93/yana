@@ -11,7 +11,7 @@ import Thumbnails from '../components/Thumbnails'
 import ActionButton from '../components/ActionButton'
 import ProgressBar from '../components/ProgressBar'
 
-const WordCover = ({word, nextWord, languageId}) => (
+const WordExercise = ({word, nextWord, languageId}) => (
   <div>
 
     <Thumbnails
@@ -41,4 +41,4 @@ const WordCover = ({word, nextWord, languageId}) => (
   </div>
 )
 
-export default WordCover;
+export default WordExercise;
