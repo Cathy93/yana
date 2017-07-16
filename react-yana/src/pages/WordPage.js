@@ -35,9 +35,8 @@ const WordPage = ({word, nextWord, languageId, totalWords, progressBarWordIndex}
       <ActionButton className="button-thin" title="Next"
         onClick={nextWord} />
     </div>
-    <h2>{languageId}</h2>
-    <h3>{progressBarWordIndex} out of {totalWords} = {progressBarWordIndex / totalWords * 100 }</h3>
-    <ProgressBar CurrentLevel={progressBarWordIndex / totalWords * 100} />
+    
+      <ProgressBar CurrentLevel={progressBarWordIndex / totalWords * 100} />
     <Footer />
   </div>
 )
