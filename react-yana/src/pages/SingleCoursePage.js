@@ -55,32 +55,53 @@ class SingleCoursePage extends React.Component {
     return course.words[wordIndex];
   }
 
+  courseNotStarted() {
+    return !this.currentWord()
+  }
+
+  courseFinished() {
+    const wordIndex = this.state.currentWordIndex;
+    return this.totalWords() === wordIndex
+  }
+
+  languageWords() {
+    const course = this.state.course;
+    const allWords = course.words
+    const languageID = this.props.languageId
+
+    return allWords.filter(word => {
+      const wordHasLanguage = !!word.title[languageID]
+      return wordHasLanguage // Keep if true, remove if false
+    }) // filter down allWords to your language
+  }
+
+  totalWords() {
+    return this.languageWords().length
+  }
+
   render() {
     const course = this.state.course;
+    const languageID = this.props.languageId
 
     if(!course) {
       return (<div>Loading</div>);
     }
 
-    const languageID = this.props.languageId
-    const allWords = course.words
-    const languageWords = allWords.filter(word => {
-    const wordHasLanguage = !!word.title[languageID]
-      return wordHasLanguage // Keep if true, remove if false
-    }) // filter down allWords to your language
-    const totalWords = languageWords.length
+    if(this.courseFinished()) {
+      return <FinishCourse course={course}/>
 
-    if(!this.currentWord()) {
+    }
+    else if(this.courseNotStarted()) {
       return <CourseCover course={course}
                           nextWord={this.nextWord}
-                          languageId={this.props.languageId}
-                          totalWords={totalWords} />
+                          languageId={languageID}
+                          totalWords={this.totalWords()} />
 
     } else {
       return <WordExercise
               word={this.currentWord()}
               nextWord={this.nextWord}
-              languageId={this.props.languageId} />
+              languageId={languageID} />
     }
   }
 }
