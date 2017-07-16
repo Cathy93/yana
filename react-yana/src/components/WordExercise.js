@@ -11,7 +11,7 @@ import Thumbnails from '../components/Thumbnails'
 import ActionButton from '../components/ActionButton'
 import ProgressBar from '../components/ProgressBar'
 
-const WordExercise = ({word, nextWord, languageId}) => (
+const WordExercise = ({word, nextWord, languageId, CurrentLevel}) => (
   <div>
 
     <Thumbnails
@@ -36,7 +36,7 @@ const WordExercise = ({word, nextWord, languageId}) => (
         onClick={nextWord} />
     </div>
     <h2>{languageId}</h2>
-    <ProgressBar CurrentLevel={25} />
+    <ProgressBar CurrentLevel={CurrentLevel} />
     <Footer />
   </div>
 )

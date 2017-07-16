@@ -101,7 +101,8 @@ class SingleCoursePage extends React.Component {
       return <WordExercise
               word={this.currentWord()}
               nextWord={this.nextWord}
-              languageId={languageID} />
+              languageId={languageID}
+              CurrentLevel={25} />
     }
   }
 }
