@@ -3,7 +3,7 @@ import MainHeader from '../components/MainHeader'
 import LevelCourse from '../components/LevelCourse'
 import ActionButton from '../components/ActionButton'
 import Footer from '../components/Footer'
-import WordPage from '../pages/WordPage'
+import WordCover from '../components/WordCover'
 import CourseCover from '../components/CourseCover'
 
 
@@ -76,7 +76,7 @@ class SingleCoursePage extends React.Component {
                           totalWords={totalWords} />
 
     } else {
-      return <WordPage
+      return <WordCover
               word={this.currentWord()}
               nextWord={this.nextWord}
               languageId={this.props.languageId} />

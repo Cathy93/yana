@@ -11,7 +11,7 @@ import Thumbnails from '../components/Thumbnails'
 import ActionButton from '../components/ActionButton'
 import ProgressBar from '../components/ProgressBar'
 
-const WordPage = ({word, nextWord, languageId}) => (
+const WordCover = ({word, nextWord, languageId}) => (
   <div>
 
     <Thumbnails
@@ -41,4 +41,4 @@ const WordPage = ({word, nextWord, languageId}) => (
   </div>
 )
 
-export default WordPage;
+export default WordCover;

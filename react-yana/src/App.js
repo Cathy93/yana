@@ -15,7 +15,6 @@ import FaqPage from './pages/FaqPage';
 import ContactPage from './pages/ContactPage';
 import CoursesPage from './pages/CoursesPage';
 import SingleCoursePage from './pages/SingleCoursePage';
-import WordPage from './pages/WordPage'
 import LanguagesPage from './pages/LanguagesPage';
 
 
