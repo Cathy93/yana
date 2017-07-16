@@ -1,9 +1,10 @@
 import React from 'react'
 import MainHeader from '../components/MainHeader'
-import LevelCourse from '../components/LevelCourse';
-import ActionButton from '../components/ActionButton';
-import Footer from '../components/Footer';
-import WordPage from '../pages/WordPage';
+import LevelCourse from '../components/LevelCourse'
+import ActionButton from '../components/ActionButton'
+import Footer from '../components/Footer'
+import WordPage from '../pages/WordPage'
+import CourseCover from '../components/CourseCover'
 
 
 import animal from '../img/animal.png';
@@ -18,8 +19,6 @@ class SingleCoursePage extends React.Component {
 
   componentDidMount() {
     var url = "http://localhost:8000/api/courses/" + this.props.courseName;
-
-
     fetch(url)
       .then(results => results.json())
       .then(course => {
@@ -62,41 +61,25 @@ class SingleCoursePage extends React.Component {
       return (<div>Loading</div>);
     }
 
-  const languageID = this.props.languageId
-  const allWords = course.words
-  const languageWords = allWords.filter(word => {
-  const wordHasLanguage = !!word.title[languageID]
-     return wordHasLanguage // Keep if true, remove if false
-   }) // filter down allWords to your language
-   const totalWords = languageWords.length
+    const languageID = this.props.languageId
+    const allWords = course.words
+    const languageWords = allWords.filter(word => {
+    const wordHasLanguage = !!word.title[languageID]
+      return wordHasLanguage // Keep if true, remove if false
+    }) // filter down allWords to your language
+    const totalWords = languageWords.length
 
     if(!this.currentWord()) {
-      return (
-        <div>
-          <MainHeader title={course.courseName}/>
+      return <CourseCover course={course}
+                          nextWord={this.nextWord}
+                          languageId={this.props.languageId}
+                          totalWords={totalWords} />
 
-          <LevelCourse course_icon={course.courseImage}
-
-                     course_icon_name="animal_course_icon"
-                     path='/bla'
-                     title=""/>
-
-          <h3 className="course-description text-center">Level: {course.level} </h3>
-          <p className="course-description text-center">Words: {totalWords}</p>
-
-          <div className='button-wrapper'>
-            <ActionButton title="Start" onClick={this.nextWord} />
-          </div>
-          <Footer />
-        </div>
-      );
     } else {
       return <WordPage
               word={this.currentWord()}
               nextWord={this.nextWord}
               languageId={this.props.languageId} />
-
-
     }
   }
 }
