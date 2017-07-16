@@ -5,6 +5,8 @@ import MainHeader from '../components/MainHeader';
 import LevelCourse from '../components/LevelCourse';
 import SubHeading from '../components/SubHeading';
 import Footer from '../components/Footer';
+import { groupBy } from 'underscore'
+
 import {
   languageIDs, languageIDToNames, languageIDToFlagImages
 } from '../content/languages'
@@ -21,18 +23,11 @@ class CoursesPage  extends React.Component {
       fetch(url)
         .then(results => results.json())
         .then(courses => {
-          this.setState({levels: this.groupBy(courses, 'level')});
+          this.setState({levels: groupBy(courses, 'level')});
         })
         .catch(function(err) {
           console.log("Didn't connect to the API", err)
         });
-  }
-
-  groupBy(collection, attribute) {
-    return collection.reduce((groups, elem) => {
-      (groups[elem[attribute]] = groups[elem[attribute]] || []).push(elem);
-      return groups;
-    }, {});
   }
 
   renderLevels() {

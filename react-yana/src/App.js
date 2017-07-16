@@ -16,9 +16,8 @@ import ContactPage from './pages/ContactPage';
 import CoursesPage from './pages/CoursesPage';
 import SingleCoursePage from './pages/SingleCoursePage';
 import LanguagesPage from './pages/LanguagesPage';
-
-
 import SignInPage from './pages/SignInPage';
+
 
 class App extends Component {
   render() {
@@ -41,11 +40,8 @@ class App extends Component {
 
               <Route
                 path='/languages/:languageId/courses/:courseName'
-                render={({match}) => <SingleCoursePage
-                                      courseName={match.params.courseName}
-                                      languageId={match.params.languageId}
-                                      />
-              }/>
+                render={({match}) => <SingleCoursePage  courseName={match.params.courseName}
+                                                        languageId={match.params.languageId}/> }/>
 
               <Route
                 path='/languages/:languageId'
