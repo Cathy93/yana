@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
 import MainHeader from '../components/MainHeader'
 import LevelCourse from '../components/LevelCourse';
 import ActionButton from '../components/ActionButton';
 import Footer from '../components/Footer';
 import WordPage from '../pages/WordPage';
 
-
 import animal from '../img/animal.png';
+
+
 
 class SingleCoursePage extends React.Component {
   // Act as initialize in ruby
