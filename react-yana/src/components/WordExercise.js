@@ -35,7 +35,6 @@ const WordExercise = ({word, nextWord, languageId, CurrentLevel}) => (
       <ActionButton className="button-thin" title="Next"
         onClick={nextWord} />
     </div>
-    <h2>{languageId}</h2>
     <ProgressBar CurrentLevel={CurrentLevel} />
     <Footer />
   </div>

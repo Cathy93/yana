@@ -55,6 +55,11 @@ class SingleCoursePage extends React.Component {
     return course.words[wordIndex];
   }
 
+  progressBar () {
+    const wordIndex = this.state.currentWordIndex ;
+   return wordIndex / this.totalWords() * 100
+  }
+
   courseNotStarted() {
     return !this.currentWord()
   }
@@ -98,11 +103,12 @@ class SingleCoursePage extends React.Component {
                           totalWords={this.totalWords()} />
 
     } else {
-      return <WordExercise
+      return(
+      <WordExercise
               word={this.currentWord()}
               nextWord={this.nextWord}
               languageId={languageID}
-              CurrentLevel={25} />
+              CurrentLevel={this.progressBar()} />)
     }
   }
 }
