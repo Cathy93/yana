@@ -578,11 +578,27 @@ div.background-caption-contact {
   color: white;
 }
 
-.button-thin:hover > a,
 .button-thin:focus > a {
   background-color: #353535;
-  color: #F4DA9D;
+  color: white;
   text-decoration: none
+}
+
+button.btn.action-btn {
+  background-color: #353535;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background: #353535;
+  color: white;
+}
+
+button.btn.action-btn:hover {
+  color: #F4DA9D;
+  text-decoration: none;
 }
 
 /*-----------------------------progress bar Component--------------------------*/
