@@ -878,6 +878,8 @@ a.sign-in-link:focus {
 
   img.vacl-logo {
     width: 40%;
+    margin-top: 3px;
+    margin-bottom: 30px;
   }
 
   img.boom-img {
@@ -897,11 +899,6 @@ a.sign-in-link:focus {
     text-align: center;
   }
 
-  img.vacl-logo {
-    margin-bottom: 5px;
-  }
-
-
   div.button-container {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -913,14 +910,18 @@ a.sign-in-link:focus {
   }
 }
 
-@media screen and (max-width: 380px){
-
-  .img.vacl-logo {
-    margin-bottom: 40px;
-  }
+@media screen and (max-width: 450px){
 
   .home-heading-text {
       font-size: 3.5rem;
+  }
+
+}
+
+@media screen and (max-width: 380px){
+
+  .home-heading-text {
+      font-size: 3rem;
   }
 
 }
