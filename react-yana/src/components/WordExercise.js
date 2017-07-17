@@ -13,14 +13,12 @@ import ProgressBar from '../components/ProgressBar'
 
 const WordExercise = ({word, nextWord, languageId, CurrentLevel}) => (
   <div>
-
     <Thumbnails
       course_icon={word.image}
       course_icon_alt="animal_icon"
       titleOne={word.title[languageId]}
       titleTwo ={word.title["eng"]}
     />
-
 
     <Mosaic
       key={word.audio[languageId]}
@@ -33,8 +31,9 @@ const WordExercise = ({word, nextWord, languageId, CurrentLevel}) => (
 
     <div className="button-wrapper" >
       <ActionButton className="button-thin" title="Next"
-        onClick={nextWord} />
+                                            onClick={nextWord} />
     </div>
+
     <ProgressBar CurrentLevel={CurrentLevel} />
     <Footer />
   </div>

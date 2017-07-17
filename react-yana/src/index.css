@@ -564,26 +564,6 @@ div.background-caption-contact {
 /*------------------------------End of ContactPage----------------------------*/
 
 /*------------------------------Button Thin----------------------------*/
-
-.button-thin {
-  border-radius: 5px;
-  font-size: 20px;
-  padding-left: 80px;
-  padding-right: 80px;
-  background: #353535;
-  color: white;
-}
-
-.button-thin > a {
-  color: white;
-}
-
-.button-thin:focus > a {
-  background-color: #353535;
-  color: white;
-  text-decoration: none
-}
-
 button.btn.action-btn {
   background-color: #353535;
   color: white;
@@ -599,6 +579,27 @@ button.btn.action-btn {
 button.btn.action-btn:hover {
   color: #F4DA9D;
   text-decoration: none;
+}
+
+button.btn.action-btn-home {
+  background-color: #353535;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 2rem 4.5rem;
+  background: #353535;
+  color: white;
+  font-size: 3.3rem;
+}
+
+button.btn.action-btn-home:hover {
+  color: #F4DA9D;
+  text-decoration: none;
+}
+
+div.finish-btn-wrapper {
+  margin-bottom: 100px;
 }
 
 /*-----------------------------progress bar Component--------------------------*/
@@ -832,7 +833,7 @@ img.vacl-logo {
 .home-heading-text {
     color: #353535;
     font-weight: 700;
-    font-size: 42px;
+    font-size: 4rem;
     padding: 0px 10px 0px 10px;
 }
 
@@ -843,27 +844,8 @@ img.boom-img {
 
 div.button-container {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
-
-button.learn-now-button {
-  border-radius: 15px;
-  background-color: #353535;
-  font-weight: 500;
-  font-size: 24px;
-  padding: 20px 60px;
-}
-
-button.learn-now-button > a {
-  color: white;
-}
-
-button.learn-now-button:hover > a,
-button.learn-now-button:focus > a {
-  background-color: #353535;
-  color: #F4DA9D;
-  text-decoration: none
-}
-
 
 div.sign-in-link-container {
   margin-top: -15px;
@@ -911,6 +893,7 @@ a.sign-in-link:focus {
 
   div.button-container {
     margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   button.learn-now-button {
@@ -923,11 +906,6 @@ a.sign-in-link:focus {
 
   .img.vacl-logo {
     margin-bottom: 40px;
-  }
-
-  .home-heading-text {
-    font-size: 30px;
-    padding: 0px 3px 0px 3px;
   }
 
 }
@@ -1053,7 +1031,7 @@ h5.course-name-title:focus {
 }
 
 .thumbnail-wrapper {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .audio {
@@ -1107,7 +1085,7 @@ a.img-link > img {
 }
 
 .button-wrapper {
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 
 /*---------------------------End of SingleCoursePage---------------------------*/

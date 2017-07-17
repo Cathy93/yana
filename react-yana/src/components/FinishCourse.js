@@ -9,17 +9,18 @@ import FinishedCourse from '../img/finished_level.png'
 
 const FinishCourse = ({course}) => (
   <div>
-      <h2 className="text-center">Congratulations!</h2>
+      <h2 className="home-heading-text text-center">Congratulations!</h2>
     <Thumbnails
       course_icon={ FinishedCourse }
       course_icon_alt="congratulation-image"
     />
 
-    <h3 className="text-center">You finish your {course.courseName} course!</h3>
+    <h3 className="text-center">You finish the <b>{course.courseName}</b> course!</h3>
 
-    <ButtonThin title="More Courses"
-                buttonPath="/Languages" />
-
+    <div className="finish-btn-wrapper">
+      <ButtonThin title="More Courses"
+                  buttonPath="/Languages" />
+    </div>
 
     <Footer />
   </div>
