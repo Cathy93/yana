@@ -21,6 +21,10 @@ main {
    width: 100%;
 }
 
+.row{
+  margin: 0 0;
+}
+
 /*------------------------NavMenu Component-----------------------------------*/
 .nav-container {
   background-color: #353535;
@@ -927,7 +931,7 @@ a.sign-in-link:focus {
 /*-----------------------------SubHeading Component---------------------------*/
 h1.sub-heading-text {
   padding-left: 50px;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 700;
   color: black;
 }
@@ -935,32 +939,26 @@ h1.sub-heading-text {
 /*Media Query Settings for SubHeading Component*/
 @media screen and (max-width: 1200px){
   h1.sub-heading-text {
-    font-size: 45px;
+    font-size: 4.5rem;
     margin-left: -25px;
   }
 }
 
 @media screen and (max-width: 800px){
   h1.sub-heading-text {
-    font-size: 35px;
+    font-size: 4rem;
   }
 }
 
 @media screen and (max-width: 600px){
   h1.sub-heading-text {
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 600px){
-  h1.sub-heading-text {
-    font-size: 23px;
+    font-size: 3.5rem;
   }
 }
 
 @media screen and (max-width: 400px){
   h1.sub-heading-text {
-    font-size: 18px;
+    font-size: 3rem;
   }
 }
 
