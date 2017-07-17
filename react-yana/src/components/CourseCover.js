@@ -7,7 +7,7 @@ import Footer from './Footer'
 
 const CourseCover = ({course, nextWord, languageId, totalWords}) => (
   <div>
-    <MainHeader title={course.courseName}/>
+    <h1 className="home-heading-text text-center">{course.courseName}</h1>
 
     <LevelCourse course_icon={course.courseImage}
                  course_icon_name="animal_course_icon"

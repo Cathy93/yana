@@ -885,7 +885,7 @@ a.sign-in-link:focus {
   }
 
   .home-heading-text {
-      margin-top: 20px;
+      margin-top: 5px;
       font-size: 4.5rem;
   }
 
@@ -966,8 +966,8 @@ h1.sub-heading-text {
 
 /*---------------------------LevelCourse Component----------------------------*/
 .img-rounded {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 a.img-link:hover > h5.course-name-title,
@@ -998,14 +998,18 @@ h5.course-name-title:focus {
 /*Media Query Settings for LecelCourse Component*/
 @media screen and (max-width: 500px){
   h5.course-name-title {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     padding-bottom: 30px;
+  }
+
+  .img-rounded {
+    width:80%;
   }
 }
 
 @media screen and (max-width: 400px){
   h5.course-name-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding-bottom: 10px;
   }
 }
@@ -1017,7 +1021,7 @@ h5.course-name-title:focus {
 }
 
 .title-wrapper {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 0;
 }
 
@@ -1028,13 +1032,13 @@ h5.course-name-title:focus {
 .audio {
       display: block;
       text-align: center;
-      margin: 0 auto;
+      margin: -25px auto;
       font-size: 10rem;
       background-color: transparent;
       border: 2px solid transparent;
       border: 3px solid black;
       border-radius: 120px 120px;
-      padding: 12px 17px;
+      padding: 5px 11px;
       border-color: transparent;
 }
 
@@ -1067,9 +1071,9 @@ a.img-link > img {
 }
 
 .course-description {
-  margin-top: -20px;
+  margin-top: -15px;
   padding-bottom: 20px;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 600;
   color: black;
   line-height: 4rem;
@@ -1077,6 +1081,12 @@ a.img-link > img {
 
 .button-wrapper {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px){
+  .course-description {
+    line-height: 3rem;
+  }
 }
 
 /*---------------------------End of SingleCoursePage---------------------------*/
