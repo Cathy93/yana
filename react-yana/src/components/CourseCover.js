@@ -11,7 +11,7 @@ const CourseCover = ({course, nextWord, languageId, totalWords}) => (
 
     <LevelCourse course_icon={course.courseImage}
                  course_icon_name="animal_course_icon"
-                 path='/bla'
+                 path={nextWord}
                  title=""/>
 
     <h3 className="course-description text-center">Level: {course.level} </h3>
