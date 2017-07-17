@@ -587,10 +587,10 @@ button.btn.action-btn-home {
   text-decoration: none;
   border-radius: 15px;
   font-size: 20px;
-  padding: 2rem 4.5rem;
+  padding: 1.5rem 3.5rem;
   background: #353535;
   color: white;
-  font-size: 3.3rem;
+  font-size: 2.5rem;
 }
 
 button.btn.action-btn-home:hover {
@@ -833,8 +833,10 @@ img.vacl-logo {
 .home-heading-text {
     color: #353535;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 7rem;
     padding: 0px 10px 0px 10px;
+    margin-top: 90px;
+    margin-bottom: 30px;
 }
 
 img.boom-img {
@@ -878,6 +880,11 @@ a.sign-in-link:focus {
     width: 70%;
   }
 
+  .home-heading-text {
+      margin-top: 20px;
+      font-size: 4.5rem;
+  }
+
   .secondary-section-wrapper {
     display: block;
     justify-content: space-around;
@@ -906,6 +913,10 @@ a.sign-in-link:focus {
 
   .img.vacl-logo {
     margin-bottom: 40px;
+  }
+
+  .home-heading-text {
+      font-size: 3.5rem;
   }
 
 }
@@ -957,7 +968,8 @@ h1.sub-heading-text {
 
 /*---------------------------LevelCourse Component----------------------------*/
 .img-rounded {
-  padding-left: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 a.img-link:hover > h5.course-name-title,
@@ -969,7 +981,7 @@ a.img-link:focus > h5.course-name-title {
 }
 
 h5.course-name-title {
-  font-size: 50px;
+  font-size: 4rem;
   font-weight: 700;
   text-align: center;
   color: black;
@@ -986,35 +998,16 @@ h5.course-name-title:focus {
 }
 
 /*Media Query Settings for LecelCourse Component*/
-@media screen and (max-width: 1200px){
-  h5.course-name-title {
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 800px){
-  h5.course-name-title {
-    font-size: 25px;
-  }
-}
-
-@media screen and (max-width: 600px){
-  h5.course-name-title {
-    font-size: 20px;
-    padding-bottom: 20px;
-  }
-}
-
 @media screen and (max-width: 500px){
   h5.course-name-title {
-    font-size: 15px;
-    padding-bottom: 15px;
+    font-size: 3.5rem;
+    padding-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 400px){
   h5.course-name-title {
-    font-size: 12px;
+    font-size: 2.5rem;
     padding-bottom: 10px;
   }
 }

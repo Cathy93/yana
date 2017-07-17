@@ -1,7 +1,6 @@
 // Dependencies
 import React from 'react'
 // Components
-import MainHeader from '../components/MainHeader';
 import LevelCourse from '../components/LevelCourse';
 import SubHeading from '../components/SubHeading';
 import Footer from '../components/Footer';
@@ -57,7 +56,7 @@ class CoursesPage  extends React.Component {
 
   render() {
     return (<div>
-      <MainHeader title={ languageIDToNames[this.props.languageId] }/>
+      <h1 className="home-heading-text text-center">{languageIDToNames[this.props.languageId]}</h1>
       {this.renderLevels()}
       <Footer />
     </div>);
