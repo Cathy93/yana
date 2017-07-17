@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 const ButtonDefault = ({title, buttonPath}) => (
   <div className="button-container text-center">
-    <button className="btn learn-now-button">
-      <Link to={buttonPath}>{title}</Link>
-    </button>    
+    <Link to={buttonPath}>
+      <button className="btn action-btn-home">{title}</button>
+    </Link>
  </div>
 )
 

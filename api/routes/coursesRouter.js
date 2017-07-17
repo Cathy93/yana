@@ -20,7 +20,13 @@ router.get('/api/courses/:courseName', (req, res) => {
 router.get('/api/courses', (req, res) => {
   Course.find(function (err, courses) {
     if (err) { res.send(err) }
-    res.json(courses)
+    res.json(courses.map((course) => {
+      return {
+        level: course.level,
+        courseName: course.courseName,
+        courseImage: course.courseImage
+      }
+    }))
   });
 });
 
