@@ -4,18 +4,22 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
+    "bluebird": "^3.5.0",
     "bootstrap": "4.0.0-alpha.6",
     "gulp-sass": "^3.1.0",
+    "immutability-helper": "^2.3.0",
     "mosaic-audio": "^1.1.1",
     "npmdoc-react-fontawesome": "^0.0.2",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.0",
     "react-collapsible": "^1.4.0",
+    "react-custom-validation": "^0.5.5",
     "react-dom": "^15.6.1",
     "react-google-maps": "^6.3.0",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "validator": "^8.0.0"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"

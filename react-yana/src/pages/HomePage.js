@@ -5,6 +5,7 @@ import { Image } from 'react-bootstrap';
 // Components
 import Footer from '../components/Footer';
 import ButtonDefault from '../components/ButtonDefault';
+import ButtonThin from '../components/ButtonThin';
 import AnchorLink from '../components/AnchorLink';
 import MainHeader from '../components/MainHeader';
 
@@ -24,6 +25,8 @@ const HomePage = ({
       <div className="learn-now-button-container text-center">
               <ButtonDefault title="Learn Now"
                              buttonPath="/Languages" />
+              <ButtonThin title="Register"
+                             buttonPath="/register" />
           </div>
           <h3 className="text-center"> Not a new user?</h3>
           <div className="sign-in-link-container text-center">
