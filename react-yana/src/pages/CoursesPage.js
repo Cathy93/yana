@@ -1,10 +1,11 @@
 // Dependencies
 import React from 'react'
 // Components
-import MainHeader from '../components/MainHeader';
 import LevelCourse from '../components/LevelCourse';
 import SubHeading from '../components/SubHeading';
 import Footer from '../components/Footer';
+import { groupBy } from 'underscore'
+
 import {
   languageIDs, languageIDToNames, languageIDToFlagImages
 } from '../content/languages'
@@ -21,18 +22,11 @@ class CoursesPage  extends React.Component {
       fetch(url)
         .then(results => results.json())
         .then(courses => {
-          this.setState({levels: this.groupBy(courses, 'level')});
+          this.setState({levels: groupBy(courses, 'level')});
         })
         .catch(function(err) {
           console.log("Didn't connect to the API", err)
         });
-  }
-
-  groupBy(collection, attribute) {
-    return collection.reduce((groups, elem) => {
-      (groups[elem[attribute]] = groups[elem[attribute]] || []).push(elem);
-      return groups;
-    }, {});
   }
 
   renderLevels() {
@@ -49,20 +43,20 @@ class CoursesPage  extends React.Component {
 
   renderCourses(courses) {
     return courses.map((course) =>
-      <div className="col-xs-4 col-sm-4 mb20" key={course._id}>
+    <div>
+      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" key={course._id}>
         <LevelCourse course_icon={course.courseImage}
                      course_icon_name="animal_course_icon"
                      path={`/languages/${this.props.languageId}/courses/${course.courseName}`}
-
                      title={course.courseName}/>
-
       </div>
+    </div>
     );
   }
 
   render() {
     return (<div>
-      <MainHeader title={ languageIDToNames[this.props.languageId] }/>
+      <h1 className="home-heading-text text-center">{languageIDToNames[this.props.languageId]}</h1>
       {this.renderLevels()}
       <Footer />
     </div>);

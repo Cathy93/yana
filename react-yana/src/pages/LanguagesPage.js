@@ -1,7 +1,6 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
-import MainHeader from '../components/MainHeader';
 import Footer from '../components/Footer';
 import LevelCourse from '../components/LevelCourse';
 import CoursesPage from './CoursesPage'
@@ -12,7 +11,7 @@ import {
 
 const  LanguagesPage = () => (
   <div>
-    <MainHeader title="Languages"/>
+    <h1 className="home-heading-text text-center">Languages</h1>
     {
       languageIDs.map((languageId) =>
         <LevelCourse

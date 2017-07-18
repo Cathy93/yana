@@ -21,6 +21,10 @@ main {
    width: 100%;
 }
 
+.row{
+  margin: 0 0;
+}
+
 /*------------------------NavMenu Component-----------------------------------*/
 .nav-container {
   background-color: #353535;
@@ -564,24 +568,42 @@ div.background-caption-contact {
 /*------------------------------End of ContactPage----------------------------*/
 
 /*------------------------------Button Thin----------------------------*/
-
-.button-thin {
+button.btn.action-btn {
+  background-color: #353535;
+  color: white;
+  text-decoration: none;
   border-radius: 5px;
   font-size: 20px;
   padding-left: 80px;
   padding-right: 80px;
   background: #353535;
-}
-
-.button-thin > a {
   color: white;
 }
 
-.button-thin:hover > a,
-.button-thin:focus > a {
-  background-color: #353535;
+button.btn.action-btn:hover {
   color: #F4DA9D;
-  text-decoration: none
+  text-decoration: none;
+}
+
+button.btn.action-btn-home {
+  background-color: #353535;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 1.5rem 3.5rem;
+  background: #353535;
+  color: white;
+  font-size: 2.5rem;
+}
+
+button.btn.action-btn-home:hover {
+  color: #F4DA9D;
+  text-decoration: none;
+}
+
+div.finish-btn-wrapper {
+  margin-bottom: 100px;
 }
 
 /*-----------------------------progress bar Component--------------------------*/
@@ -815,8 +837,10 @@ img.vacl-logo {
 .home-heading-text {
     color: #353535;
     font-weight: 700;
-    font-size: 42px;
+    font-size: 7rem;
     padding: 0px 10px 0px 10px;
+    margin-top: 90px;
+    margin-bottom: 30px;
 }
 
 img.boom-img {
@@ -826,27 +850,8 @@ img.boom-img {
 
 div.button-container {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
-
-button.learn-now-button {
-  border-radius: 15px;
-  background-color: #353535;
-  font-weight: 500;
-  font-size: 24px;
-  padding: 20px 60px;
-}
-
-button.learn-now-button > a {
-  color: white;
-}
-
-button.learn-now-button:hover > a,
-button.learn-now-button:focus > a {
-  background-color: #353535;
-  color: #F4DA9D;
-  text-decoration: none
-}
-
 
 div.sign-in-link-container {
   margin-top: -15px;
@@ -873,10 +878,17 @@ a.sign-in-link:focus {
 
   img.vacl-logo {
     width: 40%;
+    margin-top: 3px;
+    margin-bottom: 30px;
   }
 
   img.boom-img {
     width: 70%;
+  }
+
+  .home-heading-text {
+      margin-top: 5px;
+      font-size: 4.5rem;
   }
 
   .secondary-section-wrapper {
@@ -887,13 +899,9 @@ a.sign-in-link:focus {
     text-align: center;
   }
 
-  img.vacl-logo {
-    margin-bottom: 5px;
-  }
-
-
   div.button-container {
     margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   button.learn-now-button {
@@ -902,15 +910,18 @@ a.sign-in-link:focus {
   }
 }
 
-@media screen and (max-width: 380px){
-
-  .img.vacl-logo {
-    margin-bottom: 40px;
-  }
+@media screen and (max-width: 450px){
 
   .home-heading-text {
-    font-size: 30px;
-    padding: 0px 3px 0px 3px;
+      font-size: 3.5rem;
+  }
+
+}
+
+@media screen and (max-width: 380px){
+
+  .home-heading-text {
+      font-size: 3rem;
   }
 
 }
@@ -921,7 +932,7 @@ a.sign-in-link:focus {
 /*-----------------------------SubHeading Component---------------------------*/
 h1.sub-heading-text {
   padding-left: 50px;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 700;
   color: black;
 }
@@ -929,32 +940,26 @@ h1.sub-heading-text {
 /*Media Query Settings for SubHeading Component*/
 @media screen and (max-width: 1200px){
   h1.sub-heading-text {
-    font-size: 45px;
+    font-size: 4.5rem;
     margin-left: -25px;
   }
 }
 
 @media screen and (max-width: 800px){
   h1.sub-heading-text {
-    font-size: 35px;
+    font-size: 4rem;
   }
 }
 
 @media screen and (max-width: 600px){
   h1.sub-heading-text {
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 600px){
-  h1.sub-heading-text {
-    font-size: 23px;
+    font-size: 3.5rem;
   }
 }
 
 @media screen and (max-width: 400px){
   h1.sub-heading-text {
-    font-size: 18px;
+    font-size: 3rem;
   }
 }
 
@@ -962,7 +967,8 @@ h1.sub-heading-text {
 
 /*---------------------------LevelCourse Component----------------------------*/
 .img-rounded {
-  padding-left: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 a.img-link:hover > h5.course-name-title,
@@ -974,7 +980,7 @@ a.img-link:focus > h5.course-name-title {
 }
 
 h5.course-name-title {
-  font-size: 50px;
+  font-size: 4rem;
   font-weight: 700;
   text-align: center;
   color: black;
@@ -991,35 +997,20 @@ h5.course-name-title:focus {
 }
 
 /*Media Query Settings for LecelCourse Component*/
-@media screen and (max-width: 1200px){
-  h5.course-name-title {
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 800px){
-  h5.course-name-title {
-    font-size: 25px;
-  }
-}
-
-@media screen and (max-width: 600px){
-  h5.course-name-title {
-    font-size: 20px;
-    padding-bottom: 20px;
-  }
-}
-
 @media screen and (max-width: 500px){
   h5.course-name-title {
-    font-size: 15px;
-    padding-bottom: 15px;
+    font-size: 2.5rem;
+    padding-bottom: 30px;
+  }
+
+  .img-rounded {
+    width:80%;
   }
 }
 
 @media screen and (max-width: 400px){
   h5.course-name-title {
-    font-size: 12px;
+    font-size: 2.2rem;
     padding-bottom: 10px;
   }
 }
@@ -1031,24 +1022,24 @@ h5.course-name-title:focus {
 }
 
 .title-wrapper {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 0;
 }
 
 .thumbnail-wrapper {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .audio {
       display: block;
       text-align: center;
-      margin: 0 auto;
+      margin: -25px auto;
       font-size: 10rem;
       background-color: transparent;
       border: 2px solid transparent;
       border: 3px solid black;
       border-radius: 120px 120px;
-      padding: 12px 17px;
+      padding: 5px 11px;
       border-color: transparent;
 }
 
@@ -1081,16 +1072,22 @@ a.img-link > img {
 }
 
 .course-description {
-  margin-top: -20px;
+  margin-top: -15px;
   padding-bottom: 20px;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 600;
   color: black;
   line-height: 4rem;
 }
 
 .button-wrapper {
-  margin-bottom: 100px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px){
+  .course-description {
+    line-height: 3rem;
+  }
 }
 
 /*---------------------------End of SingleCoursePage---------------------------*/
