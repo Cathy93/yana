@@ -41,10 +41,6 @@ class SingleCoursePage extends React.Component {
     });
   }
 
-  progressBarWordIndex = () => {
-    const progressWordIndex = this.state.currentWordIndex + 1 ;
-    return progressWordIndex;
-  }
 
   currentWord = () => {
     const course = this.state.course;

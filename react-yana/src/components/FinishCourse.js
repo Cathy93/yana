@@ -19,7 +19,7 @@ const FinishCourse = ({course}) => (
 
     <div className="finish-btn-wrapper">
       <ButtonThin title="More Courses"
-                  buttonPath="/Languages" />
+                  buttonPath="/languages/:languageId" />
     </div>
 
     <Footer />
