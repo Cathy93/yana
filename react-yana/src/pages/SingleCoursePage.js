@@ -42,6 +42,7 @@ class SingleCoursePage extends React.Component {
   }
 
 
+
   currentWord = () => {
     const course = this.state.course;
     const wordIndex = this.state.currentWordIndex;
@@ -58,7 +59,7 @@ class SingleCoursePage extends React.Component {
 
   progressBar () {
     const wordIndex = this.state.currentWordIndex ;
-   return wordIndex / this.totalWords() * 100
+    return wordIndex / this.totalWords() * 100
   }
 
   courseNotStarted() {
@@ -94,7 +95,8 @@ class SingleCoursePage extends React.Component {
     }
 
     if(this.courseFinished()) {
-      return <FinishCourse course={course}/>
+      return <FinishCourse course={course}
+                           languageId = {languageID}/>
 
     }
     else if(this.courseNotStarted()) {
@@ -109,7 +111,7 @@ class SingleCoursePage extends React.Component {
               word={this.currentWord()}
               nextWord={this.nextWord}
               languageId={languageID}
-              CurrentLevel={this.progressBar()} />)
+              currentLevel={this.progressBar()} />)
     }
   }
 }
