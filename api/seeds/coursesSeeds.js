@@ -1,4 +1,5 @@
 require('dotenv').config()
+
 const Course = require('../models/course')
 
 Course.create([

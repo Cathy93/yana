@@ -1,5 +1,6 @@
-var mongoose = require('mongoose')
 require('./init')
+
+var mongoose = require('mongoose')
 var Schema = mongoose.Schema
 
 const languages = ['eng', 's35', 's36']
