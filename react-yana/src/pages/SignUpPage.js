@@ -4,12 +4,13 @@ import SignUpForm from '../components/SignUpForm'
 import LanguagesPage from './LanguagesPage'
 import Footer from '../components/Footer';
 
+
 const SignUpPage = ({
     token,
     onSignUp
 }) => (
-    <div>
-      <h1 className="home-heading-text text-center">Join Us</h1>
+  <div>
+    <h1 className="home-heading-text text-center">Join Us</h1>
       <div>
       {
           !!token ? (
@@ -19,10 +20,10 @@ const SignUpPage = ({
           )
       }
       </div>
-      <div className="fixed-bottom">
-        <Footer />
-      </div>
+    <div className="fixed-bottom">
+      <Footer />
     </div>
+  </div>
 )
 
 export default SignUpPage

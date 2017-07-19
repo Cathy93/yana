@@ -28,7 +28,7 @@ main {
 .fixed-bottom {
   position: fixed;
   bottom: 0;
-  width: 100%
+  width: 100%;
 }
 
 /*------------------------SigupForm-------------------------------------------*/
@@ -93,6 +93,9 @@ main {
   .label-text {
     font-size: 1.5rem;
   }
+=======
+  width: 100%;
+>>>>>>> cbeb9e40148fdef4b2c4e56ba0e9af81a138977a
 }
 */
 

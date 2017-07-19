@@ -8,7 +8,7 @@ const SignInPage = ({
     token,
     onSignIn
 }) => (
-    <div>
+  <div>
       <h1 className="home-heading-text text-center">Welcome Back!</h1>
       <div>
       {
@@ -20,10 +20,10 @@ const SignInPage = ({
           )
       }
       </div>
-      <div className="fixed-bottom">
-        <Footer />
-      </div>
+    <div className="fixed-bottom">
+      <Footer />
     </div>
+  </div>
 )
 
 export default SignInPage
