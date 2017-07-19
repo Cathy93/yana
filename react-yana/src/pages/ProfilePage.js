@@ -8,7 +8,7 @@ export default function ProfilePage({
     onSignOut
 }) {
     return (
-        <div>
+        <div className="text-center">
           <h1>Profile</h1>
           {
             !userInfo ? (
@@ -17,7 +17,7 @@ export default function ProfilePage({
               <Profile userInfo={ userInfo } />
             )
           }
-          <button onClick={ onSignOut }>Sign Out</button>
+          <button className="btn thin-btn"onClick={ onSignOut }>Sign Out</button>
         </div>
     )
 }

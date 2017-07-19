@@ -11,12 +11,12 @@ const SignUpPage = ({
 }) => (
   <div>
     <h1 className="home-heading-text text-center">Join Us</h1>
-      <div>
+      <div className="text-center" >
       {
           !!token ? (
-              <LanguagesPage token={ token } />
+            <Redirect to="/languages" token={ token } />
           ) : (
-              <SignUpForm onSignUp={ onSignUp } />
+            <SignUpForm onSignUp={ onSignUp } />
           )
       }
       </div>

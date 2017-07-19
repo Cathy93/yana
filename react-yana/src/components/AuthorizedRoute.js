@@ -10,7 +10,7 @@ const AuthorizedRoute = ({
     return <Route path={ path } render={ render }/>
   }
   else {
-    return <Redirect to='/signin' />
+    return <Redirect to='/sign_in' />
   }
 }
 export default AuthorizedRoute;

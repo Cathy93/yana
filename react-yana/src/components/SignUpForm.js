@@ -24,21 +24,24 @@ export default function SignUpForm({
   onSignUp
 }) {
   return (
-      <form
-        onSubmit={ (event) => submitSignUp(event, onSignUp) }
-        style={ formStyle }
-      >
-        <label>
-          <span>Email </span>
-          <input name='email' />
-        </label>
-        <label>
-          <span>Password </span>
-          <input type='password' name='password' />
-        </label>
-        <div className="learn-now-button-container text-center">
-          <button className="btn action-btn-home">Join</button>
-        </div>
-      </form>
+
+        <form
+          onSubmit={ (event) => submitSignUp(event, onSignUp) }
+          style={ formStyle }>
+          <div>
+            <label>
+              <span>Email </span>
+              <input name='email' />
+            </label>
+            <br/>
+            <label>
+              <span>Password </span>
+              <input type='password' name='password' />
+            </label>
+            </div>
+          <div className="learn-now-button-container text-center">
+            <button className="btn thin-btn">Join</button>
+          </div>
+        </form>
     )
   }

@@ -9,7 +9,7 @@ function untilExpiryInSeconds(exp) {
 export default ({
   userInfo
 }) => (
-    <div>
+    <div className="text-center">
         <dl>
           <dt>Email:</dt>
           <dd>{ userInfo.email }</dd>

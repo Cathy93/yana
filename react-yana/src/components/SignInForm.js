@@ -2,6 +2,7 @@ import React from 'react'
 import ButtonDefault from '../components/ButtonDefault';
 import Validation from 'react-validation';
 
+
 const formStyle = {
   display: 'flex',
   flexDirection: 'column',
@@ -26,8 +27,7 @@ function submitSignIn(event, onSignIn) {
       return (
         <form
           onSubmit={ (event) => submitSignIn(event, onSignIn) }
-          style={ formStyle }
-        >
+          style={ formStyle }>
           <label>
             <span>Email </span>
             <input name='email' />
@@ -37,7 +37,9 @@ function submitSignIn(event, onSignIn) {
             <input type='password' name='password' />
           </label>
           <div className="learn-now-button-container text-center">
-            <button className="btn action-btn-home">Log In</button>
+            <button className="btn thin-btn">Sign In</button>
+
+
           </div>
         </form>
       )

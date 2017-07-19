@@ -641,6 +641,18 @@ div.background-caption-contact {
 /*------------------------------End of ContactPage----------------------------*/
 
 /*------------------------------Button Thin----------------------------*/
+button.btn.thin-btn {
+  background-color: #353535;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #353535;
+  color: white;
+}
+
 button.btn.action-btn {
   background-color: #353535;
   color: white;
