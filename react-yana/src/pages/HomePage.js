@@ -23,20 +23,14 @@ const HomePage = ({
       <MainHeader title="Dive into Aboriginal Culture!"/>
       <Image className="boom-img" src={boomerang} alt="boomerang_caption" responsive/>
       <div className="learn-now-button-container text-center">
-              <ButtonDefault title="Learn Now"
-                             buttonPath="/Languages" />
-              <ButtonThin title="Register"
-                             buttonPath="/register" />
-          </div>
-          <h3 className="text-center"> Not a new user?</h3>
-          <div className="sign-in-link-container text-center">
-              <AnchorLink title="Sign in"
-                          linkPath="/sign_in" />
-                        </div>
-                        <div className="sign-up-link-container text-center">
-                          <AnchorLink title="Sign Up"
-                                      linkPath="/sign_up" />
-          </div>
+          <ButtonDefault title="Learn Now" buttonPath="/Languages" />
+      </div>
+      <h3 className="text-center"> Not a new user?</h3>
+      <div className="sign-in-link-container text-center">
+          <AnchorLink title="Sign in" linkPath="/sign_in" />
+          &nbsp; &nbsp; | &nbsp; &nbsp;
+          <AnchorLink title="Sign Up" linkPath="/sign_up" />
+      </div>
     </div>
 
     <div id="about" className="secondary-section">
