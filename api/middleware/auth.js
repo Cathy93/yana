@@ -13,7 +13,7 @@ function signTokenHandler(req, res) {
   const token = jwt.sign(
     { // Payload
       email: user.email,
-    
+
     },
     jwtSecret,
     { // Options
@@ -80,7 +80,22 @@ function registerMiddleware(req, res, next) {
     req.user = user
     // Our middleware succeeded with no error
     next()
+
   })
+}
+
+const ensureRole = (role) => (req, res, next) => {
+  const user = req.user
+  const roles = user.roles
+  // If the user’s roles does not include the required role
+  if (roles.indexOf(role) === -1) {
+    let error = new Error(`User must have role ${role}`)
+    error.status = 401 // Unauthorized
+    next(error)
+    return
+  }
+
+  next()
 }
 
 module.exports = {
@@ -88,5 +103,6 @@ module.exports = {
   authenticateSignIn: passport.authenticate('local', { session: false }),
   authenticateJWT: passport.authenticate('jwt', { session: false }),
   register: registerMiddleware,
-  signTokenHandler
+  signTokenHandler,
+  ensureRole
 }

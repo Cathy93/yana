@@ -9,6 +9,7 @@ import {
 import decodeJWT from 'jwt-decode';
 // Components
 import NavMenu from './components/NavMenu';
+import AuthorizedRoute from './components/AuthorizedRoute'
 
 // Pages
 import HomePage from './pages/HomePage';
@@ -19,23 +20,26 @@ import SingleCoursePage from './pages/SingleCoursePage';
 import LanguagesPage from './pages/LanguagesPage';
 import SignInPage from './pages/SignInPage';
 import SignUpPage from './pages/SignUpPage';
+
 import ProfilePage from './pages/ProfilePage';
 import * as authAPI from './api/auth';
+import { setAPIToken } from './api/init';
 
 const tokenKey = 'userToken'
 // Read the last token from the local storage database
 const savedToken = localStorage.getItem(tokenKey)
 // Set the token on the API headers
 // setAPIToken(savedToken)
+setAPIToken(savedToken)
 
 class App extends Component {
   state = {
 error: null,
-token: null,
+  token: savedToken,
 // movies: null // Null means not loaded yet
 }
 setToken = (token) => {
-  // setAPIToken(token)
+    setAPIToken(token)
 
   // Forget we’ve ever loaded anything
   this.loadPromises = {}
@@ -86,7 +90,7 @@ handleSignOut = () => {
       <Router>
         <main>
           <NavMenu isSignedIn={ !!token } />
-          {/* { !!error && <ErrorMessage error={error} />} */}
+
             <Switch>
               <Route
                 exact path='/'
@@ -114,17 +118,23 @@ handleSignOut = () => {
 
                 <Route
                   path='/profile'
-                  render={() => (
-                  <ProfilePage userInfo={ userInfo } onSignOut={ this.handleSignOut } />)} />
+                  render={() => (<ProfilePage
+                    userInfo={ userInfo }
+                    onSignOut={ this.handleSignOut } />)} />
 
-              <Route
+
+
+              <AuthorizedRoute
                 path='/languages/:languageId/courses/:courseName'
-                render={({match}) => <SingleCoursePage  courseName={match.params.courseName}
-                languageId={match.params.languageId}/> }/>
+                render={({match}) => <SingleCoursePage
+                  courseName={match.params.courseName}
+                  languageId={match.params.languageId}/> }
+                token= { token }/>
 
               <Route
                 path='/languages/:languageId'
-                render={({match}) => <CoursesPage languageId={match.params.languageId}/> }/>
+                render={({match}) => <CoursesPage
+                  languageId={match.params.languageId}/> }/>
 
               <Route
                 path='/languages'
