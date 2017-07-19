@@ -30,7 +30,7 @@ const HomePage = ({
               <AnchorLink title="Sign in"
                           linkPath="/sign_in" />
                         </div>
-                        <div className="sign-in-link-container text-center">
+                        <div className="sign-up-link-container text-center">
                           <AnchorLink title="Sign Up"
                                       linkPath="/sign_up" />
           </div>

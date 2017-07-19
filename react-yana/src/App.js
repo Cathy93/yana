@@ -120,7 +120,7 @@ handleSignOut = () => {
               <Route
                 path='/languages/:languageId/courses/:courseName'
                 render={({match}) => <SingleCoursePage  courseName={match.params.courseName}
-                                                        languageId={match.params.languageId}/> }/>
+                languageId={match.params.languageId}/> }/>
 
               <Route
                 path='/languages/:languageId'
