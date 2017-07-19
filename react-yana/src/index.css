@@ -25,68 +25,10 @@ main {
   margin: 0 0;
 }
 
-/*------------------------SigupForm-------------------------------------------*/
-.form-group {
-  width: 80%;
-  margin: 0 auto;
-  padding: 2rem 10rem;
-}
-
-.label-text {
-  font-size: 3rem;
-  color: #353535;
-}
-
-.form-control {
-  border: 1px solid #353535;
-  height: 5rem;
-  background-color: rgba(53, 53, 53, 0.8);
-  color: white;
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.error-msg {
-  color: red;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.buttom-form {
-  margin-bottom: 80px;
-}
-
-
-@media screen and (max-width: 600px){
-  .form-group {
-    width: 100%;
-  }
-
-  .label-text {
-    font-size: 2.5rem;
-  }
-
-  .form-control {
-    height: 3.5rem;
-    font-size: 1.8rem;
-  }
-}
-
-@media screen and (max-width: 450px){
-  .form-group {
-    width: 100%;
-    padding: 2rem 2rem;
-  }
-
-  .label-text {
-    font-size: 2.3rem;
-  }
-}
-
-@media screen and (max-width: 300px){
-  .label-text {
-    font-size: 1.5rem;
-  }
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 /*------------------------NavMenu Component-----------------------------------*/
@@ -181,7 +123,6 @@ div.navbar-collapse.collapse > a.selected {
   div.navbar-collapse.collapse.in > a {
     float: left;
     display: block;
-    padding-right: 400px;
     width: 300px;
   }
 

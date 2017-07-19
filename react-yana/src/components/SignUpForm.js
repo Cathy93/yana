@@ -36,7 +36,9 @@ export default function SignUpForm({
           <span>Password </span>
           <input type='password' name='password' />
         </label>
-        <button>Sign Up</button>
+        <div className="learn-now-button-container text-center">
+          <button className="btn action-btn-home">Join</button>
+        </div>
       </form>
     )
   }
