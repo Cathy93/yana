@@ -11,7 +11,7 @@ const SignInPage = ({
     onSignIn
 }) => (
   <div>
-      <h1 className="home-heading-text text-center">Welcome Back!</h1>
+      <h1 className="home-heading-text text-center">Welcome!</h1>
       <div>
       {
           !!token ? (
