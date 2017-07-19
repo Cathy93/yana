@@ -99,13 +99,18 @@ handleSignOut = () => {
               <Route
                 path='/contact'
                 render={() => (<ContactPage />)}/>
+
                 <Route
                   path='/sign_in'
-                  render={() => (<SignInPage onSignIn={ this.handleSignIn} />)}/>
+                  render={() => (<SignInPage
+                    token={ token }
+                    onSignIn={ this.handleSignIn} />)}/>
 
                   <Route
                   path='/sign_up'
-                  render={() => (<SignUpPage onSignIn={this.handleSignUp} />)}/>
+                  render={() => (<SignUpPage
+                    token={ token }
+                    onSignUp={this.handleSignUp} />)}/>
 
                 <Route
                   path='/profile'

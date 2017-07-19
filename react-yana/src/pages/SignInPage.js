@@ -1,7 +1,7 @@
 import React from 'react'
 import { Redirect } from 'react-router-dom'
 import SignInForm from '../components/SignInForm'
-
+import LanguagesPage from './LanguagesPage'
 const SignInPage = ({
     token,
     onSignIn
@@ -9,7 +9,7 @@ const SignInPage = ({
     <div>
     {
         !!token ? (
-            <Redirect to='/LanguagesPage' />
+            <LanguagesPage token={ token} />
         ) : (
             <SignInForm onSignIn={ onSignIn } />
         )

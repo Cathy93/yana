@@ -24,18 +24,19 @@ export default function SignUpForm({
   onSignUp
 }) {
   return (
-    <Validation.components.Form
-      onSubmit={ (event) => submitSignUp(event, onSignUp) }
-      style={ formStyle }
-    >
-      <label>
-        <span>Email <Validation.components.Input value='email@email.com' name='email' validations={['required', 'email']}/></span>
-      </label>
-      <label>
-        <span>Password <Validation.components.Input type='password' value='' name='password' validations={['required']}/></span>
-      </label>
-      <ButtonDefault title="Sign Up"
-                     buttonPath="" />
-    </Validation.components.Form>
-  )
-}
+      <form
+        onSubmit={ (event) => submitSignUp(event, onSignUp) }
+        style={ formStyle }
+      >
+        <label>
+          <span>Email </span>
+          <input name='email' />
+        </label>
+        <label>
+          <span>Password </span>
+          <input type='password' name='password' />
+        </label>
+        <button>Sign Up</button>
+      </form>
+    )
+  }
