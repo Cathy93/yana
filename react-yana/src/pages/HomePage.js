@@ -32,6 +32,10 @@ const HomePage = ({
           <div className="sign-in-link-container text-center">
               <AnchorLink title="Sign in"
                           linkPath="/sign_in" />
+                        </div>
+                        <div className="sign-up-link-container text-center">
+                          <AnchorLink title="Sign Up"
+                                      linkPath="/sign_up" />
           </div>
     </div>
 

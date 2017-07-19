@@ -1,5 +1,6 @@
 import React from 'react'
 import ButtonDefault from '../components/ButtonDefault';
+import Validation from 'react-validation';
 
 const formStyle = {
   display: 'flex',
@@ -19,24 +20,23 @@ function submitSignIn(event, onSignIn) {
   onSignIn({ email, password })
 }
 
-export default function SignInForm({
-  onSignIn
-}) {
-  return (
-    <form
-      onSubmit={ (event) => submitSignIn(event, onSignIn) }
-      style={ formStyle }
-    >
-      <label>
-        <span>Email </span>
-        <input name='email' />
-      </label>
-      <label>
-        <span>Password </span>
-        <input type='password' name='password' />
-      </label>
-      <ButtonDefault title="Log In"
-                     buttonPath="/languages" />
-    </form>
-  )
+    export default function SignInForm({
+      onSignIn
+    }) {
+      return (
+        <form
+          onSubmit={ (event) => submitSignIn(event, onSignIn) }
+          style={ formStyle }
+        >
+          <label>
+            <span>Email </span>
+            <input name='email' />
+          </label>
+          <label>
+            <span>Password </span>
+            <input type='password' name='password' />
+          </label>
+          <button>Sign In</button>
+        </form>
+      )
 }

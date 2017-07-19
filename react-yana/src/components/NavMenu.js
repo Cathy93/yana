@@ -3,7 +3,9 @@ import { NavLink } from 'react-router-dom';
 import { Image, Navbar } from 'react-bootstrap';
 import logo from '../img/aus_logo.png';
 
-export default () => (
+export default ({
+  isSignedIn = false
+}) => (
       <Navbar fixedTop className="nav-container container-fluid">
       <Navbar.Header>
         <Navbar.Brand>
@@ -17,6 +19,15 @@ export default () => (
           <a href='/#about'>About</a>
           <NavLink to='/faq' activeClassName="selected">FAQ</NavLink>
           <NavLink to='/contact' activeClassName="selected">Contact</NavLink>
+          {
+           isSignedIn ? [
+               <NavLink key='profile' to='/profile'  activeClassName='active'>Profile</NavLink>
+           ] : [
+               <NavLink key='signin' to='/signin'  activeClassName='active'>Sign In</NavLink>,
+               <NavLink key='signup' to='/signup'  activeClassName='active'>Sign Up</NavLink>
+           ]
+          }
+          }
       </Navbar.Collapse>
     </Navbar>
 )
