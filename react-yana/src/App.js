@@ -114,17 +114,22 @@ handleSignOut = () => {
 
                 <Route
                   path='/profile'
-                  render={() => (
-                  <ProfilePage userInfo={ userInfo } onSignOut={ this.handleSignOut } />)} />
+                  render={() => (<ProfilePage
+                    userInfo={ userInfo }
+                    onSignOut={ this.handleSignOut } />)} />
+
+                
 
               <Route
                 path='/languages/:languageId/courses/:courseName'
-                render={({match}) => <SingleCoursePage  courseName={match.params.courseName}
-                languageId={match.params.languageId}/> }/>
+                render={({match}) => <SingleCoursePage
+                  courseName={match.params.courseName}
+                  languageId={match.params.languageId}/> }/>
 
               <Route
                 path='/languages/:languageId'
-                render={({match}) => <CoursesPage languageId={match.params.languageId}/> }/>
+                render={({match}) => <CoursesPage
+                  languageId={match.params.languageId}/> }/>
 
               <Route
                 path='/languages'

@@ -12,7 +12,7 @@ export default function ProfilePage({
           <h1>Profile</h1>
           {
             !userInfo ? (
-              <Redirect to='/signin' />
+              <Redirect to='/' />
             ) : (
               <Profile userInfo={ userInfo } />
             )
