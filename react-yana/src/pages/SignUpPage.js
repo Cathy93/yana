@@ -73,10 +73,10 @@ class Form extends React.Component {
           <h1 className="home-heading-text text-center">Join Us</h1>
 
           <div className="form-group">
-            <div className="">
+            <div>
               <label className="label-text">Email Address</label>
             </div>
-            <div className="">
+            <div>
               <input className="form-control" type="text" value={fields.email}
               {...$field('email', (e) => onChange('email', e.target.value))}/>
             </div>
