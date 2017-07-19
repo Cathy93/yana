@@ -1,8 +1,22 @@
-require('dotenv').config()
+require('dotenv').config({ path: '../models/.env' })
 
 const User = require('../models/user')
 
-{
-  "email": "patrick.smith@coderacademy.edu.au",
-  "password": "test123"
-}
+User.create([
+  {
+    email: "cathy@coderacademy.edu.au",
+    password: "test123"
+  },
+  {
+    email: "tech@coderacademy.edu.au",
+    password: "test123"
+  },
+  {
+    email: "livia@coderacademy.edu.au",
+    password: "test123"
+  },
+  {
+    email: "george@coderacademy.edu.au",
+    password: "test123"
+  }
+])

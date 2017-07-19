@@ -1,20 +1,20 @@
 import React from 'react'
 import { Redirect } from 'react-router-dom'
-import SignInForm from '../components/SignInForm'
+import SignUpForm from '../components/SignUpForm'
 
-const SignInPage = ({
+const SignUpPage = ({
     token,
-    onSignIn
+    onSignUp
 }) => (
     <div>
     {
         !!token ? (
             <Redirect to='/LanguagesPage' />
         ) : (
-            <SignInForm onSignIn={ onSignIn } />
+            <SignUpForm onSignUp={ onSignUp } />
         )
     }
     </div>
 )
 
-export default SignInPage
+export default SignUpPage

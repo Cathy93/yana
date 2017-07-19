@@ -5,7 +5,9 @@
   "dependencies": {
     "axios": "^0.16.2",
     "bootstrap": "4.0.0-alpha.6",
+    "classnames": "^2.2.5",
     "gulp-sass": "^3.1.0",
+    "jwt-decode": "^2.2.0",
     "mosaic-audio": "^1.1.1",
     "npmdoc-react-fontawesome": "^0.0.2",
     "react": "^15.6.1",
@@ -15,6 +17,7 @@
     "react-google-maps": "^6.3.0",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
+    "react-validation": "^2.10.9",
     "underscore": "^1.8.3"
   },
   "devDependencies": {

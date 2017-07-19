@@ -1,5 +1,5 @@
 require('dotenv').config({path: './models/.env'})
-
+const cors = require('cors')
 const express = require('express')
 const bodyParser = require('body-parser')
 const authMiddleware = require('./middleware/auth')
@@ -13,6 +13,10 @@ const server = express()
 
 server.use(bodyParser.urlencoded({extended: true}))
 server.use(bodyParser.json())
+server.use(cors({
+    origin: process.env.CORS_ORIGINS.split(',')
+}))
+
 server.use(authMiddleware.initialize)
 
 server.use(coursesRouter)
