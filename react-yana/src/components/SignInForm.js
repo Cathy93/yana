@@ -36,7 +36,9 @@ function submitSignIn(event, onSignIn) {
             <span>Password </span>
             <input type='password' name='password' />
           </label>
-          <button>Sign In</button>
+          <div className="learn-now-button-container text-center">
+            <button className="btn action-btn-home">Log In</button>
+          </div>
         </form>
       )
 }
