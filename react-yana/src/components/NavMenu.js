@@ -23,8 +23,8 @@ export default ({
            isSignedIn ? [
                <NavLink key='profile' to='/profile'  activeClassName='active'>Profile</NavLink>
            ] : [
-               <NavLink key='signin' to='/signin'  activeClassName='active'>Sign In</NavLink>,
-               <NavLink key='signup' to='/signup'  activeClassName='active'>Sign Up</NavLink>
+               <NavLink key='signin' to='/sign_in'  activeClassName='active'>Sign In</NavLink>,
+               <NavLink key='signup' to='/sign_up'  activeClassName='active'>Sign Up</NavLink>
            ]
           }
           }
