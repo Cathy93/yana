@@ -18,8 +18,7 @@ class CoursesPage  extends React.Component {
   }
 
   componentDidMount() {
-    var url = "http://localhost:8000/api/courses"
-      fetch(url)
+      fetch("/api/courses")
         .then(results => results.json())
         .then(courses => {
           this.setState({levels: groupBy(courses, 'level')});

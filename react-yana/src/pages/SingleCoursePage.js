@@ -98,7 +98,8 @@ class SingleCoursePage extends React.Component {
     }
 
     if(this.courseFinished()) {
-      return <FinishCourse course={course}/>
+      return <FinishCourse  course={course}
+                            languageId={languageID}/>
 
     }
     else if(this.courseNotStarted()) {

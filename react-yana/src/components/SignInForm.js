@@ -1,5 +1,5 @@
 import React from 'react'
-import ButtonDefault from '../components/ButtonDefault';
+import  ActionButton from '../components/ActionButton';
 
 const formStyle = {
   display: 'flex',
@@ -35,8 +35,8 @@ export default function SignInForm({
         <span>Password </span>
         <input type='password' name='password' />
       </label>
-      <ButtonDefault title="Log In"
-                     buttonPath="/languages" />
+      <ActionButton title="Log In"
+                     Onclick={onSignIn} />
     </form>
   )
 }
