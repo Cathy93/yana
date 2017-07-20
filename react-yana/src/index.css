@@ -733,6 +733,7 @@ div.panel-body {
     font-size: 30px;
     font-weight: 900;
     color: white;
+    margin-top: -10px;
     padding-bottom: 5px;
 }
 
@@ -747,7 +748,7 @@ label.col-sm-2.col-form-label {
 }
 
 div.panel.panel-default.custom {
-    border: 1px solid rgba(53, 53, 53, 0.8);
+    border: 0.1px solid rgba(53, 53, 53, 1);
 }
 
 div.formErrors > p {
@@ -764,20 +765,25 @@ div.col-lg-offset-2 {
   margin-top: 30px;
 }
 
+input.form-control {
+  margin-bottom: 20px;
+}
+
 input.btn {
   font-size: 15px;
   font-weight: 700;
   color: white;
   background-color: #353535;
   border-radius: 8px;
+  margin-left: 10px;
   border: 3px solid white;
 }
 
 input.btn:hover,
 input.btn:focus {
   color: white;
-  background-color: #73BF45;
-  border: 3px solid #73BF45;
+  background-color: #DD6D26;
+  border: 3px solid #DD6D26;
 }
 
 button.btn.btn-link {
@@ -823,11 +829,20 @@ button.btn.btn-link:focus {
 @media screen and (max-width: 565px){
   div.well.well-lg {
       max-height: 900px;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px;
   }
 
   div.panel-body {
     width: 100%;
     max-height: 760px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  input.btn {
+    margin-left: 15px;
   }
 }
 
@@ -863,6 +878,7 @@ a.anchor-default-link:hover,
 a.anchor-default-link:focus {
   color: #DD6D26;
   font-size: 24px;
+  font-weight: 600;
   text-decoration: underline;
 }
 
