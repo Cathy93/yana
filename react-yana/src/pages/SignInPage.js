@@ -28,7 +28,9 @@ const SignInPage = ({
           )
       }
       </div>
-      <Footer />
+      <div className="fixed-bottom">
+        <Footer />
+      </div>
   </div>
 )
 

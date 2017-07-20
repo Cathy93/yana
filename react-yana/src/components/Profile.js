@@ -10,12 +10,8 @@ export default ({
   userInfo
 }) => (
     <div className="text-center">
-        <dl>
-          <dt>Email:</dt>
-          <dd>{ userInfo.email }</dd>
+          <h3>Email: { userInfo.email }</h3>
 
-          <dt>Expires in:</dt>
-          <dd>{ untilExpiryInSeconds(userInfo.exp) }s</dd>
-        </dl>
+          <h4><b>Expires in:</b> { untilExpiryInSeconds(userInfo.exp) }s</h4>
     </div>
 )
