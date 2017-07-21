@@ -4,7 +4,8 @@ import React from 'react'
 import LevelCourse from '../components/LevelCourse';
 import SubHeading from '../components/SubHeading';
 import Footer from '../components/Footer';
-import { groupBy } from 'underscore'
+import { groupBy } from 'underscore';
+import * as coursesAPI from '../api/courses';
 
 import {
   languageIDs, languageIDToNames, languageIDToFlagImages
@@ -18,11 +19,10 @@ class CoursesPage  extends React.Component {
   }
 
   componentDidMount() {
-    var url = "http://localhost:8000/api/courses"
-      fetch(url)
-        .then(results => results.json())
+      coursesAPI.list()
         .then(courses => {
-          this.setState({levels: groupBy(courses, 'level')});
+          const levels = groupBy(courses, 'level')
+          this.setState({levels: levels });
         })
         .catch(function(err) {
           console.log("Didn't connect to the API", err)

@@ -1,4 +1,4 @@
-require('dotenv').config({path: './models/.env'})
+require('dotenv').config({path: './.env'})
 const cors = require('cors')
 const express = require('express')
 const bodyParser = require('body-parser')
@@ -6,6 +6,7 @@ const authMiddleware = require('./middleware/auth')
 const mongoose = require('mongoose')
 const coursesRouter = require('./routes/coursesRouter')
 const authRouter = require('./routes/auth')
+const jwt = require('jsonwebtoken')
 // const router = express.Router()
 const peopleRouter = require('./routes/people')
 

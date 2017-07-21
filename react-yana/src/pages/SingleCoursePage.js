@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 import WordExercise from '../components/WordExercise'
 import CourseCover from '../components/CourseCover'
 import FinishCourse from "../components/FinishCourse"
-
+import * as coursesAPI from '../api/courses';
 
 import animal from '../img/animal.png';
 
@@ -19,9 +19,8 @@ class SingleCoursePage extends React.Component {
   }
 
   componentDidMount() {
-    var url = "http://localhost:8000/api/courses/" + this.props.courseName;
-    fetch(url)
-      .then(results => results.json())
+    var url = "REACT_APP_API_URL" + this.props.courseName;
+    coursesAPI.list(url)
       .then(course => {
         this.setState({course: course});
       })
