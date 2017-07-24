@@ -5,7 +5,10 @@
 1. [Application Brief](#application-brief)
 2. [Client Interaction](#client-interaction)
 3. [Technology Stack](#technology-stack)
-4. [Design and Planning Process](#design-and-planning-process)
+4. [Plugins and Packages (YARN Package Management)](#plugins-and-packages-(yarn-package-management))
+5. [Design and Planning Process](#design-and-planning-process)
+5.
+6.
 
 
 ### Application Brief
