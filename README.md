@@ -7,15 +7,25 @@
 3. [Technology Stack](#technology-stack)
 4. [Plugins and Packages YARN Package Management](#plugins-and-packages-yarn-package-management)
 5. [Design and Planning Process](#design-and-planning-process)
+    
     5.1 [White Board Brain Storming](#white-board-brain-storming)
+    
     5.2 [User Stories](#user-stories)
+   
     5.3 [User Experience UX Flow](#user-experience-us-flow)
+    
     5.4 [Wireframe Mockup](#wireframe-mockup)
+    
     5.5 [Style Guide](#style-guide)
+   
     5.6 [Project Management](#project-management)
+    
 6. [Application Content](#application-content)
+    
     6.1 [Front-end](#front-end)
+   
     6.2 [Back-end](#back-end)
+    
 7. [Live Application Address](#live-application-address)
 8. [Additional Features to be followed](#additional-features-to-be-followed)
 9. [Outstanding Issues](#outstanding-issues)
@@ -32,6 +42,9 @@ This app is an online aboriginal languages learning platform sponsoered for the 
 The VACL was approached via email to discuss the application idea to help the Aboriginal community with a language mobile leanring tool. A meeting soon followed and the idea was presented to the CEO and he approved the idea to go into an application.
 
 Several weeks were given to produce a minimum viable product (MVP). Throughout the interaction activities, several meetings were held to discuss the application design and to obtain feedbacks. Data used in this application were also provided by VACL.
+
+
+[Back to Top](#table-of-contents)
 - - - -
 
 ### Technology Stack
@@ -56,6 +69,9 @@ Several weeks were given to produce a minimum viable product (MVP). Throughout t
 - NOW Depoy / Hosting
 
 For more details, please refer to package.json file for dependencies installed 
+
+
+[Back to Top](#table-of-contents)
 - - - -
 
 ### Design and Planning Process
@@ -89,6 +105,9 @@ The style guide for this application is simple. A total of 6 different colors an
 #### Project Management
 The project management was executed using Trello Board, Github Organisation and Slack. These tools played a big part in holding pieces of the project contribution in together one place and helping the contributors to communicate effectively. Please refer to following link to view the Trello Board maangement contents.
 https://trello.com/b/AsPE7dTZ/vacl
+
+
+[Back to Top](#table-of-contents)
 - - - -
 
 ### Application Content
@@ -100,6 +119,9 @@ https://trello.com/b/AsPE7dTZ/vacl
 The above figure showed some of the components concept that were integrated into the application. The idea is to break down the application systems into smaller, more modular/reusable parts that can bring us huge benefits and allow for more unity between design and development in the long term. For example, The Navigation Bar and the Footer that were used throughout the entire application.
 
 Another modular/usable component is the button, where it encapsulate the functionality within themselve and provide a different way of implementation. For example, a button is used for links and change state of the components.
+
+
+[Back to Top](#table-of-contents)
 - - - -
 
 #### Back-end
@@ -107,6 +129,9 @@ Another modular/usable component is the button, where it encapsulate the functio
 **Figure 7**: MongoDB Schema
 
 MongoDB Mlab was used to store all required application data. The MongoDB schema as depicted in figure 7 is implemented to serve as a reference when building the backend Node/Express server. This schema is also implemented in a way so that future courses and languages importation into the application could be performed seamlessly.
+
+
+[Back to Top](#table-of-contents)
 - - - -
 
 #### Live Application Address
@@ -126,4 +151,4 @@ https://yana.now.sh
 - Refactoring andRenaming of certain contents
 
 
-[Table of Contents](#table-of-contents)
+[Back to Top](#table-of-contents)
