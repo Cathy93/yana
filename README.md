@@ -2,10 +2,10 @@
 
 
 ## Table of Contents
-- Application Brief
-- Client Interaction
-- Technology Stack
-- Design and Planning Process
+1. [Application Brief](#application-brief)
+2. [Client Interaction](#client-interaction)
+3. [Technology Stack](#technology-stack)
+4. [Design and Planning Process](#design-and-planning-process)
 
 
 ### Application Brief
