@@ -1,12 +1,16 @@
 # YANA Design Documentation (Aboriginal Language Learning APP)
+========
+
 ### Table of Contents
 -Application Brief
 -Client Interaction
 -Technology Stack
 -Design and Planning Process
+========
 
 ### Application Brief
 This app is an online aboriginal languages learning platform sponsoered for the Victorian Aboriginal Corporation for Languages (VACL). VACL staff and volunteers experience helped build the content to make indegenous language learning more fun and effective. For more details, visit the VACL page. 
+========
 
 ### Client Interaction
 ![interaction png](https://user-images.githubusercontent.com/22834712/28507972-49885fbe-707a-11e7-996a-4a8cb0dc9bec.jpg)
@@ -15,6 +19,7 @@ This app is an online aboriginal languages learning platform sponsoered for the 
 The VACL was approached via email to discuss the application idea to help the Aboriginal community with a language mobile leanring tool. A meeting soon followed and the idea was presented to the CEO and he approved the idea to go into an application.
 
 Several weeks were given to produce a minimum viable product (MVP). Throughout the interaction activities, several meetings were held to discuss the application design and to obtain feedbacks. Data used in this application were also provided by VACL.
+========
 
 ### Technology Stack
 - Node JS
@@ -64,6 +69,7 @@ The wireframe design around the application was accomplished using FIGMA, which 
 #### Style Guide
 The style guide for this application is simple. A total of 6 different colors and one family font were used throughout the mockup design. Please refer to following figure for detailed style guides.
 ![style](https://user-images.githubusercontent.com/22834712/28508295-60becd00-707d-11e7-9d22-6a209197cc47.png) 
+
 **Figure 5**: Wireframe and Application Style Guide
 
 #### Project Management
@@ -73,10 +79,17 @@ https://trello.com/b/AsPE7dTZ/vacl
 ### Application Content
 #### Front-end
 ![components](https://user-images.githubusercontent.com/22834712/28509201-e04e972a-7083-11e7-89ad-ad17eb4d4142.png)
+
 **Figure 6**: React-app Components
 The above figure showed some of the components concept that were integrated into the application. The idea is to break down the application systems into smaller, more modular/reusable parts that can bring us huge benefits and allow for more unity between design and development in the long term. For example, The Navigation Bar and the Footer that were used throughout the entire application.
 
 Another modular/usable component is the button, where it encapsulate the functionality within themselve and provide a different way of implementation. For example, a button is used for links and change state of the components.
 
 #### Back-end
+![mongodb](https://user-images.githubusercontent.com/22834712/28509456-c68638f0-7085-11e7-9c56-ec24e9f0a188.jpg)
+**Figure 7**: MongoDB Schema
+
+MongoDB Mlab was used to store all required application data. The MongoDB schema as depicted in figure 7 is implemented to serve as a reference when building the backend Node/Express server. This schema is also implemented in a way so that future courses and languages importation into the application could be performed seamlessly.
+
+
 
