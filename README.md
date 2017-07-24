@@ -46,11 +46,11 @@ The wireframe design around the application was accomplished using FIGMA, which 
 
 #### Style Guide
 The style guide for this application is simple. A total of 6 different colors and one family font were used throughout the mockup design. Please refer to following figure for detailed style guides.
-![style](https://user-images.githubusercontent.com/22834712/28508295-60becd00-707d-11e7-9d22-6a209197cc47.png)
-**Figure 5**: Wireframe and Application Style Guide
+![style](https://user-images.githubusercontent.com/22834712/28508295-60becd00-707d-11e7-9d22-6a209197cc47.png) **Figure 5**: Wireframe and Application Style Guide
 
 #### Project Management
-
+The project management was executed using Trello Board, Github Organisation and Slack. These tools played a big part in holding pieces of the project contribution in together one place and helping the contributors to communicate effectively. Please refer to following link to view the Trello Board contents.
+https://trello.com/b/AsPE7dTZ/vacl
 
 ### Application Content
 
