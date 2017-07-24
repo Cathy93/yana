@@ -40,7 +40,9 @@ The following were some of the stories used to build the application features.
 **Figure 3**: User Experience Flow Diagram
 
 #### Wireframe Mockup
-
+The wireframe design around the application was accomplished using FIGMA, which is a online collaboration design tool. Most of the mockup was designed based on mobile first philosophy. Design iteration was performed as could be seen in the following figure. The AFTER design sketches were achieved after knowing what sort of required data and the culture significance of the application were identified.  
+![wireframe](https://user-images.githubusercontent.com/22834712/28508044-1f15ada8-707b-11e7-874d-e329ab09a008.png)
+**Figure 4**: Wireframe Mockup and Design
 
 -Style Guide
 -Project Management
