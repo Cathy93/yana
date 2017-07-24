@@ -19,7 +19,7 @@ This app is an online aboriginal languages learning platform sponsoered for the 
 The VACL was approached via email to discuss the application idea to help the Aboriginal community with a language mobile leanring tool. A meeting soon followed and the idea was presented to the CEO and he approved the idea to go into an application.
 
 Several weeks were given to produce a minimum viable product (MVP). Throughout the interaction activities, several meetings were held to discuss the application design and to obtain feedbacks. Data used in this application were also provided by VACL.
-
+- - - -
 
 ### Technology Stack
 - Node JS
@@ -43,11 +43,9 @@ Several weeks were given to produce a minimum viable product (MVP). Throughout t
 - NOW Depoy / Hosting
 
 For more details, please refer to package.json file for dependencies installed 
-
+- - - -
 
 ### Design and Planning Process
-
-
 #### White Board Brain Storming
 Before the start of diving into programming this application, various ideas focusing on design and user experience were taken into consideration. For example, DuoLingo and Babel applications were used as a inspirational ideas to whiteboard some of the features of the application.
 ![whiteboard](https://user-images.githubusercontent.com/22834712/28507813-001c5426-7079-11e7-852d-32ce24ed69a1.png)
@@ -78,6 +76,7 @@ The style guide for this application is simple. A total of 6 different colors an
 #### Project Management
 The project management was executed using Trello Board, Github Organisation and Slack. These tools played a big part in holding pieces of the project contribution in together one place and helping the contributors to communicate effectively. Please refer to following link to view the Trello Board maangement contents.
 https://trello.com/b/AsPE7dTZ/vacl
+- - - -
 
 ### Application Content
 #### Front-end
@@ -88,15 +87,18 @@ https://trello.com/b/AsPE7dTZ/vacl
 The above figure showed some of the components concept that were integrated into the application. The idea is to break down the application systems into smaller, more modular/reusable parts that can bring us huge benefits and allow for more unity between design and development in the long term. For example, The Navigation Bar and the Footer that were used throughout the entire application.
 
 Another modular/usable component is the button, where it encapsulate the functionality within themselve and provide a different way of implementation. For example, a button is used for links and change state of the components.
+- - - -
 
 #### Back-end
 ![mongodb](https://user-images.githubusercontent.com/22834712/28509456-c68638f0-7085-11e7-9c56-ec24e9f0a188.jpg)
 **Figure 7**: MongoDB Schema
 
 MongoDB Mlab was used to store all required application data. The MongoDB schema as depicted in figure 7 is implemented to serve as a reference when building the backend Node/Express server. This schema is also implemented in a way so that future courses and languages importation into the application could be performed seamlessly.
+- - - -
 
 #### Live Application Address
 To be included soon
+- - - -
 
 #### Additional Features to be followed
 - Avatar Image Selection within the User Profile
@@ -104,3 +106,7 @@ To be included soon
 - Badges Accumulation based on Points generated from enrolled courses
 - Administration dashboard for application owner to control contents
 
+#### Outstanding Issues
+- Google Map API Key replacement
+- Contact Form warnings
+- Refactoring andRenaming of certain contents
