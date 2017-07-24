@@ -10,7 +10,7 @@ This app is an online aboriginal languages learning platform sponsoered for the 
 
 ### Client Interaction
 ![interaction png](https://user-images.githubusercontent.com/22834712/28507972-49885fbe-707a-11e7-996a-4a8cb0dc9bec.jpg)
-Figure 1: Client Interaction
+**Figure 1**: Client Interaction
 
 The VACL was approached via email to discuss the application idea to help the Aboriginal community with a language mobile leanring tool. A meeting soon followed and the idea was presented to the CEO and he approved the idea to go into an application.
 
@@ -26,7 +26,7 @@ Several weeks were given to produce a minimum viable product (MVP). Throughout t
 #### White Board Brain Storming
 Before the start of diving into programming this application, various ideas focusing on design and user experience were taken into consideration. For example, DuoLingo and Babel applications were used as a inspirational ideas to whiteboard some of the features of the application.
 ![whiteboard](https://user-images.githubusercontent.com/22834712/28507813-001c5426-7079-11e7-852d-32ce24ed69a1.png)
-Figure 2: Brain Storming Activity
+**Figure 2**: Brain Storming Activity
 
 #### User Stories
 The following were some of the stories used to build the application features.
@@ -37,6 +37,7 @@ The following were some of the stories used to build the application features.
 
 #### User Experience (UX) Flow 
 ![vacl user flow](https://user-images.githubusercontent.com/25757504/27676878-04aadcc2-5cf3-11e7-93c2-119a78b1b613.jpg)
+**Figure 3**: User Experience Flow Diagram
 
 #### Wireframe Mockup
 
