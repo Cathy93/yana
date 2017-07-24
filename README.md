@@ -22,6 +22,8 @@ Several weeks were given to produce a minimum viable product (MVP). Throughout t
 ### Design and Planning Process
 #### White Board Brain Storming
 Before the start of diving into programming this application, various ideas focusing on design and user experience were taken into consideration. For example, DuoLingo and Babel applications were used as a inspirational ideas to whiteboard some of the features of the application.
+![whiteboard](https://user-images.githubusercontent.com/22834712/28507813-001c5426-7079-11e7-852d-32ce24ed69a1.png)
+Figure 2: Brain Storming Activity
 
 #### User Stories
 The following were some of the stories used to build the application features.
