@@ -105,6 +105,7 @@ To be included soon
 - Point System within the User Profile
 - Badges Accumulation based on Points generated from enrolled courses
 - Administration dashboard for application owner to control contents
+- - - -
 
 #### Outstanding Issues
 - Google Map API Key replacement
