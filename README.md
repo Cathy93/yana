@@ -2,10 +2,10 @@
 
 
 ## Table of Contents
--Application Brief
--Client Interaction
--Technology Stack
--Design and Planning Process
+- Application Brief
+- Client Interaction
+- Technology Stack
+- Design and Planning Process
 
 
 ### Application Brief
@@ -95,5 +95,12 @@ Another modular/usable component is the button, where it encapsulate the functio
 
 MongoDB Mlab was used to store all required application data. The MongoDB schema as depicted in figure 7 is implemented to serve as a reference when building the backend Node/Express server. This schema is also implemented in a way so that future courses and languages importation into the application could be performed seamlessly.
 
+#### Live Application Address
+To be included soon
 
+#### Additional Features to be followed
+- Avatar Image Selection within the User Profile
+- Point System within the User Profile
+- Badges Accumulation based on Points generated from enrolled courses
+- Administration dashboard for application owner to control contents
 
