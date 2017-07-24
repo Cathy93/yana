@@ -22,6 +22,7 @@ const  LanguagesPage = () => (
         />
       )
     }
+      <Footer />
   </div>
   )
 

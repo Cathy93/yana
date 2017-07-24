@@ -25,79 +25,177 @@ main {
   margin: 0 0;
 }
 
-.fixed-bottom {
-  position: fixed;
-  bottom: 0;
+.user {
+  margin-top: 0px;
+  position: absolute;
   width: 100%;
 }
 
-/*------------------------SigupForm-------------------------------------------*/
-/*.form-group {
-  width: 80%;
-  margin: 0 auto;
-  padding: 2rem 10rem;
+.user-link-margin {
+  margin-bottom: 170px;
 }
 
-.label-text {
+.profile-link-margin {
+  margin-bottom: 230px;
+}
+
+.button-center {
+  padding-left: 45%;
+  padding-right: 45%;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 1366px){
+  .user-link-margin {
+    margin-bottom: 310px;
+  }
+
+  .profile-link-margin {
+    margin-bottom: 370px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .user-link-margin {
+    margin-bottom: 650px;
+  }
+
+  .profile-link-margin {
+    margin-bottom: 710px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .user-link-margin {
+    margin-bottom: 310px;
+  }
+
+  .profile-link-margin {
+    margin-bottom: 370px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .user-link-margin {
+    margin-bottom: 90px;
+  }
+
+  .profile-link-margin {
+    margin-bottom: 170px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .user-link-margin {
+    margin-bottom: 110px;
+  }
+
+  .profile-link-margin {
+    margin-bottom: 170px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .user-link-margin {
+    margin-bottom: 130px;
+  }
+
+  .profile-link-margin {
+    margin-bottom: 200px;
+  }
+}
+
+
+
+/*------------------------SigupForm-------------------------------------------*/
+.label-container {
+border: 0px solid orange;
+}
+
+.input-container {
+  border: 0px solid green;
+}
+
+
+.label-text-user {
   font-size: 3rem;
   color: #353535;
+  float: right;
 }
 
-.form-control {
+.form-control-user {
   border: 1px solid #353535;
   height: 5rem;
   background-color: rgba(53, 53, 53, 0.8);
   color: white;
   font-size: 2rem;
   font-weight: 600;
+  width: 60%;
+  float: left;
+  margin-bottom: 50px;
 }
 
-.error-msg {
+.form-container {
+  margin: 50px auto;
+}
+
+/*.error-msg {
   color: red;
   font-size: 1.5rem;
   font-weight: 600;
-}
+}*/
 
-.buttom-form {
+.buttom-form-user {
   margin-bottom: 80px;
 }
 
+@media screen and (max-width: 1199px){
+  .label-text-user {
+    float: right;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .label-text-user {
+    float: left;
+  }
+
+  .form-control-user {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 600px){
-  .form-group {
+  .form-group-user {
     width: 100%;
   }
 
-  .label-text {
+  .label-text-user {
     font-size: 2.5rem;
   }
 
-  .form-control {
+  .form-control-user {
     height: 3.5rem;
     font-size: 1.8rem;
   }
 }
 
 @media screen and (max-width: 450px){
-  .form-group {
+  .form-group-user {
     width: 100%;
     padding: 2rem 2rem;
   }
 
-  .label-text {
+  .label-text-user {
     font-size: 2.3rem;
   }
 }
 
 @media screen and (max-width: 300px){
-  .label-text {
+  .label-text-user {
     font-size: 1.5rem;
   }
-=======
-  width: 100%;
->>>>>>> cbeb9e40148fdef4b2c4e56ba0e9af81a138977a
 }
-*/
 
 /*------------------------NavMenu Component-----------------------------------*/
 .nav-container {
@@ -665,7 +763,14 @@ button.btn.action-btn {
   color: white;
 }
 
-button.btn.action-btn:hover {
+button.btn.thin-btn:hover,
+button.btn.thin-btn:focus,
+button.btn.action-btn:hover,
+button.btn.action-btn:focus,
+button.btn.action-btn:hover,
+button.btn.action-btn:focus,
+button.btn.action-btn-home:hover,
+button.btn.action-btn-home:focus {
   color: #F4DA9D;
   text-decoration: none;
 }
@@ -680,11 +785,6 @@ button.btn.action-btn-home {
   background: #353535;
   color: white;
   font-size: 2.5rem;
-}
-
-button.btn.action-btn-home:hover {
-  color: #F4DA9D;
-  text-decoration: none;
 }
 
 div.finish-btn-wrapper {
@@ -733,6 +833,7 @@ div.panel-body {
     font-size: 30px;
     font-weight: 900;
     color: white;
+    margin-top: -10px;
     padding-bottom: 5px;
 }
 
@@ -747,7 +848,7 @@ label.col-sm-2.col-form-label {
 }
 
 div.panel.panel-default.custom {
-    border: 1px solid rgba(53, 53, 53, 0.8);
+    border: 0.1px solid rgba(53, 53, 53, 1);
 }
 
 div.formErrors > p {
@@ -764,20 +865,25 @@ div.col-lg-offset-2 {
   margin-top: 30px;
 }
 
+input.form-control {
+  margin-bottom: 20px;
+}
+
 input.btn {
   font-size: 15px;
   font-weight: 700;
   color: white;
   background-color: #353535;
   border-radius: 8px;
+  margin-left: 10px;
   border: 3px solid white;
 }
 
 input.btn:hover,
 input.btn:focus {
   color: white;
-  background-color: #73BF45;
-  border: 3px solid #73BF45;
+  background-color: #DD6D26;
+  border: 3px solid #DD6D26;
 }
 
 button.btn.btn-link {
@@ -823,11 +929,20 @@ button.btn.btn-link:focus {
 @media screen and (max-width: 565px){
   div.well.well-lg {
       max-height: 900px;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px;
   }
 
   div.panel-body {
     width: 100%;
     max-height: 760px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  input.btn {
+    margin-left: 15px;
   }
 }
 
@@ -863,6 +978,7 @@ a.anchor-default-link:hover,
 a.anchor-default-link:focus {
   color: #DD6D26;
   font-size: 24px;
+  font-weight: 600;
   text-decoration: underline;
 }
 

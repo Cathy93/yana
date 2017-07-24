@@ -20,9 +20,6 @@ const SignUpPage = ({
           )
       }
       </div>
-    <div className="fixed-bottom">
-      <Footer />
-    </div>
   </div>
 )
 
