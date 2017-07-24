@@ -19,8 +19,7 @@ class SingleCoursePage extends React.Component {
   }
 
   componentDidMount() {
-    var url = "REACT_APP_API_URL" + this.props.courseName;
-    coursesAPI.list(url)
+    coursesAPI.show(this.props.courseName)
       .then(course => {
         this.setState({course: course});
       })
