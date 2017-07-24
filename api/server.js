@@ -14,9 +14,7 @@ const server = express()
 
 server.use(bodyParser.urlencoded({extended: true}))
 server.use(bodyParser.json())
-server.use(cors({
-    origin: process.env.CORS_ORIGINS.split(',')
-}))
+server.use(cors({}))
 
 server.use(authMiddleware.initialize)
 
