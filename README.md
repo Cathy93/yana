@@ -7,8 +7,18 @@
 3. [Technology Stack](#technology-stack)
 4. [Plugins and Packages YARN Package Management](#plugins-and-packages-yarn-package-management)
 5. [Design and Planning Process](#design-and-planning-process)
-5.
-6.
+  5.1 [White Board Brain Storming](#white-board-brain-storming)
+  5.2 [User Stories](#user-stories)
+  5.3 [User Experience UX Flow](#user-experience-us-flow)
+  5.4 [Wireframe Mockup](#wireframe-mockup)
+  5.5 [Style Guide](#style-guide)
+  5.6 [Project Management](#project-management)
+6. [Application Content](#application-content)
+  6.1 [Front-end](#front-end)
+  6.2 [Back-end](#back-end)
+7. [Live Application Address](#live-application-address)
+8. [Additional Features to be followed](#additional-features-to-be-followed)
+9. [Outstanding Issues](#outstanding-issues)
 
 
 ### Application Brief
@@ -61,7 +71,7 @@ The following were some of the stories used to build the application features.
 - As someone that is learning the aboriginal language, I want to be able to connect with others that are doing the same.
 - As student, I want to be able to see the progress I'm making in the course.
 
-#### User Experience (UX) Flow 
+#### User Experience *UX* Flow 
 ![vacl user flow](https://user-images.githubusercontent.com/25757504/27676878-04aadcc2-5cf3-11e7-93c2-119a78b1b613.jpg)
 **Figure 3**: User Experience Flow Diagram
 
