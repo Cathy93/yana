@@ -17,10 +17,10 @@ The VACL was approached via email to discuss the application idea to help the Ab
 Several weeks were given to produce a minimum viable product (MVP). Throughout the interaction activities, several meetings were held to discuss the application design and to obtain feedbacks. Data used in this application were also provided by VACL.
 
 ### Technology Stack
--Node JS
--React JS
--Express JS
--MongoDB
+- Node JS
+- React JS
+- Express JS
+- MongoDB
 
 ### Design and Planning Process
 #### White Board Brain Storming
@@ -44,8 +44,13 @@ The wireframe design around the application was accomplished using FIGMA, which 
 ![wireframe](https://user-images.githubusercontent.com/22834712/28508044-1f15ada8-707b-11e7-874d-e329ab09a008.png)
 **Figure 4**: Wireframe Mockup and Design
 
--Style Guide
--Project Management
+#### Style Guide
+The style guide for this application is simple. A total of 6 different colors and one family font were used throughout the mockup design. Please refer to following figure for detailed style guides.
+![style](https://user-images.githubusercontent.com/22834712/28508295-60becd00-707d-11e7-9d22-6a209197cc47.png)
+**Figure 5**: Wireframe and Application Style Guide
+
+#### Project Management
+
 
 ### Application Content
 
