@@ -10,7 +10,7 @@
 
 ### Application Brief
 This app is an online aboriginal languages learning platform sponsoered for the Victorian Aboriginal Corporation for Languages (VACL). VACL staff and volunteers experience helped build the content to make indegenous language learning more fun and effective. For more details, visit the VACL page. 
-
+- - - -
 
 ### Client Interaction
 ![interaction png](https://user-images.githubusercontent.com/22834712/28507972-49885fbe-707a-11e7-996a-4a8cb0dc9bec.jpg)
