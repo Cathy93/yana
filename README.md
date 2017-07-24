@@ -5,7 +5,7 @@
 1. [Application Brief](#application-brief)
 2. [Client Interaction](#client-interaction)
 3. [Technology Stack](#technology-stack)
-4. [Plugins and Packages (YARN Package Management)](#plugins-and-packages-(yarn-package-management))
+4. [Plugins and Packages YARN Package Management](#plugins-and-packages-yarn-package-management)
 5. [Design and Planning Process](#design-and-planning-process)
 5.
 6.
@@ -30,7 +30,7 @@ Several weeks were given to produce a minimum viable product (MVP). Throughout t
 - Express JS
 - MongoDB
 
-### Plugins and Packages (YARN Package Management)
+### Plugins and Packages *YARN Package Management*
 - React create-app APPNAME
 - React-router v4
 - Nodemon
