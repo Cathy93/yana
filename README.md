@@ -22,6 +22,23 @@ Several weeks were given to produce a minimum viable product (MVP). Throughout t
 - Express JS
 - MongoDB
 
+### Plugins and Packages (YARN Package Management)
+- React create-app APPNAME
+- React-router v4
+- Nodemon
+- React-bootstrap
+- Auth0
+- Passport / JWT
+- Axios
+- Mosaic Audio
+- Underscore
+- Lodash
+- Dotenv
+- Mongoose
+- NOW Depoy / Hosting
+
+For more details, please refer to package.json file for dependencies installed 
+
 ### Design and Planning Process
 #### White Board Brain Storming
 Before the start of diving into programming this application, various ideas focusing on design and user experience were taken into consideration. For example, DuoLingo and Babel applications were used as a inspirational ideas to whiteboard some of the features of the application.
@@ -46,11 +63,20 @@ The wireframe design around the application was accomplished using FIGMA, which 
 
 #### Style Guide
 The style guide for this application is simple. A total of 6 different colors and one family font were used throughout the mockup design. Please refer to following figure for detailed style guides.
-![style](https://user-images.githubusercontent.com/22834712/28508295-60becd00-707d-11e7-9d22-6a209197cc47.png) **Figure 5**: Wireframe and Application Style Guide
+![style](https://user-images.githubusercontent.com/22834712/28508295-60becd00-707d-11e7-9d22-6a209197cc47.png) 
+**Figure 5**: Wireframe and Application Style Guide
 
 #### Project Management
-The project management was executed using Trello Board, Github Organisation and Slack. These tools played a big part in holding pieces of the project contribution in together one place and helping the contributors to communicate effectively. Please refer to following link to view the Trello Board contents.
+The project management was executed using Trello Board, Github Organisation and Slack. These tools played a big part in holding pieces of the project contribution in together one place and helping the contributors to communicate effectively. Please refer to following link to view the Trello Board maangement contents.
 https://trello.com/b/AsPE7dTZ/vacl
 
 ### Application Content
+#### Front-end
+![components](https://user-images.githubusercontent.com/22834712/28509201-e04e972a-7083-11e7-89ad-ad17eb4d4142.png)
+**Figure 6**: React-app Components
+The above figure showed some of the components concept that were integrated into the application. The idea is to break down the application systems into smaller, more modular/reusable parts that can bring us huge benefits and allow for more unity between design and development in the long term. For example, The Navigation Bar and the Footer that were used throughout the entire application.
+
+Another modular/usable component is the button, where it encapsulate the functionality within themselve and provide a different way of implementation. For example, a button is used for links and change state of the components.
+
+#### Back-end
 
