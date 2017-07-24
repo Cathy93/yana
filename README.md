@@ -7,15 +7,15 @@
 3. [Technology Stack](#technology-stack)
 4. [Plugins and Packages YARN Package Management](#plugins-and-packages-yarn-package-management)
 5. [Design and Planning Process](#design-and-planning-process)
-  5.1 [White Board Brain Storming](#white-board-brain-storming)
-  5.2 [User Stories](#user-stories)
-  5.3 [User Experience UX Flow](#user-experience-us-flow)
-  5.4 [Wireframe Mockup](#wireframe-mockup)
-  5.5 [Style Guide](#style-guide)
-  5.6 [Project Management](#project-management)
+    5.1 [White Board Brain Storming](#white-board-brain-storming)
+    5.2 [User Stories](#user-stories)
+    5.3 [User Experience UX Flow](#user-experience-us-flow)
+    5.4 [Wireframe Mockup](#wireframe-mockup)
+    5.5 [Style Guide](#style-guide)
+    5.6 [Project Management](#project-management)
 6. [Application Content](#application-content)
-  6.1 [Front-end](#front-end)
-  6.2 [Back-end](#back-end)
+    6.1 [Front-end](#front-end)
+    6.2 [Back-end](#back-end)
 7. [Live Application Address](#live-application-address)
 8. [Additional Features to be followed](#additional-features-to-be-followed)
 9. [Outstanding Issues](#outstanding-issues)
@@ -124,3 +124,6 @@ https://yana.now.sh
 - Google Map API Key replacement
 - Contact Form warnings
 - Refactoring andRenaming of certain contents
+
+
+[Table of Contents](#table-of-contents)
