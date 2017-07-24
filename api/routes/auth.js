@@ -3,7 +3,8 @@ const authMiddleware = require('../middleware/auth')
 const cors = require('cors')
 const router = express.Router()
 
-app.use(cors())
+router.options('*', cors())
+router.use(cors())
 // Sign in: POST /auth
 router.post('/auth', authMiddleware.authenticateSignIn, authMiddleware.signTokenHandler)
 
