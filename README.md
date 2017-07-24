@@ -1,5 +1,5 @@
 # YANA Design Documentation (Aboriginal Language Learning APP)
-========
+
 
 ### Table of Contents
 -Application Brief
@@ -81,6 +81,7 @@ https://trello.com/b/AsPE7dTZ/vacl
 ![components](https://user-images.githubusercontent.com/22834712/28509201-e04e972a-7083-11e7-89ad-ad17eb4d4142.png)
 
 **Figure 6**: React-app Components
+
 The above figure showed some of the components concept that were integrated into the application. The idea is to break down the application systems into smaller, more modular/reusable parts that can bring us huge benefits and allow for more unity between design and development in the long term. For example, The Navigation Bar and the Footer that were used throughout the entire application.
 
 Another modular/usable component is the button, where it encapsulate the functionality within themselve and provide a different way of implementation. For example, a button is used for links and change state of the components.
