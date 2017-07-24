@@ -31,7 +31,7 @@ The following were some of the stories used to build the application features.
 - As student, I want to be able to see the progress I'm making in the course.
 
 #### User Experience (UX) Flow 
-![vacl user flow](https://user-images.githubusercontent.com/25757504/27676878-04aadcc2-5cf3-11e7-93c2-119a78b1b613.jpg
+![vacl user flow](https://user-images.githubusercontent.com/25757504/27676878-04aadcc2-5cf3-11e7-93c2-119a78b1b613.jpg)
 
 -Wireframe Mockup
 -Style Guide
