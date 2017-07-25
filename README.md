@@ -32,14 +32,14 @@
 
 
 ### Application Brief
-This app is an online aboriginal languages learning platform sponsoered for the Victorian Aboriginal Corporation for Languages (VACL). VACL staff and volunteers experience helped build the content to make indegenous language learning more fun and effective. For more details, visit the VACL page. 
+This is an online app for learning Aboriginal languages sponsored by the Victorian Aboriginal Corporation for Languages (VACL). The VACL staff and volunteers helped build the Yana app content to make indigenous languages more fun to learn. For more details please visit the VACL page. 
 - - - -
 
 ### Client Interaction
 ![interaction png](https://user-images.githubusercontent.com/22834712/28507972-49885fbe-707a-11e7-996a-4a8cb0dc9bec.jpg)
 **Figure 1**: Client Interaction
 
-The VACL was approached via email to discuss the application idea to help the Aboriginal community with a language mobile leanring tool. A meeting soon followed and the idea was presented to the CEO and he approved the idea to go into an application.
+The VACL was approached via email to discuss the language application idea to help the Aboriginal community learn their languages by providing them a mobile learning tool. A meeting with the VACL CEO, Paul Paton, soon followed where the idea was presented to him and with his approval he allowed us to seek permission by the Boonwurrung and Woiwurrung tribes to host their languages on the app as a pilot project.
 
 Several weeks were given to produce a minimum viable product (MVP). Throughout the interaction activities, several meetings were held to discuss the application design and to obtain feedbacks. Data used in this application were also provided by VACL.
 
@@ -76,15 +76,15 @@ For more details, please refer to package.json file for dependencies installed
 
 ### Design and Planning Process
 #### White Board Brain Storming
-Before the start of diving into programming this application, various ideas focusing on design and user experience were taken into consideration. For example, DuoLingo and Babel applications were used as a inspirational ideas to whiteboard some of the features of the application.
+Before we started diving into coding and programming the learning application, various ideas focusing on design and user experience were taken into consideration. For example, DuoLingo and Babel applications were used for inspirational ideas, all thoughts were whiteboarded  and discussed.
 ![whiteboard](https://user-images.githubusercontent.com/22834712/28507813-001c5426-7079-11e7-852d-32ce24ed69a1.png)
 **Figure 2**: Brain Storming Activity
 
 #### User Stories
 The following were some of the stories used to build the application features.
-- In order to learn another language, I want to listen how the word is pronounced.
-- In order to learn about Australian Culture, as a Student I want to know some aboriginal words.
-- As someone that is learning the aboriginal language, I want to be able to connect with others that are doing the same.
+- In order to learn another language, I want to listen how the words are pronounced.
+- In order to learn about Australian Aboriginal Culture, as a Student I want to know some aboriginal words.
+- As someone that is learning the Aboriginal language, I want to be able to connect with others that are doing the same.
 - As student, I want to be able to see the progress I'm making in the course.
 
 #### User Experience *UX* Flow 
@@ -92,18 +92,18 @@ The following were some of the stories used to build the application features.
 **Figure 3**: User Experience Flow Diagram
 
 #### Wireframe Mockup
-The wireframe design around the application was accomplished using FIGMA, which is a online collaboration design tool. Most of the mockup was designed based on mobile first philosophy. Design iteration was performed as could be seen in the following figure. The AFTER design sketches were achieved after knowing what sort of required data and the culture significance of the application were identified.  
+The wireframe design for the application was accomplished using FIGMA, it being an online collaboration design tool. Most of the mockup was designed based on mobile first philosophy. Design iteration was based on cultural colours and their significant design sketches were identified as seen in the following figure.  
 ![wireframe](https://user-images.githubusercontent.com/22834712/28508044-1f15ada8-707b-11e7-874d-e329ab09a008.png)
 **Figure 4**: Wireframe Mockup and Design
 
 #### Style Guide
-The style guide for this application is simple. A total of 6 different colors and one family font were used throughout the mockup design. Please refer to following figure for detailed style guides.
+The style guide for this application is simple. A total of 6 different colors and one family font was used throughout the mockup design. Please refer to following figure for detailed style guides.
 ![style](https://user-images.githubusercontent.com/22834712/28508295-60becd00-707d-11e7-9d22-6a209197cc47.png) 
 
 **Figure 5**: Wireframe and Application Style Guide
 
 #### Project Management
-The project management was executed using Trello Board, Github Organisation and Slack. These tools played a big part in holding pieces of the project contribution in together one place and helping the contributors to communicate effectively. Please refer to following link to view the Trello Board maangement contents.
+The project management was executed using Trello Board, Github Organisation for source control and Slack for immediate team collaboration. These tools played a big part in holding all the pieces of the project contribution together, all the tools in unison helped the contributors communicate effectively. Please refer to following link to view the Trello Board maangement contents.
 https://trello.com/b/AsPE7dTZ/vacl
 
 
