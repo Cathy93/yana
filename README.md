@@ -32,7 +32,7 @@
 
 
 ### Application Brief
-This is an online app for learning Aboriginal languages sponsored by the Victorian Aboriginal Corporation for Languages (VACL). The VACL staff and volunteers helped build the Yana app content to make indigenous languages more fun to learn. For more details please visit the VACL page. 
+This is an online app for learning Aboriginal languages sponsored by the Victorian Aboriginal Corporation for Languages (VACL). The VACL staff and volunteers helped build the Yana app content to make indigenous languages more fun to learn. At this stage of the application, visitor could sign up to learn a couple of languages which contained three levels of difficulties. All the language phrases could be heard by using the audio play function. For more details please visit the VACL page. 
 - - - -
 
 ### Client Interaction
@@ -146,6 +146,7 @@ https://yana.now.sh
 - - - -
 
 #### Outstanding Issues
+- User can't sign up and login with mobile phones browser
 - Google Map API Key replacement
 - Contact Form warnings
 - Refactoring andRenaming of certain contents
