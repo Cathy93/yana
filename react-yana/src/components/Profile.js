@@ -1,7 +1,4 @@
 import React from 'react'
-import { Link  } from 'react-router-dom'
-import AnchorLink from '../components/AnchorLink';
-import Footer from '../components/Footer'
 
 function untilExpiryInSeconds(exp) {
   const now = new Date()

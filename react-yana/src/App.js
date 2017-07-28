@@ -20,8 +20,6 @@ import SingleCoursePage from './pages/SingleCoursePage';
 import LanguagesPage from './pages/LanguagesPage';
 import SignInPage from './pages/SignInPage';
 import SignUpPage from './pages/SignUpPage';
-import * as coursesAPI from './api/courses';
-
 import ProfilePage from './pages/ProfilePage';
 import * as authAPI from './api/auth';
 import { setAPIToken } from './api/init';

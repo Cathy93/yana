@@ -1,6 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import MainHeader from './MainHeader'
 import LevelCourse from './LevelCourse'
 import ActionButton from './ActionButton'
 import Footer from './Footer'

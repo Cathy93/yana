@@ -1,14 +1,8 @@
 import React from 'react'
-import MainHeader from '../components/MainHeader'
-import LevelCourse from '../components/LevelCourse'
-import ActionButton from '../components/ActionButton'
-import Footer from '../components/Footer'
 import WordExercise from '../components/WordExercise'
 import CourseCover from '../components/CourseCover'
 import FinishCourse from "../components/FinishCourse"
 import * as coursesAPI from '../api/courses';
-
-import animal from '../img/animal.png';
 
 class SingleCoursePage extends React.Component {
   // Act as initialize in ruby

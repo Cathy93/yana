@@ -7,9 +7,7 @@ import Footer from '../components/Footer';
 import { groupBy } from 'underscore';
 import * as coursesAPI from '../api/courses';
 
-import {
-  languageIDs, languageIDToNames, languageIDToFlagImages
-} from '../content/languages'
+import { languageIDToNames } from '../content/languages'
 
 
 class CoursesPage  extends React.Component {

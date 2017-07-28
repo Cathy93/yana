@@ -1,7 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom';
-
-// Components
 import Footer from './Footer'
 import Thumbnails from './Thumbnails'
 import ButtonThin from './ButtonThin'

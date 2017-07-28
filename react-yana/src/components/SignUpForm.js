@@ -1,8 +1,5 @@
 import React from 'react'
-import ButtonDefault from '../components/ButtonDefault';
-import Validation from 'react-validation';
 import AnchorLink from '../components/AnchorLink';
-import Footer from '../components/Footer'
 
 
 function submitSignUp(event, onSignUp) {
@@ -29,7 +26,7 @@ export default function SignUpForm({
             <input className="form-control" type='email' name='email' />
             <label className="label-text-user">Password:</label>
             <input className="form-control" type='password' name='password' />
-            </div>
+          </div>
 
             <div className="learn-now-button-container text-center">
               <button className="btn thin-btn">Join</button>
@@ -40,8 +37,6 @@ export default function SignUpForm({
             <h3 className="">Already an existing User? </h3>
             <AnchorLink className="sign-in-link-container" title="Sign In" linkPath="/sign_in" />
           </div>
-          <Footer />
-
       </div>
     )
   }

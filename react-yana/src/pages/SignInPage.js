@@ -1,7 +1,7 @@
 import React from 'react'
 import { Redirect } from 'react-router-dom'
 import SignInForm from '../components/SignInForm'
-import LanguagesPage from './LanguagesPage'
+import Footer from '../components/Footer'
 
 const SignInPage = ({
     token,
@@ -13,11 +13,12 @@ const SignInPage = ({
           !!token ? (
             <Redirect to="/languages" token={ token } />
           ) : (
-            <div className="text-center">
+            <div>
               <SignInForm onSignIn={ onSignIn } />
             </div>
           )
       }
+    <Footer/>
   </div>
 )
 

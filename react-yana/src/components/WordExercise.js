@@ -1,12 +1,7 @@
 // Dependencies
 import React from 'react'
-import ReactDOM from 'react-dom';
 import Mosaic from 'mosaic-audio';
-
-// Components
 import Footer from '../components/Footer'
-
-// Img
 import Thumbnails from '../components/Thumbnails'
 import ActionButton from '../components/ActionButton'
 import ProgressBar from '../components/ProgressBar'

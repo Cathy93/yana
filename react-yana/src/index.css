@@ -32,7 +32,7 @@ main {
 }
 
 .user-link-margin {
-  margin-bottom: 170px;
+  margin-bottom: 100px;
 }
 
 .profile-link-margin {
@@ -46,9 +46,6 @@ main {
 }
 
 @media screen and (max-width: 1366px){
-  .user-link-margin {
-    margin-bottom: 310px;
-  }
 
   .profile-link-margin {
     margin-bottom: 370px;
@@ -56,9 +53,6 @@ main {
 }
 
 @media screen and (max-width: 1024px){
-  .user-link-margin {
-    margin-bottom: 650px;
-  }
 
   .profile-link-margin {
     margin-bottom: 710px;
@@ -66,9 +60,6 @@ main {
 }
 
 @media screen and (max-width: 768px){
-  .user-link-margin {
-    margin-bottom: 310px;
-  }
 
   .profile-link-margin {
     margin-bottom: 370px;
@@ -76,9 +67,6 @@ main {
 }
 
 @media screen and (max-width: 600px){
-  .user-link-margin {
-    margin-bottom: 90px;
-  }
 
   .profile-link-margin {
     margin-bottom: 170px;
@@ -86,9 +74,6 @@ main {
 }
 
 @media screen and (max-width: 450px){
-  .user-link-margin {
-    margin-bottom: 110px;
-  }
 
   .profile-link-margin {
     margin-bottom: 170px;
@@ -96,10 +81,6 @@ main {
 }
 
 @media screen and (max-width: 400px){
-  .user-link-margin {
-    margin-bottom: 130px;
-  }
-
   .profile-link-margin {
     margin-bottom: 200px;
   }
