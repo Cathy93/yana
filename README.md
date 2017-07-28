@@ -135,7 +135,7 @@ MongoDB Mlab was used to store all required application data. The MongoDB schema
 - - - -
 
 #### Live Application Address
-https://yana.now.sh
+https://yana-app.now.sh
 - - - -
 
 #### Additional Features to be followed
