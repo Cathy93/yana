@@ -120,7 +120,7 @@ border: 0px solid orange;
 .label-text-user {
   font-size: 3rem;
   color: #353535;
-  float: right;
+  float: left;
 }
 
 .form-control-user {
@@ -136,7 +136,7 @@ border: 0px solid orange;
 }
 
 .form-container {
-  margin: 50px auto;
+  margin: 25px auto;
 }
 
 /*.error-msg {
@@ -149,16 +149,8 @@ border: 0px solid orange;
   margin-bottom: 80px;
 }
 
-@media screen and (max-width: 1199px){
-  .label-text-user {
-    float: right;
-  }
-}
 
 @media screen and (max-width: 991px){
-  .label-text-user {
-    float: left;
-  }
 
   .form-control-user {
     width: 100%;
